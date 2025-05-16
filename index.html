@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MapleStory Characters</title>
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>MapleStory Characters</h1>
-  <table id="character-table" border="1">
-    <thead>
-      <tr>
-        <th>IGN</th>
-        <th>Job</th>
-        <th>Archetype</th>
-        <th>Faction</th>
-        <th>Arcane Force</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+<h1>MapleStory Tracker</h1>
+<table id="charTable">
+  <thead>
+  <tr>
+    <th>Faction</th>
+    <th>Archetype</th>
+    <th>Job</th>
+    <th>ID</th>
+    <th>Link Skill</th>
+    <th>Arcane Force</th>
+    <th>Arcane Stats</th>
+    <th>Sacred Force</th>
+    <th>Sacred Stats</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-  <script src="script.js">
-  </script>
+<!-- Include jsyaml from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>

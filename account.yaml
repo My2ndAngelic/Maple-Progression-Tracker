@@ -1,13 +1,51 @@
 characters:
-  - ign: "SnowMage"
-    level: 225
-    jobName: "il"
-    arcaneSymbols:
-      vj: 2
-      chuchu: 7
-  - ign: "HeroGuy"
-    level: 210
-    jobName: "hero"
-    arcaneSymbols:
-      vj: 5
-      chuchu: 3
+  - { jobName: dk, ign: My2ndDarkKn, level: 270 }
+  - { jobName: ab, ign: My2ndAngelic, level: 262 }
+  - { jobName: mihile, ign: My2ndMikhail, level: 250 }
+  - { jobName: wa, ign: My2ndWA, level: 250 }
+  - { jobName: bm, ign: My2ndRanger, level: 251 }
+  - { jobName: pally, ign: My2ndPaladin, level: 250 }
+  - { jobName: hero, ign: My2ndHero, level: 251 }
+  - { jobName: khali, ign: My2ndKhali, level: 250 }
+  - { jobName: mm, ign: My2ndSniper, level: 260 }
+  - { jobName: pf, ign: My2ndPF, level: 235 }
+  - { jobName: lumi, ign: My2ndLumin, level: 221 }
+  - { jobName: hy, ign: My2ndHoyoung, level: 220 }
+  - { jobName: bw, ign: My2ndBW, level: 220 }
+  - { jobName: dw, ign: My2ndDW, level: 219 }
+  - { jobName: il, ign: My2ndIL, level: 220 }
+  - { jobName: bishop, ign: My2ndBishop, level: 220 }
+  - { jobName: fp, ign: My2ndFPMage, level: 220 }
+  - { jobName: bucc, ign: My2ndBucc, level: 220 }
+  - { jobName: cm, ign: My3rdCannon, level: 220 }
+  - { jobName: sair, ign: My2ndCorsair, level: 220 }
+  - { jobName: nw, ign: My2ndNW, level: 219 }
+  - { jobName: nl, ign: My2ndNL, level: 220 }
+  - { jobName: evan, ign: thanhbinh6, level: 221 }
+  - { jobName: phantom, ign: My3rdPhantom, level: 221 }
+  - { jobName: aran, ign: thanhbinh5, level: 260 }
+  - { jobName: da, ign: My2ndDA, level: 218 }
+  - { jobName: ds, ign: My2ndDS, level: 218 }
+  - { jobName: blaster, ign: My2ndBlaster, level: 220 }
+  - { jobName: hayato, ign: My2ndHayato, level: 220 }
+  - { jobName: lara, ign: My2ndLara, level: 218 }
+  - { jobName: lynn, ign: My2ndBT, level: 220 }
+  - { jobName: zero, ign: My2ndZero, level: 218 }
+  - { jobName: tb, ign: My2ndStriker, level: 218 }
+  - { jobName: db, ign: My2ndDBlader, level: 220 }
+  - { jobName: shad, ign: My2ndShadow, level: 220 }
+  - { jobName: ark, ign: My2ndArk, level: 218 }
+  - { jobName: adele, ign: My2ndAdele, level: 218 }
+  - { jobName: kine, ign: My2ndKine, level: 218 }
+  - { jobName: merc, ign: M2AMercedes, level: 221 }
+  - { jobName: shade, ign: My2ndShade, level: 260 }
+  - { jobName: kain, ign: My2ndKain, level: 218 }
+  - { jobName: illium, ign: My2ndIllium, level: 218 }
+  - { jobName: cadena, ign: My3rdCadena, level: 220 }
+  - { jobName: kaiser, ign: My3rdKaiser, level: 218 }
+  - { jobName: wh, ign: Wild01Hunter, level: 218 }
+  - { jobName: bam, ign: thanhbinh15, level: 220 }
+  - { jobName: mech, ign: My2ndMech, level: 220 }
+  - { jobName: xenon, ign: My2ndXenon, level: 218 }
+  - { jobName: kanna, ign: My2ndKanna, level: 220 }
+  - { jobName: mx, ign: My2ndMoXuan, level: 236 }
