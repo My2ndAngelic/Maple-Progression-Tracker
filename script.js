@@ -140,7 +140,7 @@ async function renderArcaneDetail() {
     trHead.appendChild(Object.assign(document.createElement('th'), { textContent: 'IGN' }));
     columns.forEach(col => {
       const th = document.createElement('th');
-      th.textContent = col === 'Lachelein' ? 'Lachelein' : col;
+      th.textContent = col;
       trHead.appendChild(th);
     });
     thead.appendChild(trHead);
