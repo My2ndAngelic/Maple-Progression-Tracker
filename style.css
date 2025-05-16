@@ -1,32 +1,59 @@
 body {
-    font-family: sans-serif;
-    padding: 2rem;
-    background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+#viewButtons {
+  margin-bottom: 20px;
 }
 
-thead {
-    background-color: #333;
-    color: white;
+button {
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 4px;
 }
 
-th, td {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    text-align: left;
+button:hover {
+  background-color: #ddd;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f0f0f0;
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.data-table th, .data-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.data-table thead {
+  background-color: #333;
+  color: white;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  display: none;
+}
+
+#arcaneView h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }

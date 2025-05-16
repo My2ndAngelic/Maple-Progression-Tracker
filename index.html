@@ -7,27 +7,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>MapleStory Tracker</h1>
-<table id="charTable">
-  <thead>
-  <tr>
-    <th>Faction</th>
-    <th>Archetype</th>
-    <th>Job</th>
-    <th>ID</th>
-    <th>Link Skill</th>
-    <th>Arcane Force</th>
-    <th>Arcane Stats</th>
-    <th>Sacred Force</th>
-    <th>Sacred Stats</th>
-  </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<!-- Include jsyaml from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
-<script src="script.js"></script>
-
+  <h1>MapleStory Tracker</h1>
+  <div id="viewButtons">
+    <button id="overviewBtn">Overview</button>
+    <button id="arcaneBtn">Arcane Symbol Detail</button>
+  </div>
+  <div id="overviewView">
+    <table id="charTable" class="data-table">
+      <thead>
+        <tr>
+          <th>Faction</th>
+          <th>Archetype</th>
+          <th>Job</th>
+          <th>ID</th>
+          <th>Level</th>
+          <th>Link Skill</th>
+          <th>Arcane Force</th>
+          <th>Sacred Force</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div id="arcaneView" class="hidden">
+    <table id="arcaneTable" class="data-table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
