@@ -44,31 +44,39 @@ async function loadCSV(url) {
   return parseCSV(text);
 }
 
-// Calculate Arcane Force for a single symbol level
-function calculateArcaneForSymbol(level) {
-  const n = Number(level);
-  if (isNaN(n) || n === 0) return 0;
-  if (n === 1) return 30;
-  return 30 + (n - 1) * 10;
+function setView(viewId) {
+  document.querySelectorAll('#overviewView, #arcaneView').forEach(div => {
+    div.classList.add('hidden');
+  });
+  document.getElementById(viewId).classList.remove('hidden');
 }
 
 async function renderTable() {
   try {
     const accountData = await loadCSV('account.csv');
     const jobList = await loadCSV('joblist.csv');
-    const arcaneDataRaw = await loadCSV('arcane.csv');
+    const arcaneData = await loadCSV('arcane.csv');
+    const sacredData = await loadCSV('sacred.csv');
 
-    // Map jobName → job details
     const jobMap = {};
     jobList.forEach(job => {
       jobMap[job.jobName] = job;
     });
 
-    // Map ign → arcane data row for fast lookup
     const arcaneMap = {};
-    arcaneDataRaw.forEach(row => {
-      arcaneMap[row.IGN] = row;
+    arcaneData.forEach(row => {
+      const { IGN, ...symbols } = row;
+      arcaneMap[IGN] = Object.values(symbols).map(v => Number(v) || 0);
     });
+
+    const sacredMap = {};
+    sacredData.forEach(row => {
+      const { IGN, ...symbols } = row;
+      sacredMap[IGN] = Object.values(symbols).map(v => Number(v) || 0);
+    });
+
+    // Sort by level descending
+    accountData.sort((a, b) => Number(b.level) - Number(a.level));
 
     const tbody = document.querySelector('#charTable tbody');
     tbody.innerHTML = '';
@@ -80,26 +88,34 @@ async function renderTable() {
         return;
       }
 
-      const arcaneEntry = arcaneMap[char.ign];
-      let totalArcane = 0;
-      if (arcaneEntry) {
-        const levels = [
-          arcaneEntry['Vanishing Journey'],
-          arcaneEntry['Chu Chu Island'],
-          arcaneEntry['Lachelin'],
-          arcaneEntry['Arcana'],
-          arcaneEntry['Morass'],
-          arcaneEntry['Esfera']
-        ];
-        totalArcane = levels.reduce((sum, lvl) => sum + calculateArcaneForSymbol(lvl), 0);
+      let arcaneForce = '';
+      if (arcaneMap[char.ign]) {
+        arcaneForce = arcaneMap[char.ign].reduce((sum, lvl) => {
+          if (lvl === 0) return sum;
+          return sum + 30 + 10 * (lvl - 1);
+        }, 0);
+      }
+
+      let sacredForce = '';
+      if (sacredMap[char.ign]) {
+        sacredForce = sacredMap[char.ign].reduce((sum, lvl) => {
+          return sum + (lvl * 10);
+        }, 0);
       }
 
       const tr = document.createElement('tr');
-
-      // faction | archetype | jobb | id (ign) | link skill max level | arcane
-      [job.faction, job.archetype, job.fullName, char.ign, char.level, job.linkSkillMaxLevel, totalArcane].forEach(text => {
+      [
+        job.faction || '',
+        job.archetype || '',
+        job.fullName || '',
+        char.ign || '',
+        char.level || '',
+        job.linkSkillMaxLevel || '',
+        arcaneForce,
+        sacredForce
+      ].forEach(text => {
         const td = document.createElement('td');
-        td.textContent = text || 'N/A';
+        td.textContent = text !== undefined && text !== null ? text : '';
         tr.appendChild(td);
       });
 
@@ -110,4 +126,52 @@ async function renderTable() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', renderTable);
+async function renderArcaneDetail() {
+  try {
+    const arcaneData = await loadCSV('arcane.csv');
+
+    const columns = Object.keys(arcaneData[0] || {}).filter(k => k !== 'IGN');
+    const thead = document.querySelector('#arcaneTable thead');
+    const tbody = document.querySelector('#arcaneTable tbody');
+    thead.innerHTML = '';
+    tbody.innerHTML = '';
+
+    const trHead = document.createElement('tr');
+    trHead.appendChild(Object.assign(document.createElement('th'), { textContent: 'IGN' }));
+    columns.forEach(col => {
+      const th = document.createElement('th');
+      th.textContent = col === 'Lachelein' ? 'Lachelein' : col;
+      trHead.appendChild(th);
+    });
+    thead.appendChild(trHead);
+
+    arcaneData.forEach(row => {
+      const tr = document.createElement('tr');
+      const ignTd = document.createElement('td');
+      ignTd.textContent = row.IGN;
+      tr.appendChild(ignTd);
+
+      columns.forEach(col => {
+        const td = document.createElement('td');
+        td.textContent = row[col] || '';
+        tr.appendChild(td);
+      });
+
+      tbody.appendChild(tr);
+    });
+  } catch (err) {
+    console.error('Error loading arcane details:', err);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  renderTable();
+  document.getElementById('overviewBtn').addEventListener('click', () => {
+    setView('overviewView');
+    renderTable();
+  });
+  document.getElementById('arcaneBtn').addEventListener('click', () => {
+    setView('arcaneView');
+    renderArcaneDetail();
+  });
+});
