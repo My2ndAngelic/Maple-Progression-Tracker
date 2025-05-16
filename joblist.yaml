@@ -1,0 +1,9 @@
+jobs:
+  il:
+    fullName: "Arch Mage (Ice/Lightning)"
+    archetype: "Magician"
+    faction: "Explorer"
+  hero:
+    fullName: "Hero"
+    archetype: "Warrior"
+    faction: "Explorer"

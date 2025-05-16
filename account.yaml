@@ -1,0 +1,13 @@
+characters:
+  - ign: "SnowMage"
+    level: 225
+    jobName: "il"
+    arcaneSymbols:
+      vj: 2
+      chuchu: 7
+  - ign: "HeroGuy"
+    level: 210
+    jobName: "hero"
+    arcaneSymbols:
+      vj: 5
+      chuchu: 3

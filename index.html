@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MapleStory Characters</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+  <h1>MapleStory Characters</h1>
+  <table id="character-table" border="1">
+    <thead>
+      <tr>
+        <th>IGN</th>
+        <th>Job</th>
+        <th>Archetype</th>
+        <th>Faction</th>
+        <th>Total Arcane Force</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function fetchYAML(path) {
+      const res = await fetch(path);
+      const text = await res.text();
+      return jsyaml.load(text);
+    }
+
+    function computeArcaneForce(symbols) {
+      return Object.values(symbols).reduce((sum, lvl) => sum + 30 + 10 * (lvl - 1), 0);
+    }
+
+    async function renderCharacters() {
+      const accountData = await fetchYAML('account.yaml');
+      const jobList = (await fetchYAML('joblist.yaml')).jobs;
+
+      const tbody = document.querySelector('#character-table tbody');
+      accountData.characters.forEach(char => {
+        const jobInfo = jobList[char.jobName] || {};
+        const arcForce = computeArcaneForce(char.arcaneSymbols || {});
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${char.ign}</td>
+          <td>${jobInfo.fullName || char.jobName}</td>
+          <td>${jobInfo.archetype || 'Unknown'}</td>
+          <td>${jobInfo.faction || 'Unknown'}</td>
+          <td>${arcForce}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    renderCharacters();
+  </script>
+</body>
+</html>
