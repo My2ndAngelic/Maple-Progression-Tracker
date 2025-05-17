@@ -168,3 +168,101 @@ h1 {
   background-color: #b3e5fc;  /* Very Light Blue */
   color: #000000;
 }
+
+.equipment-superior {
+  background-color: #ffd700;  /* Gold */
+  color: #000000;
+}
+
+.equipment-meister {
+  background-color: #c0c0c0;  /* Silver */
+  color: #000000;
+}
+
+.equipment-reinforced {
+  background-color: #cd7f32;  /* Bronze */
+  color: #ffffff;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown #equipmentBtn, .dropdown #symbolsBtn {
+  height: 100%;
+  margin: 0;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover #equipmentBtn, .dropdown:hover #symbolsBtn {
+  background-color: #005f99;
+}
+
+/* Help page styles */
+.help-section {
+  margin-bottom: 2rem;
+}
+
+.help-section h2 {
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.help-section p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.help-section ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+code {
+  background: #f4f4f4;
+  color: #333;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+}

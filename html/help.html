@@ -3,56 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MapleStory Tracker - Help</title>
-  <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />  <style>
-    .help-section {
-      margin-bottom: 2rem;
-    }
-    .help-section h2 {
-      color: var(--accent-color, #007acc);
-      margin-bottom: 1rem;
-    }
-    .help-section p {
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-    .help-section ul {
-      list-style-type: disc;
-    }
-    code {
-      background: var(--code-bg, #2d2d2d);
-      color: var(--code-color, #e0e0e0);
-      padding: 0.2rem 0.4rem;
-      border-radius: 3px;
-      font-family: 'Consolas', 'Monaco', monospace;
-      font-size: 0.9em;
-      border: 1px solid var(--code-border, #444);
-    }
-    /* Light theme overrides */
-    :root[data-theme='light'] code {
-      --code-bg: #f4f4f4;
-      --code-color: #333;
-      --code-border: #ddd;
-    }
-    /* Dark theme overrides */
-    :root[data-theme='dark'] code {
-      --code-bg: #2d2d2d;
-      --code-color: #e0e0e0;
-      --code-border: #444;
-    }
-    :root[data-theme='dark'] .help-section h2 {
-      --accent-color: #3399ff;
-    }
-      margin-left: 2rem;
-      margin-bottom: 1rem;
-    }
-    .help-section code {
-      background: #f4f4f4;
-      padding: 0.2rem 0.4rem;
-      border-radius: 3px;
-      font-family: monospace;
-    }
-  </style>
+  <title>MapleStory Tracker - Help</title>  <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />
 </head>
 <body>
   <div id="container">
@@ -72,35 +23,74 @@
       <div class="help-section">
         <h2>Navigation</h2>
         <p>Use the navigation bar at the top to access different views:</p>
-        <ul>
-          <li><strong>Overview:</strong> Basic character information and symbol totals</li>
+        <ul>          <li><strong>Overview:</strong> Basic character information and symbol totals</li>
+          <li><strong>Help:</strong> Documentation and usage guides</li>
           <li><strong>Progression:</strong> Detailed character information including faction and class</li>
-          <li><strong>Equipment:</strong> Equipment status for each character</li>
-          <li><strong>Cash:</strong> Cash shop item tracking</li>
-          <li><strong>Arcane Symbol Detail:</strong> Detailed view of Arcane Symbol levels</li>
-          <li><strong>Sacred Symbol Detail:</strong> Detailed view of Sacred Symbol levels</li>
+          <li><strong>Equipment ▼:</strong> Dropdown menu for equipment management
+            <ul>
+              <li><strong>Armor:</strong> Core equipment pieces (weapons, armor, etc.)</li>
+              <li><strong>Accessory:</strong> Additional equipment (rings, pendants, etc.)</li>
+              <li><strong>Cash Shop:</strong> Cash shop items and NX equipment</li>
+            </ul>
+          </li>
+          <li><strong>Symbols ▼:</strong> Dropdown menu for symbol progression
+            <ul>
+              <li><strong>Arcane:</strong> Arcane Symbol levels</li>
+              <li><strong>Sacred:</strong> Sacred Symbol levels</li>
+            </ul>
+          </li>
         </ul>
       </div>
 
       <div class="help-section">
         <h2>Data Files</h2>
         <p>The tracker uses CSV files in the <code>data/</code> folder:</p>
-        <ul>
-          <li><code>account.csv</code>: Basic character information</li>
+        <ul>          <li><code>account.csv</code>: Basic character information</li>
           <li><code>joblist.csv</code>: Job/class information</li>
           <li><code>arcane.csv</code>: Arcane Symbol levels</li>
           <li><code>sacred.csv</code>: Sacred Symbol levels</li>
-          <li><code>equipment.csv</code>: Equipment tracking</li>
+          <li><code>equipment.csv</code>: Armor and main equipment tracking</li>
+          <li><code>accessory.csv</code>: Accessory equipment tracking</li>
           <li><code>cash.csv</code>: Cash shop items</li>
+        </ul>
+      </div>
+
+      <div class="help-section">
+        <h2>Equipment Organization</h2>
+        <p>Equipment is organized into two categories for better tracking:</p>
+        <ul>
+          <li><strong>Armor:</strong> Main equipment pieces including:
+            <ul>
+              <li>Weapons and Secondary weapons</li>
+              <li>Emblem</li>
+              <li>Main armor pieces (Hat, Top, Bottom, Shoes, Cape, Gloves, Shoulder)</li>
+            </ul>
+          </li>
+          <li><strong>Accessories:</strong> All additional equipment slots including:
+            <ul>
+              <li>Face, Eye, and Ear accessories</li>
+              <li>Rings (4 slots)</li>
+              <li>Pendants (2 slots)</li>
+              <li>Belt</li>
+              <li>Badge and Medal</li>
+              <li>Android and Heart</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Special equipment types are color-coded in the interface:</p>
+        <ul>
+          <li>Superior items (gold)</li>
+          <li>Meister items (silver)</li>
+          <li>Reinforced items (bronze)</li>
+          <li>AbsoLab/Absolab items (grey)</li>
+          <li>Arcane/Umbra items (purple)</li>
         </ul>
       </div>
 
       <div class="help-section">
         <h2>Theme</h2>
         <p>Click the theme toggle button (🌙/☀️) in the navigation bar to switch between dark and light themes. Your preference will be saved for future visits.</p>
-      </div>
-
-      <div class="help-section">
+      </div>      <div class="help-section">
         <h2>Updating Data</h2>
         <p>To update character information:</p>
         <ol>
@@ -108,6 +98,13 @@
           <li>Add or modify entries as needed</li>
           <li>Save the file and refresh the page to see updates</li>
         </ol>
+        <p>For equipment updates:</p>
+        <ul>
+          <li>Use <code>equipment.csv</code> for core equipment pieces (weapons, armor)</li>
+          <li>Use <code>accessory.csv</code> for accessories and additional equipment</li>
+          <li>Make sure to match the equipment names exactly for proper color coding</li>
+          <li>Leave cells empty if the slot is not filled rather than using "None" or "0"</li>
+        </ul>
       </div>
     </div>
   </div>

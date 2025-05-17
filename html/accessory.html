@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MapleStory Tracker - Accessories</title>
+  <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />
+  <script>
+    // Set initial theme from localStorage before page loads to prevent flash
+    const isDark = localStorage.getItem('darkMode') === 'true';
+    document.getElementById('themeStylesheet').href = `../style/${isDark ? 'style-dark.css' : 'style.css'}`;
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div id="accessoryView">
+      <table id="accessoryTable" class="data-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script type="module">
+    import { initializeUI } from '../script/ui.js';
+    import { renderAccessoryTable } from '../script/accessory.js';
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      initializeUI();
+      renderAccessoryTable();
+    });
+  </script>
+</body>
+</html>

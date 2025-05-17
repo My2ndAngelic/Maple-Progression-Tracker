@@ -67,8 +67,7 @@ export async function renderEquipmentTable() {
       
       // Add Level cell from account data
       const levelCell = createTableCell(levelMap.get(equipment.IGN) || '');
-      tr.appendChild(levelCell);
-        // Add equipment data in the correct order
+      tr.appendChild(levelCell);      // Add equipment data in the correct order, using the exact column names from the CSV
       const columns = ['Weapon', 'Secondary', 'Emblem', 'Hat', 'Top', 'Bottom', 'Shoe', 'Cape', 'Gloves', 'Shoulder'];
       
       columns.forEach(column => {
