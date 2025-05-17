@@ -58,9 +58,22 @@ export async function renderTable() {
 
     const jobMap = createDataMap(jobList, 'jobName');
     const arcaneMap = createSymbolsMap(arcaneData);
-    const sacredMap = createSymbolsMap(sacredData);
+    const sacredMap = createSymbolsMap(sacredData);    sortByLevelFactionArchetype(accountData, jobMap);
+    const table = document.getElementById('charTable');
+    
+    // Set up table headers
+    const thead = table.querySelector('thead');
+    thead.innerHTML = `
+      <tr>
+        <th>Character</th>
+        <th>Level</th>
+        <th>Arcane Force</th>
+        <th>Arcane Stats</th>
+        <th>Sacred Force</th>
+        <th>Sacred Stats</th>
+      </tr>
+    `;
 
-    sortByLevelFactionArchetype(accountData, jobMap);
     const tbody = prepareTable('charTable');
 
     accountData.forEach(char => {
@@ -84,44 +97,8 @@ export async function renderTable() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  renderTable();
-
-  document.getElementById('overviewBtn').addEventListener('click', () => {
-    setView('overviewView');
+  // Only try to render if we're on a page that needs it
+  if (document.getElementById('charTable')) {
     renderTable();
-  });
-
-  document.getElementById('progressionBtn').addEventListener('click', () => {
-    setView('progressionView');
-    renderProgressionTable();
-  });
-
-  document.getElementById('equipmentBtn').addEventListener('click', () => {
-    setView('equipmentView');
-    renderEquipmentTable();
-  });
-
-  document.getElementById('cashBtn').addEventListener('click', () => {
-    setView('cashView');
-    renderCashTable();
-  });
-
-  document.getElementById('arcaneBtn').addEventListener('click', () => {
-    setView('arcaneView');
-    renderSymbolsDetail('arcane');
-  });
-
-  document.getElementById('sacredBtn').addEventListener('click', () => {
-    setView('sacredView');
-    renderSymbolsDetail('sacred');
-  });
-
-  const themeLink = document.getElementById('themeStylesheet');
-  const darkToggleBtn = document.getElementById('darkModeToggle');
-
-  darkToggleBtn.addEventListener('click', () => {
-    const isDark = themeLink.getAttribute('href') === 'style-dark.css';
-    themeLink.setAttribute('href', isDark ? 'style.css' : 'style-dark.css');
-    darkToggleBtn.textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
-  });
+  }
 });

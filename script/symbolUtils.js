@@ -30,10 +30,18 @@ export function getSymbolDisplayValue(level) {
  * @param {string} type - Either 'arcane' or 'sacred'
  * @returns {Object} Configuration object with csvFile and tableId
  */
-function getSymbolTypeInfo(type) {    const typeMap = {
-        'arcane': {csvFile: 'data/arcane.csv', tableId: 'arcaneTable'},
-        'sacred': {csvFile: 'data/sacred.csv', tableId: 'sacredTable'},
-        'sacred2': {csvFile: 'data/sacred2.csv', tableId: 'sacred2Table'}
+function getSymbolTypeInfo(type) {    
+    const typeMap = {
+        'arcane': {
+            csvFile: 'arcane.csv',
+            tableId: 'arcaneTable',
+            headers: ['Character', 'Level', 'VJ', 'Chu Chu', 'Lachelein', 'Arcana', 'Morass', 'Esfera']
+        },
+        'sacred': {
+            csvFile: 'sacred.csv',
+            tableId: 'sacredTable',
+            headers: ['Character', 'Level', 'Cernium', 'Hotel Arcus', 'Odium', 'Shangri-La', 'Arteria', 'Carcion']
+        }
     };
     return typeMap[type] || {};
 }
@@ -45,11 +53,10 @@ function getSymbolTypeInfo(type) {    const typeMap = {
  */
 export async function renderSymbolsDetail(type) {
     try {
-        const {csvFile, tableId} = getSymbolTypeInfo(type);
-
-        const [symbolData, accountData, jobList] = await Promise.all([
-            loadCSV(csvFile),            loadCSV('data/account.csv'),
-            loadCSV('data/joblist.csv')
+        const {csvFile, tableId} = getSymbolTypeInfo(type);        const [symbolData, accountData, jobList] = await Promise.all([
+            loadCSV(csvFile),
+            loadCSV('account.csv'),
+            loadCSV('joblist.csv')
         ]);
 
         // Create level map for quick access
@@ -66,21 +73,18 @@ export async function renderSymbolsDetail(type) {
         sortByLevelFactionArchetype(merged, jobMap);
 
         // Get symbol names (all column names except IGN)
-        const columns = Object.keys(symbolData[0] || {}).filter(key => key !== 'IGN');
-
-        const thead = document.querySelector(`#${tableId} thead`);
-        const tbody = document.querySelector(`#${tableId} tbody`);
+        const columns = Object.keys(symbolData[0] || {}).filter(key => key !== 'IGN');        const table = document.getElementById(tableId);
+        const thead = table.querySelector('thead');
+        const tbody = table.querySelector('tbody');
 
         // Clear existing content
         thead.innerHTML = '';
         tbody.innerHTML = '';
 
-        // Create header row
+        // Create header row using predefined headers
         const headerRow = document.createElement('tr');
-        headerRow.innerHTML = `<th>IGN</th><th>Level</th>`;
-        columns.forEach(symbol => {
-            headerRow.innerHTML += `<th>${symbol}</th>`;
-        });
+        const { headers } = getSymbolTypeInfo(type);
+        headerRow.innerHTML = headers.map(header => `<th>${header}</th>`).join('');
         thead.appendChild(headerRow);
 
         // Create a row for each character (now sorted)

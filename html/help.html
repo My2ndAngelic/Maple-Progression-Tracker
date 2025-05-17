@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MapleStory Tracker - Help</title>
+  <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />  <style>
+    .help-section {
+      margin-bottom: 2rem;
+    }
+    .help-section h2 {
+      color: var(--accent-color, #007acc);
+      margin-bottom: 1rem;
+    }
+    .help-section p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .help-section ul {
+      list-style-type: disc;
+    }
+    code {
+      background: var(--code-bg, #2d2d2d);
+      color: var(--code-color, #e0e0e0);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Consolas', 'Monaco', monospace;
+      font-size: 0.9em;
+      border: 1px solid var(--code-border, #444);
+    }
+    /* Light theme overrides */
+    :root[data-theme='light'] code {
+      --code-bg: #f4f4f4;
+      --code-color: #333;
+      --code-border: #ddd;
+    }
+    /* Dark theme overrides */
+    :root[data-theme='dark'] code {
+      --code-bg: #2d2d2d;
+      --code-color: #e0e0e0;
+      --code-border: #444;
+    }
+    :root[data-theme='dark'] .help-section h2 {
+      --accent-color: #3399ff;
+    }
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+    .help-section code {
+      background: #f4f4f4;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="helpView" class="help-content">
+      <div class="help-section">
+        <h2>Overview</h2>
+        <p>The MapleStory Account Tracker helps you monitor character progression across multiple aspects of the game:</p>
+        <ul>
+          <li>Character levels and basic information</li>
+          <li>Arcane Symbol progression</li>
+          <li>Sacred Symbol progression</li>
+          <li>Equipment status</li>
+          <li>Cash shop items</li>
+        </ul>
+      </div>
+
+      <div class="help-section">
+        <h2>Navigation</h2>
+        <p>Use the navigation bar at the top to access different views:</p>
+        <ul>
+          <li><strong>Overview:</strong> Basic character information and symbol totals</li>
+          <li><strong>Progression:</strong> Detailed character information including faction and class</li>
+          <li><strong>Equipment:</strong> Equipment status for each character</li>
+          <li><strong>Cash:</strong> Cash shop item tracking</li>
+          <li><strong>Arcane Symbol Detail:</strong> Detailed view of Arcane Symbol levels</li>
+          <li><strong>Sacred Symbol Detail:</strong> Detailed view of Sacred Symbol levels</li>
+        </ul>
+      </div>
+
+      <div class="help-section">
+        <h2>Data Files</h2>
+        <p>The tracker uses CSV files in the <code>data/</code> folder:</p>
+        <ul>
+          <li><code>account.csv</code>: Basic character information</li>
+          <li><code>joblist.csv</code>: Job/class information</li>
+          <li><code>arcane.csv</code>: Arcane Symbol levels</li>
+          <li><code>sacred.csv</code>: Sacred Symbol levels</li>
+          <li><code>equipment.csv</code>: Equipment tracking</li>
+          <li><code>cash.csv</code>: Cash shop items</li>
+        </ul>
+      </div>
+
+      <div class="help-section">
+        <h2>Theme</h2>
+        <p>Click the theme toggle button (🌙/☀️) in the navigation bar to switch between dark and light themes. Your preference will be saved for future visits.</p>
+      </div>
+
+      <div class="help-section">
+        <h2>Updating Data</h2>
+        <p>To update character information:</p>
+        <ol>
+          <li>Open the relevant CSV file in the <code>data/</code> folder</li>
+          <li>Add or modify entries as needed</li>
+          <li>Save the file and refresh the page to see updates</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    import { initializeUI } from '../script/ui.js';
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      initializeUI();
+    });
+  </script>
+</body>
+</html>

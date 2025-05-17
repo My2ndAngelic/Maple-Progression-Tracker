@@ -5,9 +5,9 @@ import {createTableCell, prepareTable, sortAccountsByLevel, sortByLevelFactionAr
  * Renders the cash items table with data from cash.csv
  */
 export async function renderCashTable() {
-  try {
-    const [accountData, cashData, jobList] = await Promise.all([      loadCSV('data/account.csv'),
-      loadCSV('data/cash.csv'),
+  try {    const [accountData, cashData, jobList] = await Promise.all([      
+      loadCSV('account.csv'),
+      loadCSV('cash.csv'),
       loadCSV('joblist.csv')
     ]);
 
@@ -21,7 +21,16 @@ export async function renderCashTable() {
       return { ...cash, ...acc };
     });
 
-    sortByLevelFactionArchetype(merged, jobMap);
+    sortByLevelFactionArchetype(merged, jobMap);    // Set up table headers
+    const table = document.getElementById('cashTable');
+    const thead = table.querySelector('thead');
+    thead.innerHTML = `
+      <tr>
+        <th>Character</th>
+        <th>Level</th>
+        <th>Pet Snack</th>
+      </tr>
+    `;
 
     // Prepare table and get tbody reference
     const tbody = prepareTable('cashTable');

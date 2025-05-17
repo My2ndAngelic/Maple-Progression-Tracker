@@ -10,13 +10,13 @@ import { prepareTable } from "./tableUtils.js";
  * @returns {HTMLTableRowElement} - The created table row
  */
 export function createProgressionRow(char, job) {
-  const tr = document.createElement('tr');
-  const cellData = [
+  const tr = document.createElement('tr');  const cellData = [
     char.IGN || '',
     char.level || '',
     job.faction || '',
     job.archetype || '',
-    job.fullName || ''
+    job.fullName || '',
+    job.mainstat || ''
   ];
 
   cellData.forEach(text => {
@@ -32,10 +32,22 @@ export async function renderProgressionTable() {
   try {
     const [accountData, jobList] = await Promise.all([      loadCSV('data/account.csv'),
       loadCSV('data/joblist.csv')
-    ]);
-
-    const jobMap = createDataMap(jobList, 'jobName');
+    ]);    const jobMap = createDataMap(jobList, 'jobName');
     sortAccountsByLevel(accountData);
+    
+    // Set up table headers
+    const table = document.getElementById('progressionTable');
+    const thead = table.querySelector('thead');
+    thead.innerHTML = `
+      <tr>
+        <th>Character</th>
+        <th>Level</th>
+        <th>Faction</th>
+        <th>Archetype</th>
+        <th>Class</th>
+        <th>Main Stat</th>
+      </tr>
+    `;
     
     const tbody = prepareTable('progressionTable');
 

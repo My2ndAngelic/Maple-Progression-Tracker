@@ -1,5 +1,6 @@
 // Common UI elements and functionality
-export const navbar = `  <div id="navbar">    
+export const navbar = `
+  <div id="navbar">    
     <button id="overviewBtn" onclick="window.location.href='overview.html'">Overview</button>
     <button id="helpBtn" onclick="window.location.href='help.html'">Help</button>
     <button id="progressionBtn" onclick="window.location.href='progression.html'">Progression</button>
@@ -13,21 +14,18 @@ export const navbar = `  <div id="navbar">
 `;
 
 export function initializeUI() {
-    // Insert navbar at the start of the container
-    const container = document.getElementById('container') || document.body;
-    container.insertAdjacentHTML('afterbegin', navbar);
+    // Insert navbar at the start of the body
+    document.body.insertAdjacentHTML('afterbegin', navbar);
     initializeTheme();
 }
 
 function initializeTheme() {
     const darkToggleBtn = document.getElementById('darkModeToggle');
-    const themeLink = document.getElementById('themeStylesheet');
-    
-    if (!darkToggleBtn || !themeLink) return;    // Ensure initial theme is set even if no preference exists
+    if (!darkToggleBtn) return;
+
+    // Load saved theme preference
     const isDark = localStorage.getItem('darkMode') === 'true';
-    const basePath = window.location.pathname.includes('/html/') ? '../' : '';
-    themeLink.href = `${basePath}style/${isDark ? 'style-dark.css' : 'style.css'}`;
-    darkToggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    applyTheme(isDark);
 
     // Set up theme toggle
     darkToggleBtn.addEventListener('click', () => {
@@ -39,10 +37,9 @@ function initializeTheme() {
 function applyTheme(isDark) {
     const themeLink = document.getElementById('themeStylesheet');
     const darkToggleBtn = document.getElementById('darkModeToggle');
-      // Set theme
-    const basePath = window.location.pathname.includes('/html/') ? '../' : '';
-    themeLink.href = `${basePath}style/${isDark ? 'style-dark.css' : 'style.css'}`;
+    
+    // Set theme
+    themeLink.href = isDark ? '../style/style-dark.css' : '../style/style.css';
     darkToggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
     localStorage.setItem('darkMode', isDark);
 }

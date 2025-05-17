@@ -4,7 +4,13 @@ body {
   background-color: #121212;
   color: #ddd;
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#container {
   padding: 20px;
+  min-height: 100vh;
 }
 
 /* Navigation bar */
@@ -139,4 +145,35 @@ h1 {
 /* Pet snack conditional formatting */
 .pet-snack-yes {
   background-color: #2d632d; /* Dark green for dark mode */
+}
+
+/* Equipment color classes - Dark mode */
+.equipment-root-abyss {
+  background-color: #0d47a1;  /* Very Dark Blue */
+  color: #ffffff;
+}
+
+.equipment-deimos {
+  background-color: #f57c00;  /* Darker Orange */
+  color: #ffffff;
+}
+
+.equipment-evolving {
+  background-color: #2e7d32;  /* Dark Green */
+  color: #ffffff;
+}
+
+.equipment-absolab {
+  background-color: #455a64;  /* Darker Grey */
+  color: #ffffff;
+}
+
+.equipment-arcane {
+  background-color: #7b1fa2;  /* Darker Purple */
+  color: #ffffff;
+}
+
+.equipment-princess-no {
+  background-color: #0288d1;  /* Darker Light Blue */
+  color: #ffffff;
 }

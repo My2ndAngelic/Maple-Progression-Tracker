@@ -4,7 +4,13 @@ body {
   background-color: white;
   color: #333;
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#container {
   padding: 20px;
+  min-height: 100vh;
 }
 
 /* Navigation bar */
@@ -130,4 +136,35 @@ h1 {
 /* Pet snack conditional formatting */
 .pet-snack-yes {
   background-color: #90ee90; /* Light green */
+}
+
+/* Equipment color classes - Light mode */
+.equipment-root-abyss {
+  background-color: #1e88e5;  /* Darker Blue */
+  color: #ffffff;
+}
+
+.equipment-deimos {
+  background-color: #ffcc80;  /* Light Orange */
+  color: #000000;
+}
+
+.equipment-evolving {
+  background-color: #a5d6a7;  /* Light Green */
+  color: #000000;
+}
+
+.equipment-absolab {
+  background-color: #cfd8dc;  /* Light Grey */
+  color: #000000;
+}
+
+.equipment-arcane {
+  background-color: #e1bee7;  /* Light Purple */
+  color: #000000;
+}
+
+.equipment-princess-no {
+  background-color: #b3e5fc;  /* Very Light Blue */
+  color: #000000;
 }

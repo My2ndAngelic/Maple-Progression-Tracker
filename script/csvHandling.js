@@ -1,5 +1,14 @@
 // csvHandling.js
 
+// Function to get base path for data files
+function getDataPath() {
+  // If URL contains /html/, we need to go up one level
+  const path = window.location.pathname;
+  return path.includes('/html/') ? '../data/' : 
+         path.startsWith('/data/') ? '' :  // Already in data path
+         'data/';  // Root path
+}
+
 /**
  * Parse CSV string data into an array of objects
  * @param {string} text - CSV data as string
@@ -54,7 +63,11 @@ function parseCSV(text) {
  * @param {string} url - URL of the CSV file to load
  * @returns {Promise<Array>} - Promise resolving to array of objects
  */
-export async function loadCSV(url) {
+export async function loadCSV(filename) {
+  const basePath = getDataPath();
+  // Remove any extra 'data/' from the filename if it exists
+  const cleanFilename = filename.replace(/^data\//, '');
+  const url = `${basePath}${cleanFilename}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
   const text = await res.text();
@@ -94,7 +107,7 @@ export function createSymbolsMap(data) {
  * @returns {Promise<Array>} - Promise resolving to sorted account data
  */
 export async function loadSortedAccountData() {
-  const accountData = await loadCSV('data/account.csv');
+  const accountData = await loadCSV('account.csv');
   return accountData.sort((a, b) => Number(b.level) - Number(a.level));
 }
 
