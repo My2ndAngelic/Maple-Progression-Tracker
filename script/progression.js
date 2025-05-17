@@ -18,9 +18,13 @@ export function createProgressionRow(char, job) {
     job.fullName || '',
     job.mainstat || ''
   ];
-
-  cellData.forEach(text => {
-    tr.appendChild(createTableCell(text));
+  cellData.forEach((text, index) => {
+    const cell = createTableCell(text);
+    // Add archetype color class to the archetype column (index 3)
+    if (index === 3 && text) {
+      cell.classList.add(`archetype-${text.toLowerCase()}`);
+    }
+    tr.appendChild(cell);
   });
   return tr;
 }

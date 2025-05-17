@@ -152,6 +152,32 @@ h1 {
   background-color: #2d632d; /* Dark green for dark mode */
 }
 
+/* Archetype colors - Dark Mode */
+.archetype-warrior {
+  background-color: #c92a2a; /* Darker Red */
+  color: white;
+}
+
+.archetype-magician {
+  background-color: #1864ab; /* Darker Blue */
+  color: white;
+}
+
+.archetype-archer {
+  background-color: #2b8a3e; /* Darker Green */
+  color: white;
+}
+
+.archetype-thief {
+  background-color: #9c36b5; /* Darker Purple */
+  color: white;
+}
+
+.archetype-pirate {
+  background-color: #495057; /* Darker Grey */
+  color: white;
+}
+
 /* Equipment color classes - Dark mode */
 .equipment-root-abyss {
   background-color: #0d47a1;  /* Very Dark Blue */
@@ -195,6 +221,12 @@ h1 {
 
 .equipment-reinforced {
   background-color: #8b4513;  /* Dark Bronze */
+  color: #ffffff;
+}
+
+/* Symbol level formatting */
+.symbol-max {
+  background-color: #2e7d32;  /* Dark Green */
   color: #ffffff;
 }
 

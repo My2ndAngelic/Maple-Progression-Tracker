@@ -138,6 +138,32 @@ h1 {
   background-color: #90ee90; /* Light green */
 }
 
+/* Archetype colors */
+.archetype-warrior {
+  background-color: #ff6b6b; /* Red */
+  color: white;
+}
+
+.archetype-magician {
+  background-color: #4dabf7; /* Blue */
+  color: white;
+}
+
+.archetype-archer {
+  background-color: #69db7c; /* Green */
+  color: white;
+}
+
+.archetype-thief {
+  background-color: #da77f2; /* Purple */
+  color: white;
+}
+
+.archetype-pirate {
+  background-color: #868e96; /* Grey */
+  color: white;
+}
+
 /* Equipment color classes - Light mode */
 .equipment-root-abyss {
   background-color: #1e88e5;  /* Darker Blue */
@@ -181,6 +207,12 @@ h1 {
 
 .equipment-reinforced {
   background-color: #cd7f32;  /* Bronze */
+  color: #ffffff;
+}
+
+/* Symbol level formatting */
+.symbol-max {
+  background-color: #4caf50;  /* Green */
   color: #ffffff;
 }
 

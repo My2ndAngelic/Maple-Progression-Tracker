@@ -35,7 +35,7 @@ function getSymbolTypeInfo(type) {
         'arcane': {
             csvFile: 'arcane.csv',
             tableId: 'arcaneTable',
-            headers: ['Character', 'Level', 'VJ', 'Chu Chu', 'Lachelein', 'Arcana', 'Morass', 'Esfera']
+            headers: ['Character', 'Level', 'Vanishing Journey', 'Chu Chu Island', 'Lachelein', 'Arcana', 'Morass', 'Esfera']
         },
         'sacred': {
             csvFile: 'sacred.csv',
@@ -101,11 +101,16 @@ export async function renderSymbolsDetail(type) {
             // Add symbol level cells
             columns.forEach(symbol => {
                 const td = document.createElement('td');
-                const symbolValue = char[symbol] || '0';
-                if (symbolValue === '0' || symbolValue === 0) {
+                const symbolValue = char[symbol] || '0';                if (symbolValue === '0' || symbolValue === 0) {
                     td.textContent = '';
                 } else {
                     td.textContent = symbolValue;
+                    const level = parseInt(symbolValue);
+                    if (type === 'arcane' && level === 20) {
+                        td.classList.add('symbol-max');
+                    } else if (type === 'sacred' && level === 11) {
+                        td.classList.add('symbol-max');
+                    }
                 }
                 tr.appendChild(td);
             });
