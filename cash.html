@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MapleStory Tracker - Cash</title>
+  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cashView">
+    <table id="cashTable" class="data-table">
+      <thead>
+        <tr>
+          <th>IGN</th>
+          <th>Level</th>
+          <th>Petsnack</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>  <script type="module">
+    import { initializeUI } from './ui.js';
+    import { renderCashTable } from './cash.js';
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      initializeUI();
+      renderCashTable();
+    });
+  </script>
+</body>
+</html>

@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MapleStory Tracker</title>
+  <title>MapleStory Tracker - Arcane Symbols</title>
   <link id="themeStylesheet" rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <script type="module">
+  <div id="arcaneView">
+    <table id="arcaneTable" class="data-table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>  <script type="module">
     import { initializeUI } from './ui.js';
+    import { renderSymbolsDetail } from './symbolUtils.js';
+    
     window.addEventListener('DOMContentLoaded', () => {
       initializeUI();
-      // Redirect to overview page since index is just a landing page
-      window.location.href = 'overview.html';
+      renderSymbolsDetail('arcane');
     });
   </script>
 </body>

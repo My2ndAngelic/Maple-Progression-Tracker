@@ -1,5 +1,7 @@
 import {loadCSV} from "./csvHandling.js";
 
+import {sortByLevelFactionArchetype} from "./tableUtils.js";
+
 export function calculateSymbolForce(levels, baseForce, levelMultiplier) {
     if (!levels) return '';
     
@@ -37,7 +39,6 @@ function getSymbolTypeInfo(type) {
     return typeMap[type] || {};
 }
 
-
 /**
  * Renders the detailed symbol information table in the DOM for a given type of symbol.
  * @param {string} type - The type of symbol to render (e.g., sacred, arcane).
@@ -47,13 +48,24 @@ export async function renderSymbolsDetail(type) {
     try {
         const {csvFile, tableId} = getSymbolTypeInfo(type);
 
-        const [symbolData, accountData] = await Promise.all([
+        const [symbolData, accountData, jobList] = await Promise.all([
             loadCSV(csvFile),
-            loadCSV('account.csv')
+            loadCSV('account.csv'),
+            loadCSV('joblist.csv')
         ]);
 
         // Create level map for quick access
-        const levelMap = new Map(accountData.map(char => [char.ign, char.level]));
+        const levelMap = new Map(accountData.map(char => [char.IGN, char.level]));
+        // Create job map for sorting
+        const jobMap = {};
+        jobList.forEach(j => { jobMap[j.jobName] = j; });
+
+        // Merge symbolData with accountData for sorting
+        const merged = symbolData.map(char => {
+            const acc = accountData.find(a => a.IGN === char.IGN) || {};
+            return { ...char, ...acc };
+        });
+        sortByLevelFactionArchetype(merged, jobMap);
 
         // Get symbol names (all column names except IGN)
         const columns = Object.keys(symbolData[0] || {}).filter(key => key !== 'IGN');
@@ -73,25 +85,21 @@ export async function renderSymbolsDetail(type) {
         });
         thead.appendChild(headerRow);
 
-        // Create a row for each character
-        symbolData.forEach(char => {
+        // Create a row for each character (now sorted)
+        merged.forEach(char => {
             const tr = document.createElement('tr');
-
             // Add IGN cell
             const ignCell = document.createElement('td');
             ignCell.textContent = char.IGN || '';
             tr.appendChild(ignCell);
-
             // Add Level cell
             const levelCell = document.createElement('td');
             levelCell.textContent = levelMap.get(char.IGN) || '';
             tr.appendChild(levelCell);
-
             // Add symbol level cells
             columns.forEach(symbol => {
                 const td = document.createElement('td');
                 const symbolValue = char[symbol] || '0';
-                // For sacred symbols, don't show level 0 symbols
                 if (symbolValue === '0' || symbolValue === 0) {
                     td.textContent = '';
                 } else {
@@ -99,7 +107,6 @@ export async function renderSymbolsDetail(type) {
                 }
                 tr.appendChild(td);
             });
-
             tbody.appendChild(tr);
         });
     } catch (err) {

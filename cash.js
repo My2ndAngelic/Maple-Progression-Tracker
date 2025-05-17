@@ -1,28 +1,36 @@
-import { createTableCell } from "./utils.js";
 import { loadCSV, createLevelMap } from "./csvHandling.js";
-import { sortAccountsByLevel } from "./utils.js";
-import { prepareTable } from "./tableUtils.js";
+import {createTableCell, prepareTable, sortAccountsByLevel, sortByLevelFactionArchetype} from "./tableUtils.js";
 
 /**
  * Renders the cash items table with data from cash.csv
  */
 export async function renderCashTable() {
   try {
-    const [accountData, cashData] = await Promise.all([
+    const [accountData, cashData, jobList] = await Promise.all([
       loadCSV('account.csv'),
-      loadCSV('cash.csv')
+      loadCSV('cash.csv'),
+      loadCSV('joblist.csv')
     ]);
-    
-    // Sort by level, descending
-    sortAccountsByLevel(accountData);
-    
+
+    // Create job map for sorting
+    const jobMap = {};
+    jobList.forEach(j => { jobMap[j.jobName] = j; });
+
+    // Merge cashData with accountData for sorting
+    const merged = cashData.map(cash => {
+      const acc = accountData.find(a => a.IGN === cash.IGN) || {};
+      return { ...cash, ...acc };
+    });
+
+    sortByLevelFactionArchetype(merged, jobMap);
+
     // Prepare table and get tbody reference
     const tbody = prepareTable('cashTable');
 
     // Create a level map for quick access to character levels
     const levelMap = createLevelMap(accountData);
 
-    cashData.forEach(cash => {
+    merged.forEach(cash => {
       const tr = document.createElement('tr');
       
       // Add IGN cell
@@ -34,7 +42,6 @@ export async function renderCashTable() {
       // Add Petsnack cell with conditional formatting
       let petsnackValue = String(cash.Petsnack || '').trim();
 
-      // Apply the CSS class only if the value is exactly "Yes"
       const td = document.createElement('td');
       td.textContent = petsnackValue;
       if (petsnackValue === 'Yes') {

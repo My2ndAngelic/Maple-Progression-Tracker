@@ -1,8 +1,6 @@
-
 import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
 import {calculateSacredForce, calculateSacredStat} from "./sacred.js";
-import {prepareTable} from "./tableUtils.js";
-import {sortAccountsByLevel} from "./utils.js";
+import {prepareTable, sortAccountsByLevel, sortByLevelFactionArchetype} from "./tableUtils.js";
 import {renderEquipmentTable} from "./equipment.js";
 import {renderCashTable} from "./cash.js";
 import {renderProgressionTable} from "./progression.js";
@@ -13,7 +11,7 @@ import {renderSymbolsDetail} from "./symbolUtils.js";
 function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat) {
   const tr = document.createElement('tr');
   const cellData = [
-    char.ign || '',
+    char.IGN || '',
     char.level || '',
     // job.linkSkillMaxLevel || '',  // Link Skill column commented out
     arcanePower,
@@ -50,7 +48,7 @@ function setView(viewId) {
   document.getElementById(viewId).classList.remove('hidden');
 }
 
-async function renderTable() {
+export async function renderTable() {
   try {
     const [accountData, jobList, arcaneData, sacredData] = await Promise.all([
       loadCSV('account.csv'),
@@ -63,7 +61,7 @@ async function renderTable() {
     const arcaneMap = createSymbolsMap(arcaneData);
     const sacredMap = createSymbolsMap(sacredData);
 
-    sortAccountsByLevel(accountData);
+    sortByLevelFactionArchetype(accountData, jobMap);
     const tbody = prepareTable('charTable');
 
     accountData.forEach(char => {
@@ -73,10 +71,10 @@ async function renderTable() {
         return;
       }
 
-      const arcanePower = calculateArcaneForce(arcaneMap[char.ign]);
-      const arcaneStat = calculateArcaneStat(arcaneMap[char.ign], char.jobName);
-      const sacredForce = calculateSacredForce(sacredMap[char.ign]);
-      const sacredStat = calculateSacredStat(sacredMap[char.ign], char.jobName);
+      const arcanePower = calculateArcaneForce(arcaneMap[char.IGN]);
+      const arcaneStat = calculateArcaneStat(arcaneMap[char.IGN], char.jobName);
+      const sacredForce = calculateSacredForce(sacredMap[char.IGN]);
+      const sacredStat = calculateSacredStat(sacredMap[char.IGN], char.jobName);
       
       const row = createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat);
       tbody.appendChild(row);

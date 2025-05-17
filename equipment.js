@@ -1,6 +1,5 @@
 import { loadCSV, createLevelMap } from "./csvHandling.js";
-import { createTableCell, sortAccountsByLevel } from "./utils.js";
-import { prepareTable } from "./tableUtils.js";
+import {createTableCell, prepareTable, sortAccountsByLevel} from "./tableUtils.js";
 
 /**
  * Renders the equipment table with data from equipment.csv

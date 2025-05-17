@@ -1,6 +1,5 @@
 import { createDataMap } from "./csvHandling.js";
-import { sortAccountsByLevel } from "./tableUtils.js";
-import { createTableCell } from "./utils.js";
+import {createTableCell, sortAccountsByLevel} from "./tableUtils.js";
 import { loadCSV } from "./csvHandling.js";
 import { prepareTable } from "./tableUtils.js";
 
@@ -13,7 +12,7 @@ import { prepareTable } from "./tableUtils.js";
 export function createProgressionRow(char, job) {
   const tr = document.createElement('tr');
   const cellData = [
-    char.ign || '',
+    char.IGN || '',
     char.level || '',
     job.faction || '',
     job.archetype || '',

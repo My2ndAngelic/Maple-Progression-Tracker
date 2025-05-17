@@ -104,5 +104,5 @@ export async function loadSortedAccountData() {
  * @returns {Map} - Map with IGN as keys and level as values
  */
 export function createLevelMap(accountData) {
-  return new Map(accountData.map(char => [char.ign, char.level]));
+  return new Map(accountData.map(char => [char.IGN, char.level]));
 }
