@@ -1,7 +1,8 @@
 
-import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
-import {calculateSacredForce} from "./sacred.js";
+import {calculateArcanePower, calculateArcaneStat} from "./arcane.js";
+import {calculateSacredForce, calculateSacredStat} from "./sacred.js";
 import {loadCSV, renderSymbolsDetail} from "./utils.js";
+import {renderEquipmentTable, renderCashTable} from "./equipment.js";
 
 function createDataMap(data, keyField) {
   const map = {};
@@ -21,18 +22,34 @@ function createSymbolsMap(data) {
   return map;
 }
 
-function createTableRow(char, job, arcaneForce, arcaneStat, sacredForce) {
+function createProgressionRow(char, job) {
   const tr = document.createElement('tr');
   const cellData = [
+    char.ign || '',
+    char.level || '',
     job.faction || '',
     job.archetype || '',
-    job.fullName || '',
+    job.fullName || ''
+  ];
+
+  cellData.forEach(text => {
+    const td = document.createElement('td');
+    td.textContent = text !== undefined && text !== null ? text : '';
+    tr.appendChild(td);
+  });
+  return tr;
+}
+
+function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat) {
+  const tr = document.createElement('tr');
+  const cellData = [
     char.ign || '',
     char.level || '',
     // job.linkSkillMaxLevel || '',  // Link Skill column commented out
-    arcaneForce,
+    arcanePower,
     arcaneStat,
-    sacredForce
+    sacredForce,
+    sacredStat
   ];
 
   cellData.forEach(text => {
@@ -44,10 +61,38 @@ function createTableRow(char, job, arcaneForce, arcaneStat, sacredForce) {
 }
 
 function setView(viewId) {
-  document.querySelectorAll('#overviewView, #arcaneView, #sacredView').forEach(div => {
+  document.querySelectorAll('#overviewView, #progressionView, #arcaneView, #sacredView, #equipmentView, #cashView').forEach(div => {
     div.classList.add('hidden');
   });
   document.getElementById(viewId).classList.remove('hidden');
+}
+
+async function renderProgressionTable() {
+  try {
+    const [accountData, jobList] = await Promise.all([
+      loadCSV('account.csv'),
+      loadCSV('joblist.csv')
+    ]);
+
+    const jobMap = createDataMap(jobList, 'jobName');
+    accountData.sort((a, b) => Number(b.level) - Number(a.level));
+    
+    const tbody = document.querySelector('#progressionTable tbody');
+    tbody.innerHTML = '';
+
+    accountData.forEach(char => {
+      const job = jobMap[char.jobName];
+      if (!job) {
+        console.warn(`Job not found for jobName: "${char.jobName}"`);
+        return;
+      }
+
+      const row = createProgressionRow(char, job);
+      tbody.appendChild(row);
+    });
+  } catch (err) {
+    console.error('Error:', err);
+  }
 }
 
 async function renderTable() {
@@ -74,10 +119,11 @@ async function renderTable() {
         return;
       }
 
-      const arcaneForce = calculateArcaneForce(arcaneMap[char.ign]);
-      const arcaneStat = calculateArcaneStat(arcaneMap[char.ign], char.jobName, char.level);
+      const arcanePower = calculateArcanePower(arcaneMap[char.ign]);
+      const arcaneStat = calculateArcaneStat(arcaneMap[char.ign], char.jobName);
       const sacredForce = calculateSacredForce(sacredMap[char.ign]);
-      const row = createTableRow(char, job, arcaneForce, arcaneStat, sacredForce);
+      const sacredStat = calculateSacredStat(sacredMap[char.ign], char.jobName);
+      const row = createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat);
       tbody.appendChild(row);
     });
   } catch (err) {
@@ -91,6 +137,21 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('overviewBtn').addEventListener('click', () => {
     setView('overviewView');
     renderTable();
+  });
+
+  document.getElementById('progressionBtn').addEventListener('click', () => {
+    setView('progressionView');
+    renderProgressionTable();
+  });
+
+  document.getElementById('equipmentBtn').addEventListener('click', () => {
+    setView('equipmentView');
+    renderEquipmentTable();
+  });
+
+  document.getElementById('cashBtn').addEventListener('click', () => {
+    setView('cashView');
+    renderCashTable();
   });
 
   document.getElementById('arcaneBtn').addEventListener('click', () => {

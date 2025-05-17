@@ -9,6 +9,9 @@
 <body>
 <div id="navbar">
   <button id="overviewBtn">Overview</button>
+  <button id="progressionBtn">Progression</button>
+  <button id="equipmentBtn">Equipment</button>
+  <button id="cashBtn">Cash</button>
   <button id="arcaneBtn">Arcane Symbol Detail</button>
   <button id="sacredBtn">Sacred Symbol Detail</button>
   <button id="darkModeToggle">🌙 Dark Mode</button>
@@ -24,15 +27,27 @@
     <table id="charTable" class="data-table">
       <thead>
         <tr>
-          <th>Faction</th>
-          <th>Archetype</th>
-          <th>Job</th>
-          <th>IGN</th>
-          <th>Level</th>
-          <!-- <th>Link Skill</th> -->
-          <th>Arcane Force</th>
-          <th>Arcane Stat</th>
-          <th>Sacred Force</th>
+            <th>IGN</th>
+            <th>Level</th>
+            <!-- <th>Link Skill</th> -->
+            <th>Arcane Power</th>
+            <th>Arcane Stat</th>
+            <th>Sacred Power</th>
+            <th>Sacred Stat</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="progressionView" class="hidden">
+      <table id="progressionTable" class="data-table">
+        <thead>
+          <tr>
+            <th>IGN</th>
+            <th>Level</th>
+            <th>Faction</th>
+            <th>Archetype</th>
+            <th>Class</th>
         </tr>
       </thead>
       <tbody></tbody>
@@ -48,6 +63,39 @@
 <div id="sacredView" class="hidden">
   <table id="sacredTable" class="data-table">
     <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+<div id="equipmentView" class="hidden">
+  <table id="equipmentTable" class="data-table">
+    <thead>
+      <tr>
+        <th>IGN</th>
+        <th>Level</th>
+        <th>Weapon</th>
+        <th>Secondary</th>
+        <th>Emblem</th>
+        <th>Hat</th>
+        <th>Top</th>
+        <th>Bottom</th>
+        <th>Shoe</th>
+        <th>Cape</th>
+        <th>Gloves</th>
+        <th>Shoulder</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+<div id="cashView" class="hidden">
+  <table id="cashTable" class="data-table">
+    <thead>
+      <tr>
+        <th>IGN</th>
+        <th>Level</th>
+        <th>Petsnack</th>
+      </tr>
+    </thead>
     <tbody></tbody>
   </table>
 </div>

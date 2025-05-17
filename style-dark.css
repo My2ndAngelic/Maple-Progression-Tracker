@@ -127,3 +127,13 @@ h1 {
 .hidden {
   display: none;
 }
+
+/* Pet snack conditional formatting */
+.pet-snack-yes {
+  background-color: #2d632d; /* Dark green for dark mode */
+}
+
+/* Pet snack conditional formatting */
+.pet-snack-yes {
+  background-color: #2d632d; /* Dark green for dark mode */
+}

@@ -126,3 +126,8 @@ h1 {
 .hidden {
   display: none;
 }
+
+/* Pet snack conditional formatting */
+.pet-snack-yes {
+  background-color: #90ee90; /* Light green */
+}
