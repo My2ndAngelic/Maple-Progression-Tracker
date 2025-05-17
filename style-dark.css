@@ -1,24 +1,24 @@
-/* Global light mode styles */
+/* Global dark mode styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
-  color: #333;
+  background-color: #121212;
+  color: #ddd;
   margin: 0;
   padding: 20px;
 }
 
 /* Top navigation bar */
 #topNavbar {
-  background-color: #f4f4f4;
+  background-color: #1f1f1f;
   padding: 10px 20px;
   text-align: right;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #444;
   margin-bottom: 20px;
 }
 
 #topNavbar button {
-  background-color: #007acc;
-  color: white;
+  background-color: #3399ff;
+  color: #ddd;
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
@@ -29,7 +29,7 @@ body {
 }
 
 #topNavbar button:hover {
-  background-color: #005f99;
+  background-color: #1a73e8;
 }
 
 h1 {
@@ -45,8 +45,8 @@ h1 {
 }
 
 #viewButtons button {
-  background-color: #007acc;
-  color: white;
+  background-color: #3399ff;
+  color: #ddd;
   border: none;
   margin: 0 5px;
   padding: 8px 14px;
@@ -58,7 +58,7 @@ h1 {
 }
 
 #viewButtons button:hover {
-  background-color: #005f99;
+  background-color: #1a73e8;
 }
 
 /* Table common styles */
@@ -70,24 +70,25 @@ h1 {
 
 .data-table th, .data-table td {
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   text-align: left;
   font-size: 14px;
+  color: #ddd;
 }
 
 .data-table thead th {
-  background-color: #333;
-  color: white;
+  background-color: #222;
+  color: #ddd;
   font-weight: bold;
 }
 
 /* Alternating row colors */
 .data-table tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
+  background-color: #222;
 }
 
 .data-table tbody tr:nth-child(even) {
-  background-color: white;
+  background-color: #1a1a1a;
 }
 
 /* Hidden class for views */

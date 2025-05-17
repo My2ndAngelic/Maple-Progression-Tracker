@@ -4,14 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MapleStory Characters</title>
-  <link rel="stylesheet" href="style.css" />
+  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div id="navbar">
+  <button id="overviewBtn">Overview</button>
+  <button id="arcaneBtn">Arcane Symbol Detail</button>
+  <button id="sacredBtn">Sacred Symbol Detail</button>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+</div>
+
+
   <h1>MapleStory Tracker</h1>
-  <div id="viewButtons">
-    <button id="overviewBtn">Overview</button>
-    <button id="arcaneBtn">Arcane Symbol Detail</button>
-  </div>
+<!--  <div id="viewButtons">-->
+<!--    <button id="overviewBtn">Overview</button>-->
+<!--    <button id="arcaneBtn">Arcane Symbol Detail</button>-->
+<!--  </div>-->
   <div id="overviewView">
     <table id="charTable" class="data-table">
       <thead>
@@ -19,7 +27,7 @@
           <th>Faction</th>
           <th>Archetype</th>
           <th>Job</th>
-          <th>ID</th>
+          <th>IGN</th>
           <th>Level</th>
           <th>Link Skill</th>
           <th>Arcane Force</th>
@@ -35,7 +43,14 @@
       <tbody></tbody>
     </table>
   </div>
+<!-- Add this after the arcaneView div -->
+<div id="sacredView" class="hidden">
+  <table id="sacredTable" class="data-table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
