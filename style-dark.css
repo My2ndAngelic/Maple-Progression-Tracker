@@ -100,7 +100,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.data-table th, .data-table td {
+.data-table td {
   padding: 8px 12px;
   border: 1px solid #555;
   text-align: left;
@@ -108,9 +108,17 @@ h1 {
   color: #ddd;
 }
 
+/* Table header styles - white background with black text for better visibility */
+.data-table th {
+  padding: 8px 12px;
+  border: 1px solid #555;
+  text-align: left;
+  font-size: 14px;
+}
+
 .data-table thead th {
-  background-color: #222;
-  color: #ddd;
+  background-color: #ffffff;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -126,11 +134,6 @@ h1 {
 /* Hidden class for views */
 .hidden {
   display: none;
-}
-
-/* Pet snack conditional formatting */
-.pet-snack-yes {
-  background-color: #2d632d; /* Dark green for dark mode */
 }
 
 /* Pet snack conditional formatting */

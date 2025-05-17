@@ -1,44 +1,14 @@
 
-import {calculateArcanePower, calculateArcaneStat} from "./arcane.js";
+import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
 import {calculateSacredForce, calculateSacredStat} from "./sacred.js";
-import {loadCSV, renderSymbolsDetail} from "./utils.js";
-import {renderEquipmentTable, renderCashTable} from "./equipment.js";
+import {prepareTable} from "./tableUtils.js";
+import {sortAccountsByLevel} from "./utils.js";
+import {renderEquipmentTable} from "./equipment.js";
+import {renderCashTable} from "./cash.js";
+import {renderProgressionTable} from "./progression.js";
+import {loadCSV, createDataMap, createSymbolsMap} from "./csvHandling.js";
 
-function createDataMap(data, keyField) {
-  const map = {};
-  data.forEach(item => {
-    const { [keyField]: key, ...rest } = item;
-    map[key] = rest;
-  });
-  return map;
-}
-
-function createSymbolsMap(data) {
-  const map = {};
-  data.forEach(row => {
-    const { IGN, ...symbols } = row;
-    map[IGN] = Object.values(symbols).map(v => Number(v) || 0);
-  });
-  return map;
-}
-
-function createProgressionRow(char, job) {
-  const tr = document.createElement('tr');
-  const cellData = [
-    char.ign || '',
-    char.level || '',
-    job.faction || '',
-    job.archetype || '',
-    job.fullName || ''
-  ];
-
-  cellData.forEach(text => {
-    const td = document.createElement('td');
-    td.textContent = text !== undefined && text !== null ? text : '';
-    tr.appendChild(td);
-  });
-  return tr;
-}
+import {renderSymbolsDetail} from "./symbolUtils.js";
 
 function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat) {
   const tr = document.createElement('tr');
@@ -52,9 +22,22 @@ function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredS
     sacredStat
   ];
 
-  cellData.forEach(text => {
+  cellData.forEach((text, index) => {
     const td = document.createElement('td');
-    td.textContent = text !== undefined && text !== null ? text : '';
+    
+    // Special handling for arcane columns (index 2 and 3)
+    if (index === 2 || index === 3) {
+      // Hide cell content if it's 0, undefined, null, or empty string
+      if (text === 0 || text === '0' || text === undefined || text === null || text === '') {
+        td.textContent = '';
+      } else {
+        td.textContent = text;
+      }
+    } else {
+      // Default handling for other columns
+      td.textContent = text !== undefined && text !== null ? text : '';
+    }
+    
     tr.appendChild(td);
   });
   return tr;
@@ -65,34 +48,6 @@ function setView(viewId) {
     div.classList.add('hidden');
   });
   document.getElementById(viewId).classList.remove('hidden');
-}
-
-async function renderProgressionTable() {
-  try {
-    const [accountData, jobList] = await Promise.all([
-      loadCSV('account.csv'),
-      loadCSV('joblist.csv')
-    ]);
-
-    const jobMap = createDataMap(jobList, 'jobName');
-    accountData.sort((a, b) => Number(b.level) - Number(a.level));
-    
-    const tbody = document.querySelector('#progressionTable tbody');
-    tbody.innerHTML = '';
-
-    accountData.forEach(char => {
-      const job = jobMap[char.jobName];
-      if (!job) {
-        console.warn(`Job not found for jobName: "${char.jobName}"`);
-        return;
-      }
-
-      const row = createProgressionRow(char, job);
-      tbody.appendChild(row);
-    });
-  } catch (err) {
-    console.error('Error:', err);
-  }
 }
 
 async function renderTable() {
@@ -108,9 +63,8 @@ async function renderTable() {
     const arcaneMap = createSymbolsMap(arcaneData);
     const sacredMap = createSymbolsMap(sacredData);
 
-    accountData.sort((a, b) => Number(b.level) - Number(a.level));
-    const tbody = document.querySelector('#charTable tbody');
-    tbody.innerHTML = '';
+    sortAccountsByLevel(accountData);
+    const tbody = prepareTable('charTable');
 
     accountData.forEach(char => {
       const job = jobMap[char.jobName];
@@ -119,10 +73,11 @@ async function renderTable() {
         return;
       }
 
-      const arcanePower = calculateArcanePower(arcaneMap[char.ign]);
+      const arcanePower = calculateArcaneForce(arcaneMap[char.ign]);
       const arcaneStat = calculateArcaneStat(arcaneMap[char.ign], char.jobName);
       const sacredForce = calculateSacredForce(sacredMap[char.ign]);
       const sacredStat = calculateSacredStat(sacredMap[char.ign], char.jobName);
+      
       const row = createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat);
       tbody.appendChild(row);
     });

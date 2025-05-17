@@ -12,6 +12,10 @@ export function calculateSacredForce(levels) {
 export function calculateSacredStat(levels, jobName) {
     if (!levels) return '';
 
+    // Check if any symbols are above level 0
+    const hasSymbols = levels.some(lvl => lvl > 0);
+    if (!hasSymbols) return '';
+
     // Calculate total stat from all symbols
     const totalStat = levels.reduce((sum, lvl) => {
         if (lvl === 0) return sum;
