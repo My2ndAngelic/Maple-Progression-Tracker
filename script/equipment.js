@@ -6,9 +6,8 @@ import {createTableCell, prepareTable, sortAccountsByLevel} from "./tableUtils.j
  */
 export async function renderEquipmentTable() {
   try {
-    const [accountData, equipmentData] = await Promise.all([
-      loadCSV('account.csv'),
-      loadCSV('equipment.csv')
+    const [accountData, equipmentData] = await Promise.all([      loadCSV('data/account.csv'),
+      loadCSV('data/equipment.csv')
     ]);
     
     // Sort by level, descending

@@ -94,7 +94,7 @@ export function createSymbolsMap(data) {
  * @returns {Promise<Array>} - Promise resolving to sorted account data
  */
 export async function loadSortedAccountData() {
-  const accountData = await loadCSV('account.csv');
+  const accountData = await loadCSV('data/account.csv');
   return accountData.sort((a, b) => Number(b.level) - Number(a.level));
 }
 

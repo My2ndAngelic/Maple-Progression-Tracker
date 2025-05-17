@@ -6,9 +6,8 @@ import {createTableCell, prepareTable, sortAccountsByLevel, sortByLevelFactionAr
  */
 export async function renderCashTable() {
   try {
-    const [accountData, cashData, jobList] = await Promise.all([
-      loadCSV('account.csv'),
-      loadCSV('cash.csv'),
+    const [accountData, cashData, jobList] = await Promise.all([      loadCSV('data/account.csv'),
+      loadCSV('data/cash.csv'),
       loadCSV('joblist.csv')
     ]);
 

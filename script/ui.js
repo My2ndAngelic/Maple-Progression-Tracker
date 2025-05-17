@@ -2,6 +2,7 @@
 export const navbar = `
   <div id="navbar">
     <a href="overview.html"><button id="overviewBtn">Overview</button></a>
+    <a href="help.html"><button id="helpBtn">Help</button></a>
     <a href="progression.html"><button id="progressionBtn">Progression</button></a>
     <a href="equipment.html"><button id="equipmentBtn">Equipment</button></a>
     <a href="cash.html"><button id="cashBtn">Cash</button></a>

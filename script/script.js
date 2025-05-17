@@ -50,11 +50,10 @@ function setView(viewId) {
 
 export async function renderTable() {
   try {
-    const [accountData, jobList, arcaneData, sacredData] = await Promise.all([
-      loadCSV('account.csv'),
-      loadCSV('joblist.csv'),
-      loadCSV('arcane.csv'),
-      loadCSV('sacred.csv')
+    const [accountData, jobList, arcaneData, sacredData] = await Promise.all([      loadCSV('data/account.csv'),
+      loadCSV('data/joblist.csv'),
+      loadCSV('data/arcane.csv'),
+      loadCSV('data/sacred.csv')
     ]);
 
     const jobMap = createDataMap(jobList, 'jobName');

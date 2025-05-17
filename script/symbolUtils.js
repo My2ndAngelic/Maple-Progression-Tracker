@@ -30,11 +30,10 @@ export function getSymbolDisplayValue(level) {
  * @param {string} type - Either 'arcane' or 'sacred'
  * @returns {Object} Configuration object with csvFile and tableId
  */
-function getSymbolTypeInfo(type) {
-    const typeMap = {
-        'arcane': {csvFile: 'arcane.csv', tableId: 'arcaneTable'},
-        'sacred': {csvFile: 'sacred.csv', tableId: 'sacredTable'},
-        'sacred2': {csvFile: 'sacred2.csv', tableId: 'sacred2Table'}
+function getSymbolTypeInfo(type) {    const typeMap = {
+        'arcane': {csvFile: 'data/arcane.csv', tableId: 'arcaneTable'},
+        'sacred': {csvFile: 'data/sacred.csv', tableId: 'sacredTable'},
+        'sacred2': {csvFile: 'data/sacred2.csv', tableId: 'sacred2Table'}
     };
     return typeMap[type] || {};
 }
@@ -49,9 +48,8 @@ export async function renderSymbolsDetail(type) {
         const {csvFile, tableId} = getSymbolTypeInfo(type);
 
         const [symbolData, accountData, jobList] = await Promise.all([
-            loadCSV(csvFile),
-            loadCSV('account.csv'),
-            loadCSV('joblist.csv')
+            loadCSV(csvFile),            loadCSV('data/account.csv'),
+            loadCSV('data/joblist.csv')
         ]);
 
         // Create level map for quick access

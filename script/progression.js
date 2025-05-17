@@ -30,9 +30,8 @@ export function createProgressionRow(char, job) {
  */
 export async function renderProgressionTable() {
   try {
-    const [accountData, jobList] = await Promise.all([
-      loadCSV('account.csv'),
-      loadCSV('joblist.csv')
+    const [accountData, jobList] = await Promise.all([      loadCSV('data/account.csv'),
+      loadCSV('data/joblist.csv')
     ]);
 
     const jobMap = createDataMap(jobList, 'jobName');
