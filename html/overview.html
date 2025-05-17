@@ -4,11 +4,6 @@
   <meta charset="UTF-8" />  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MapleStory Tracker - Overview</title>
   <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />
-  <script>
-    // Set initial theme from localStorage before page loads to prevent flash
-    const isDark = localStorage.getItem('darkMode') === 'true';
-    document.getElementById('themeStylesheet').href = `../style/${isDark ? 'style-dark.css' : 'style.css'}`;
-  </script>
 </head>
 <body>
   <div id="container">
@@ -19,14 +14,6 @@
       </table>
     </div>
   </div>
-  <script type="module">
-    import { initializeUI } from '../script/ui.js';
-    import { renderTable } from '../script/script.js';
-    
-    window.addEventListener('DOMContentLoaded', () => {
-      initializeUI();
-      renderTable();
-    });
-  </script>
+  <script type="module" src="../script/script.js"></script>
 </body>
 </html>

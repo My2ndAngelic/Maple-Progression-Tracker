@@ -1,12 +1,7 @@
 import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
 import {calculateSacredForce, calculateSacredStat} from "./sacred.js";
 import {prepareTable, sortAccountsByLevel, sortByLevelFactionArchetype} from "./tableUtils.js";
-import {renderEquipmentTable} from "./equipment.js";
-import {renderCashTable} from "./cash.js";
-import {renderProgressionTable} from "./progression.js";
 import {loadCSV, createDataMap, createSymbolsMap} from "./csvHandling.js";
-
-import {renderSymbolsDetail} from "./symbolUtils.js";
 
 function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat) {
   const tr = document.createElement('tr');
@@ -41,12 +36,7 @@ function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredS
   return tr;
 }
 
-function setView(viewId) {
-  document.querySelectorAll('#overviewView, #progressionView, #arcaneView, #sacredView, #equipmentView, #cashView').forEach(div => {
-    div.classList.add('hidden');
-  });
-  document.getElementById(viewId).classList.remove('hidden');
-}
+// setView function removed - unused
 
 export async function renderTable() {
   try {
@@ -96,9 +86,10 @@ export async function renderTable() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  // Only try to render if we're on a page that needs it
-  if (document.getElementById('charTable')) {
+// Overview page initialization
+if (document.getElementById('charTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
     renderTable();
-  }
-});
+  });
+}

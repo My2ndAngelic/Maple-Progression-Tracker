@@ -86,3 +86,11 @@ export async function renderEquipmentTable() {
     console.error('Error rendering equipment table:', err);
   }
 }
+
+// Equipment page initialization
+if (document.getElementById('equipmentTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
+    renderEquipmentTable();
+  });
+}

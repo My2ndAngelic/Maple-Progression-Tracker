@@ -63,3 +63,11 @@ export async function renderCashTable() {
     console.error('Error rendering cash table:', err);
   }
 }
+
+// Cash page initialization
+if (document.getElementById('cashTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
+    renderCashTable();
+  });
+}

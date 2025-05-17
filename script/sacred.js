@@ -36,3 +36,11 @@ export function calculateSacredStat(levels, jobName) {
             return totalStat;
     }
 }
+
+// Sacred page initialization
+if (document.getElementById('sacredTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
+    renderSymbolsDetail('sacred');
+  });
+}

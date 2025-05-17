@@ -69,3 +69,11 @@ export async function renderProgressionTable() {
     console.error('Error rendering progression table:', err);
   }
 }
+
+// Progression page initialization
+if (document.getElementById('progressionTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
+    renderProgressionTable();
+  });
+}

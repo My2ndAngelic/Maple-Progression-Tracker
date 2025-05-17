@@ -44,3 +44,11 @@ export function calculateArcaneStat(levels, jobName) {
             return Math.floor(totalStat);
     }
 }
+
+// Arcane page initialization
+if (document.getElementById('arcaneTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
+    renderSymbolsDetail('arcane');
+  });
+}

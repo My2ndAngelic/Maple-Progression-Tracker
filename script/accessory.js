@@ -82,3 +82,11 @@ export async function renderAccessoryTable() {
     console.error('Error rendering accessory table:', err);
   }
 }
+
+// Accessory page initialization
+if (document.getElementById('accessoryTable')) {
+  import('./ui.js').then(({ initializeUI }) => {
+    initializeUI();
+    renderAccessoryTable();
+  });
+}

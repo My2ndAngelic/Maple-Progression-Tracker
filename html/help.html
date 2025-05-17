@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MapleStory Tracker - Help</title>  <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />
+  <title>MapleStory Tracker - Help</title>
+  <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />
 </head>
 <body>
   <div id="container">
@@ -23,7 +24,8 @@
       <div class="help-section">
         <h2>Navigation</h2>
         <p>Use the navigation bar at the top to access different views:</p>
-        <ul>          <li><strong>Overview:</strong> Basic character information and symbol totals</li>
+        <ul>
+          <li><strong>Overview:</strong> Basic character information and symbol totals</li>
           <li><strong>Help:</strong> Documentation and usage guides</li>
           <li><strong>Progression:</strong> Detailed character information including faction and class</li>
           <li><strong>Equipment ▼:</strong> Dropdown menu for equipment management
@@ -45,7 +47,8 @@
       <div class="help-section">
         <h2>Data Files</h2>
         <p>The tracker uses CSV files in the <code>data/</code> folder:</p>
-        <ul>          <li><code>account.csv</code>: Basic character information</li>
+        <ul>
+          <li><code>account.csv</code>: Basic character information</li>
           <li><code>joblist.csv</code>: Job/class information</li>
           <li><code>arcane.csv</code>: Arcane Symbol levels</li>
           <li><code>sacred.csv</code>: Sacred Symbol levels</li>
@@ -58,9 +61,11 @@
       <div class="help-section">
         <h2>Class Organization</h2>
         <p>Characters are organized by their archetypes in the Progression view, with color coding for easy identification:</p>
-        <ul>          <li><strong style="color: #e00000;">Warrior</strong> (Red): Characters that specialize in strength and defense</li>
+        <ul>
+          <li><strong style="color: #e00000;">Warrior</strong> (Red): Characters that specialize in strength and defense</li>
           <li><strong style="color: #4dabf7;">Magician</strong> (Blue): Characters that use magic and intelligence</li>
-          <li><strong style="color: #69db7c;">Archer</strong> (Green): Characters that excel in ranged combat</li>          <li><strong style="color: #da77f2;">Thief</strong> (Purple): Characters focusing on luck and stealth</li>
+          <li><strong style="color: #69db7c;">Archer</strong> (Green): Characters that excel in ranged combat</li>
+          <li><strong style="color: #da77f2;">Thief</strong> (Purple): Characters focusing on luck and stealth</li>
           <li><strong style="color: #bc8f8f;">Pirate</strong> (Light Brown): Characters with unique combat styles</li>
         </ul>
       </div>
@@ -100,7 +105,8 @@
       <div class="help-section">
         <h2>Theme</h2>
         <p>Click the theme toggle button (🌙/☀️) in the navigation bar to switch between dark and light themes. Your preference will be saved for future visits.</p>
-      </div>      <div class="help-section">
+      </div>
+      <div class="help-section">
         <h2>Updating Data</h2>
         <p>To update character information:</p>
         <ol>
@@ -118,12 +124,6 @@
       </div>
     </div>
   </div>
-  <script type="module">
-    import { initializeUI } from '../script/ui.js';
-    
-    window.addEventListener('DOMContentLoaded', () => {
-      initializeUI();
-    });
-  </script>
+  <script type="module" src="../script/help.js"></script>
 </body>
 </html>
