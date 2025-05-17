@@ -2,13 +2,23 @@
 export const navbar = `
   <div id="navbar">    
     <button id="overviewBtn" onclick="window.location.href='overview.html'">Overview</button>
-    <button id="helpBtn" onclick="window.location.href='help.html'">Help</button>
     <button id="progressionBtn" onclick="window.location.href='progression.html'">Progression</button>
-    <button id="equipmentBtn" onclick="window.location.href='equipment.html'">Equipment</button>
-    <button id="cashBtn" onclick="window.location.href='cash.html'">Cash</button>
-    <button id="arcaneBtn" onclick="window.location.href='arcane.html'">Arcane</button>
-    <button id="sacredBtn" onclick="window.location.href='sacred.html'">Sacred</button>
-    <button id="accessoryBtn" onclick="window.location.href='accessory.html'">Accessory</button>
+    <div class="dropdown">
+      <button id="equipmentBtn">Equipment ▼</button>
+      <div class="dropdown-content">
+        <a href="armor.html">Armor</a>
+        <a href="accessory.html">Accessory</a>
+        <a href="cash.html">Cash</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button id="symbolsBtn">Symbols ▼</button>
+      <div class="dropdown-content">
+        <a href="arcane.html">Arcane</a>
+        <a href="sacred.html">Sacred</a>
+      </div>
+    </div>
+    <button id="helpBtn" onclick="window.location.href='help.html'">Help</button>
     <button id="darkModeToggle">🌙 Dark Mode</button>
   </div>
   <h1>MapleStory Tracker</h1>

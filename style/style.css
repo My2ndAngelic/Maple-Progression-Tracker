@@ -45,6 +45,15 @@ body {
   margin-left: auto;
 }
 
+#helpBtn {
+  margin-left: auto;
+}
+
+/* When both help and dark mode buttons are present, only the first should have auto margin */
+#helpBtn + #darkModeToggle {
+  margin-left: 10px;
+}
+
 /* Top navigation bar - keeping for backward compatibility */
 #topNavbar {
   background-color: #f4f4f4;
@@ -236,6 +245,11 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -264,7 +278,7 @@ h1 {
   display: block;
 }
 
-.dropdown:hover #equipmentBtn, .dropdown:hover #symbolsBtn {
+.dropdown:hover button {
   background-color: #005f99;
 }
 

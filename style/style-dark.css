@@ -25,7 +25,7 @@ body {
   justify-content: flex-start;
 }
 
-#navbar button, .dropdown #equipmentBtn, .dropdown #symbolsBtn {
+#navbar button, .dropdown button {
   background-color: #3399ff;
   color: #ddd;
   border: none;
@@ -37,7 +37,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.dropdown #equipmentBtn, .dropdown #symbolsBtn {
+.dropdown button {
   height: 100%;
   margin: 0;
 }
@@ -48,6 +48,21 @@ body {
 
 #darkModeToggle {
   margin-left: auto;
+}
+
+#helpBtn {
+  margin-left: auto;
+}
+
+/* When both help and dark mode buttons are present, only the first should have auto margin */
+#helpBtn + #darkModeToggle {
+  margin-left: 10px;
+}
+
+/* Dropdown menu styles for dark mode */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
 /* Top navigation bar - keeping for backward compatibility */
@@ -262,6 +277,10 @@ h1 {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown:hover button {
+  background-color: #1a73e8;
 }
 
 /* Keep button highlighted when dropdown is open */

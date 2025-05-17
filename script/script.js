@@ -2,6 +2,7 @@ import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
 import {calculateSacredForce, calculateSacredStat} from "./sacred.js";
 import {prepareTable, sortAccountsByLevel, sortByLevelFactionArchetype} from "./tableUtils.js";
 import {loadCSV, createDataMap, createSymbolsMap} from "./csvHandling.js";
+import {renderArmorTable} from "./armor.js";
 
 function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat) {
   const tr = document.createElement('tr');
