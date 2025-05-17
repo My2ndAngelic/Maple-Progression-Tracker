@@ -7,7 +7,7 @@ export function createSymbolsMap(data) {
     return map;
 }
 
-export function calculateForce(levels, baseForce, levelMultiplier) {
+export function calculateSymbolForce(levels, baseForce, levelMultiplier) {
     if (!levels) return '';
     return levels.reduce((sum, lvl) => {
         if (lvl === 0) return sum;

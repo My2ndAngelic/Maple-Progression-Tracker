@@ -1,7 +1,7 @@
 
-import {calculateArcaneForce, renderArcaneDetail} from "./arcane.js";
-import {calculateSacredForce, renderSacredDetail} from "./sacred.js";
-import {loadCSV} from "./utils.js";
+import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
+import {calculateSacredForce} from "./sacred.js";
+import {loadCSV, renderSymbolsDetail} from "./utils.js";
 
 function createDataMap(data, keyField) {
   const map = {};
@@ -21,7 +21,7 @@ function createSymbolsMap(data) {
   return map;
 }
 
-function createTableRow(char, job, arcaneForce, sacredForce) {
+function createTableRow(char, job, arcaneForce, arcaneStat, sacredForce) {
   const tr = document.createElement('tr');
   const cellData = [
     job.faction || '',
@@ -29,8 +29,9 @@ function createTableRow(char, job, arcaneForce, sacredForce) {
     job.fullName || '',
     char.ign || '',
     char.level || '',
-    job.linkSkillMaxLevel || '',
+    // job.linkSkillMaxLevel || '',  // Link Skill column commented out
     arcaneForce,
+    arcaneStat,
     sacredForce
   ];
 
@@ -74,8 +75,9 @@ async function renderTable() {
       }
 
       const arcaneForce = calculateArcaneForce(arcaneMap[char.ign]);
+      const arcaneStat = calculateArcaneStat(arcaneMap[char.ign], char.jobName, char.level);
       const sacredForce = calculateSacredForce(sacredMap[char.ign]);
-      const row = createTableRow(char, job, arcaneForce, sacredForce);
+      const row = createTableRow(char, job, arcaneForce, arcaneStat, sacredForce);
       tbody.appendChild(row);
     });
   } catch (err) {
@@ -93,12 +95,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('arcaneBtn').addEventListener('click', () => {
     setView('arcaneView');
-    renderArcaneDetail();
+    renderSymbolsDetail('arcane');
   });
 
   document.getElementById('sacredBtn').addEventListener('click', () => {
     setView('sacredView');
-    renderSacredDetail();
+    renderSymbolsDetail('sacred');
   });
 
   const themeLink = document.getElementById('themeStylesheet');

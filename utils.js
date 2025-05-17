@@ -43,3 +43,24 @@ export async function loadCSV(url) {
     const text = await res.text();
     return parseCSV(text);
 }
+
+export async function renderSymbolsDetail(type) {
+    const csvFile = type === 'arcane' ? 'arcane.csv' : 'sacred.csv';
+    const tableId = type === 'arcane' ? 'arcaneTable' : 'sacredTable';
+    const errorMessage = `Error loading ${type} details:`;
+
+    const [symbolData, accountData] = await Promise.all([
+        loadCSV(csvFile),
+        loadCSV('account.csv')
+    ]);
+
+    // Import dynamically to avoid circular dependencies
+    const { renderSymbolDetail } = await import('./symbolUtils.js');
+
+    await renderSymbolDetail(
+        symbolData,
+        accountData,
+        tableId,
+        errorMessage
+    );
+}
