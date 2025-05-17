@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MapleStory Tracker - Overview</title>
-  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
+  <link id="themeStylesheet" rel="stylesheet" href="style/style.css" />
 </head>
 <body>
   <div id="overviewView">
@@ -21,9 +21,8 @@
       </thead>
       <tbody></tbody>
     </table>
-  </div>  <script type="module">
-    import { initializeUI } from './ui.js';
-    import { renderTable } from './script.js';
+  </div>  <script type="module">    import { initializeUI } from './script/ui.js';
+    import { renderTable } from './script/script.js';
     
     window.addEventListener('DOMContentLoaded', () => {
       initializeUI();

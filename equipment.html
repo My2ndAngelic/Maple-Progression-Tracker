@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MapleStory Tracker - Equipment</title>
-  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
+  <title>MapleStory Tracker - Equipment</title>  <link id="themeStylesheet" rel="stylesheet" href="style/style.css" />
 </head>
 <body>
   <div id="equipmentView">
@@ -27,9 +26,8 @@
       </thead>
       <tbody></tbody>
     </table>
-  </div>  <script type="module">
-    import { initializeUI } from './ui.js';
-    import { renderEquipmentTable } from './equipment.js';
+  </div>  <script type="module">    import { initializeUI } from './script/ui.js';
+    import { renderEquipmentTable } from './script/equipment.js';
     
     window.addEventListener('DOMContentLoaded', () => {
       initializeUI();

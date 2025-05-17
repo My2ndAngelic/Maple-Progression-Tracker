@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MapleStory Tracker - Progression</title>
-  <link id="themeStylesheet" rel="stylesheet" href="style.css" />
+  <title>MapleStory Tracker - Progression</title>  <link id="themeStylesheet" rel="stylesheet" href="style/style.css" />
 </head>
 <body>
   <div id="progressionView">
@@ -20,9 +19,8 @@
       </thead>
       <tbody></tbody>
     </table>
-  </div>  <script type="module">
-    import { initializeUI } from './ui.js';
-    import { renderProgressionTable } from './progression.js';
+  </div>  <script type="module">    import { initializeUI } from './script/ui.js';
+    import { renderProgressionTable } from './script/progression.js';
     
     window.addEventListener('DOMContentLoaded', () => {
       initializeUI();
