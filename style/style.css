@@ -140,7 +140,7 @@ h1 {
 
 /* Archetype colors */
 .archetype-warrior {
-  background-color: #ff6b6b; /* Red */
+  background-color: #e00000; /* Bright Red */
   color: white;
 }
 
@@ -160,7 +160,7 @@ h1 {
 }
 
 .archetype-pirate {
-  background-color: #868e96; /* Grey */
+  background-color: #bc8f8f; /* Light Brown (Rosy Brown) */
   color: white;
 }
 

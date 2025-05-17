@@ -154,7 +154,7 @@ h1 {
 
 /* Archetype colors - Dark Mode */
 .archetype-warrior {
-  background-color: #c92a2a; /* Darker Red */
+  background-color: #b30000; /* Dark Bright Red */
   color: white;
 }
 
@@ -174,7 +174,7 @@ h1 {
 }
 
 .archetype-pirate {
-  background-color: #495057; /* Darker Grey */
+  background-color: #996666; /* Darker Rosy Brown */
   color: white;
 }
 
