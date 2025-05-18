@@ -156,6 +156,11 @@ const MAX_LEGENDARY_VALUES = {
   'matt': 30,
   'allstat': 40,
   
+  // Defense
+  'defp': 20,
+  'fddef': 50,
+  'deff': 500,
+  
   // Stat conversions
   'str2dex': 10,
   'dex2str': 10,
@@ -187,6 +192,57 @@ const MAX_LEGENDARY_VALUES = {
   
   // DEF conversion
   'deffd': 50
+};
+
+// Maximum unique tier values for inner abilities (for lines 2 and 3)
+const MAX_UNIQUE_VALUES = {
+  // Stats
+  'str': 30,
+  'dex': 30,
+  'int': 30,
+  'luk': 30,
+  'hp': 450,
+  'mp': 450,
+  'att': 21,
+  'matt': 21,
+  'allstat': 30,
+  
+  // Defense
+  'defp': 15,
+  'fddef': 35,
+  'deff': 350,
+  
+  // Stat conversions
+  'str2dex': 8,
+  'dex2str': 8,
+  'int2luk': 8,
+  'luk2dex': 8,
+  
+  // Defense and Boss
+  'def': 300,
+  'boss': 15,
+  
+  // Level-based
+  'attlvl': 8,
+  'mattlvl': 8,
+  
+  // Damage types
+  'normal': 8,
+  'abnormal': 8,
+  
+  // Drop rates
+  'item': 15,
+  'meso': 15,
+  
+  // Critical and buffs
+  'crit': 25,
+  'buff': 35,
+  
+  // Cooldown
+  'cdskip': 15,
+  
+  // DEF conversion
+  'deffd': 35
 };
 
 function getAbilityDescription(ability) {
@@ -244,6 +300,11 @@ function getAbilityDescription(ability) {
     case 'aoe': return `Enemies Hit by Multi-target Skills ${sign}${value}`;
     case 'def': return `Final Damage: ${sign}${value}% of DEF`;
 
+    // Defense Stats
+    case 'defp': return `Defense ${sign}${value}%`;
+    case 'fddef': return `Final Damage ${sign}${value}% of DEF`;
+    case 'deff': return `Increased defense ${sign}${value}`;
+    
     // Special conversions
     case 'str2dex': return `${value}% of AP assigned to STR added to DEX`;
     case 'dex2str': return `${value}% of AP assigned to DEX added to STR`;
@@ -258,11 +319,12 @@ function getAbilityDescription(ability) {
 }
 
 /**
- * Add an inner ability cell to a row with appropriate styling and tooltip
+ * Check if an ability value is at its maximum for its tier and line
  * @param {HTMLElement} row - The table row element
  * @param {string} value - The inner ability value
+ * @param {number} cellIndex - The index of the cell in the row
  */
-function isMaxValue(ability) {
+function isMaxValue(ability, cellIndex) {
   if (!ability) return false;
   
   // Extract ability type and value
@@ -271,13 +333,23 @@ function isMaxValue(ability) {
   
   const [, type, , value] = match;
   const typeLC = type.toLowerCase();
+  const numValue = parseInt(value);
   
-  // Get the max value for this ability type
-  const maxValue = MAX_LEGENDARY_VALUES[typeLC];
-  if (!maxValue) return false;
+  // Determine if this is line 1, 2, or 3 based on cell index
+  // Each preset has 3 lines, starting at index 2 (after IGN and Level columns)
+  const lineNumber = ((cellIndex - 2) % 3) + 1;
   
-  // Compare the value
-  return parseInt(value) === maxValue;
+  // For line 1, check against Legendary values
+  if (lineNumber === 1) {
+    const maxLegendaryValue = MAX_LEGENDARY_VALUES[typeLC];
+    if (!maxLegendaryValue) return false;
+    return numValue === maxLegendaryValue;
+  }
+  
+  // For lines 2 and 3, check against Unique values
+  const maxUniqueValue = MAX_UNIQUE_VALUES[typeLC];
+  if (!maxUniqueValue) return false;
+  return numValue >= maxUniqueValue;
 }
 
 /**
@@ -296,8 +368,9 @@ function addIACell(row, value, tooltip = '') {
             cell.classList.add(`ability-${abilityType}`);
         }
         
-        // Check if it's a max value and should be bold
-        if (isMaxValue(value)) {
+        // Check if it's a max value and should be bold based on the line number
+        const cellIndex = row.cells.length; // Get the index where this cell will be added
+        if (isMaxValue(value, cellIndex)) {
             cell.style.fontWeight = 'bold';
         }
         
