@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+<head>  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MapleStory Tracker</title>
   <link id="themeStylesheet" rel="stylesheet" href="../style/style.css" />
   <link rel="stylesheet" href="../style/style-help.css" />
 </head>
@@ -63,14 +61,13 @@
       </div>
 
       <div class="help-section">
-        <h2>Class Organization</h2>
-        <p>Characters are organized by their archetypes with intuitive color coding and enhanced filtering:</p>
+        <h2>Class Organization</h2>        <p>Characters are organized by their archetypes with intuitive color coding and enhanced filtering:</p>
         <ul>
-          <li><strong style="color: #e00000;">Warrior</strong> - Strength-based classes</li>
-          <li><strong style="color: #4dabf7;">Magician</strong> - Intelligence-based classes</li>
-          <li><strong style="color: #69db7c;">Archer</strong> - Dexterity-based classes</li>
-          <li><strong style="color: #da77f2;">Thief</strong> - Luck-based classes</li>
-          <li><strong style="color: #bc8f8f;">Pirate</strong> - Hybrid stat classes</li>
+          <li><strong style="color: #e00000;">Warrior</strong></li>
+          <li><strong style="color: #4dabf7;">Magician</strong></li>
+          <li><strong style="color: #69db7c;">Archer</strong></li>
+          <li><strong style="color: #da77f2;">Thief</strong></li>
+          <li><strong style="color: #bc8f8f;">Pirate</strong></li>
         </ul>
         <p>The Progression view now includes:</p>
         <ul>
@@ -160,37 +157,36 @@
             </ul>
           </li>
           <li><strong>Format Reference:</strong>
-            <table class="ia-table" style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <table class="ia-table data-table help-ia-table">
               <tr>
-                <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Format</th>
-                <th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Description</th>
+                <th>Format</th>
+                <th>Description</th>
+              </tr><tr>
+                <td class="attack-speed">AS+1</td>
+                <td>Attack Speed +1</td>
               </tr>
               <tr>
-                <td class="ability-as" style="border: 1px solid #ccc; padding: 8px;">AS+1</td>
-                <td style="border: 1px solid #ccc; padding: 8px;">Attack Speed +1</td>
+                <td class="boss-damage">BOSS+20</td>
+                <td>Boss Damage +20%</td>
               </tr>
               <tr>
-                <td class="ability-boss" style="border: 1px solid #ccc; padding: 8px;">BOSS+20</td>
-                <td style="border: 1px solid #ccc; padding: 8px;">Boss Damage +20%</td>
+                <td class="buff-duration">BUFF+50</td>
+                <td>Buff Duration +50%</td>
               </tr>
               <tr>
-                <td class="ability-buff" style="border: 1px solid #ccc; padding: 8px;">BUFF+50</td>
-                <td style="border: 1px solid #ccc; padding: 8px;">Buff Duration +50%</td>
+                <td class="cooldown-skip">CDSKIP+20</td>
+                <td>20% chance to skip cooldown</td>
               </tr>
               <tr>
-                <td class="ability-cdskip" style="border: 1px solid #ccc; padding: 8px;">CDSKIP+20</td>
-                <td style="border: 1px solid #ccc; padding: 8px;">20% chance to skip cooldown</td>
+                <td class="meso-obtain">MESO+20</td>
+                <td>Meso Obtained +20%</td>
               </tr>
               <tr>
-                <td class="ability-meso" style="border: 1px solid #ccc; padding: 8px;">MESO+20</td>
-                <td style="border: 1px solid #ccc; padding: 8px;">Meso Obtained +20%</td>
+                <td class="item-drop">ITEM+20</td>
+                <td>Item Drop Rate +20%</td>
               </tr>
               <tr>
-                <td class="ability-item" style="border: 1px solid #ccc; padding: 8px;">ITEM+20</td>
-                <td style="border: 1px solid #ccc; padding: 8px;">Item Drop Rate +20%</td>
-              </tr>
-              <tr>
-                <td class="ability-passive" style="border: 1px solid #ccc; padding: 8px;">PASSIVE+1</td>
+                <td class="passive-skill">PASSIVE+1</td>
                 <td style="border: 1px solid #ccc; padding: 8px;">Passive Skills +1 Level</td>
               </tr>
               <tr>
@@ -265,9 +261,27 @@
                 <td style="border: 1px solid #ccc; padding: 8px;">DefF+500</td>
                 <td style="border: 1px solid #ccc; padding: 8px;">Increased defense +500</td>
               </tr>
-            </table>
-            <li><em>Note: Colors shown above match the table display in light mode. In dark mode, these colors will automatically adjust for better visibility.</em></li>
-            <li><em>Note: Color highlighting appears only on the first line of each preset for clarity.</em></li>
+            </table>            <h3>Color Legend</h3>            <p>Light Mode Colors:</p>
+            <ul>
+              <li>Attack Speed: Light red (#ffdddd)</li>              <li>Boss Damage: Light green (#ddffdd)</li>
+              <li>Buff Duration: Light blue (#ddddff)</li>
+              <li>Cooldown Skip: Light magenta (#ffddff)</li>
+              <li>Meso Obtain: Light yellow (#ffffdd)</li>
+              <li>Item Drop: Light cyan (#ddffff)</li>
+              <li>Passive Skill: Light lavender (#d6a5e0)</li>
+              <li><em>Note: All ability cells have bold text</em></li>
+            </ul><p>Dark Mode Colors:</p>
+            <ul>
+              <li>Attack Speed: Dark red (#5c2828)</li>
+              <li>Boss Damage: Dark green (#285c28)</li>
+              <li>Buff Duration: Dark blue (#28285c)</li>
+              <li>Cooldown Skip: Dark magenta (#5c285c)</li>
+              <li>Meso Obtain: Dark gold (#5c5c28)</li>
+              <li>Item Drop: Dark turquoise (#285c5c)</li>
+              <li>Passive Skill: Dark purple (#47285c)</li>
+              <li><em>Note: All dark mode colors have white text for better contrast</em></li>
+            </ul>
+            <p><em>Note: Color highlighting appears only on the first line of each preset for clarity.</em></p>
           </li>
           <li><strong>Preset Management:</strong>
             <ul>

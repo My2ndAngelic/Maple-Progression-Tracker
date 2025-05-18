@@ -28,6 +28,11 @@ export const navbar = `
 export function initializeUI() {
     // Insert navbar at the start of the body
     document.body.insertAdjacentHTML('afterbegin', navbar);
+    
+    // Set the common title - inherit from index.html
+    document.title = 'MapleStory Tracker';
+    
+    // Initialize theme
     initializeTheme();
 }
 
