@@ -1,4 +1,4 @@
-import {calculateSymbolForce} from './symbolUtils.js';
+import {calculateSymbolForce, renderSymbolsDetail} from './symbolUtils.js';
 
 const SACRED_BASE_FORCE = 10;
 const SACRED_LEVEL_MULTIPLIER = 10;

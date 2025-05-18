@@ -1,0 +1,230 @@
+/* Inner Ability Table Specific Styles */
+
+/* Table cell styles */
+.ia-table th,
+.ia-table td {
+  text-align: center;
+  white-space: nowrap;
+  width: 9%; /* Default width for IA columns */
+  min-width: 100px; /* Slightly wider minimum to accommodate content */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 8px 4px; /* Adjusted padding to give more space for text */
+}
+
+/* Make IGN column slightly wider */
+.ia-table th:first-child,
+.ia-table td:first-child {
+  width: 10%;
+  min-width: 120px;
+  text-align: left;
+}
+
+/* Inner ability cells should have normal weight */
+.ia-table td:not(:first-child):not(:nth-child(2)) {
+  font-weight: normal;
+}
+
+/* Level column can be narrower */
+.ia-table th:nth-child(2),
+.ia-table td:nth-child(2) {
+  width: 4%;
+  min-width: 10px; /* Reduced from 60px to better fit level numbers */
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* Add some minimal padding for all cells */
+.ia-table td, 
+.ia-table th {
+  padding: 10px 6px;
+  border: 1px solid #ccc;
+}
+
+/* Style preset header row */
+.data-table.ia-table th.preset-header {
+  font-weight: bold;
+  background-color: #666666;
+  color: white;
+  border-bottom: none;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+/* Inner ability table view layout */
+#innerAbilityView {
+  margin-top: 20px;
+}
+
+#innerAbilityTable {
+  margin: 30px auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#innerAbilityView {
+  margin-top: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+/* Add horizontal lines between characters for better readability */
+.ia-table tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for the line header cells (Line 1, Line 2, Line 3) */
+.ia-table th.line-header {
+  font-size: 0.9em;
+  background-color: #666666;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Empty cells styling */
+.ia-table td:empty::after {
+  content: "—";
+  color: #ccc;
+}
+
+/* Legend Styles */
+.legend-container {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.legend-container h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+/* Inner Ability cell colors */
+.ia-table td.ability-as { background-color: #f5a9a9; }
+.ia-table td.ability-boss { background-color: #a9f5a9; }
+.ia-table td.ability-cdskip { background-color: #f5a9f5; }
+.ia-table td.ability-meso { background-color: #f5f5a9; }
+.ia-table td.ability-item { background-color: #a9f5f5; }
+.ia-table td.ability-passive { background-color: #d6a5e0; }
+.ia-table td.ability-abnormal { background-color: #f5c29a; }
+
+/* Legend colors */
+.legend-color.attack-speed { background-color: #f5a9a9; }
+.legend-color.boss-damage { background-color: #a9f5a9; }
+.legend-color.buff-duration { background-color: #a9a9f5; }
+.legend-color.cooldown-skip { background-color: #f5a9f5; }
+.legend-color.meso-obtain { background-color: #f5f5a9; }
+.legend-color.item-drop { background-color: #a9f5f5; }
+.legend-color.passive-skill { background-color: #d6a5e0; }
+.legend-color.abnormal-status { background-color: #f5c29a; }
+
+/* Tooltip styling */
+.ia-table td[title] {
+  cursor: help;
+  position: relative;
+}
+
+/* Style for cells with max legendary values */
+
+/* Make tooltips more visible */
+[title] {
+  cursor: help;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 0.85em;
+  font-style: italic;
+  color: #666;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Header styling */
+#innerAbilityView h2 {
+  margin-bottom: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .ia-table th.preset-header {
+  background-color: #ccc;
+  color: #000000;
+  border-bottom: none;
+}
+
+body.dark-mode .ia-table th.line-header {
+  background-color: #f0f0f0;
+  color: #000000;
+  font-weight: bold;
+}
+
+body.dark-mode .ia-table td,
+body.dark-mode .ia-table th {
+  border: 1px solid #ccc;
+}
+
+body.dark-mode .ia-table td:empty::after {
+  color: #555;
+}
+
+body.dark-mode .legend-container {
+  background-color: #222;
+  border-color: #444;
+}
+
+/* Dark mode inner ability colors */
+/* Table cells */
+body.dark-mode .ia-table td.ability-as { background-color: #5c2828; }
+body.dark-mode .ia-table td.ability-boss { background-color: #285c28; }
+body.dark-mode .ia-table td.ability-cdskip { background-color: #5c285c; }
+body.dark-mode .ia-table td.ability-meso { background-color: #5c5c28; }
+body.dark-mode .ia-table td.ability-item { background-color: #285c5c; }
+body.dark-mode .ia-table td.ability-passive { background-color: #47285c; }
+body.dark-mode .ia-table td.ability-abnormal { background-color: #5c3a28; }
+
+/* Legend items */
+body.dark-mode .legend-color.attack-speed { background-color: #5c2828; }
+body.dark-mode .legend-color.boss-damage { background-color: #285c28; }
+body.dark-mode .legend-color.buff-duration { background-color: #28285c; }
+body.dark-mode .legend-color.cooldown-skip { background-color: #5c285c; }
+body.dark-mode .legend-color.meso-obtain { background-color: #5c5c28; }
+body.dark-mode .legend-color.item-drop { background-color: #285c5c; }
+body.dark-mode .legend-color.passive-skill { background-color: #47285c; }
+body.dark-mode .legend-color.abnormal-status { background-color: #5c3a28; }
+
+/* Dark mode text colors */
+body.dark-mode .note {
+  color: #aaa;
+}
+
+body.dark-mode .description {
+  color: #bbb;
+}
+

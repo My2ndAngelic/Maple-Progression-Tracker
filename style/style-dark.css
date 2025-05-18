@@ -119,32 +119,40 @@ h1 {
   background-color: #1a73e8;
 }
 
-/* Table common styles */
+/* Table common styles for dark mode */
 .data-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  border: 1px solid #444;
+
 }
 
 .data-table td {
   padding: 8px 12px;
-  border: 1px solid #555;
+  border: 1px solid #444;
   text-align: left;
   font-size: 14px;
-  color: #ddd;
+  color: #ffffff;
 }
 
-/* Table header styles - white background with black text for better visibility */
+/* Table header styles */
 .data-table th {
+  border: 1px solid #444;
   padding: 8px 12px;
-  border: 1px solid #555;
   text-align: left;
   font-size: 14px;
 }
 
 .data-table thead th {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #c6c4c4;
+  color: black;
+  font-weight: bold;
+}
+
+/* Make first column always bold */
+.data-table td:first-child,
+.data-table th:first-child {
   font-weight: bold;
 }
 

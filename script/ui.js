@@ -54,5 +54,7 @@ function applyTheme(isDark) {
     themeLink.href = `${basePath}style/${isDark ? 'style-dark.css' : 'style.css'}`;
     darkToggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    // Add or remove dark-mode class on body element
+    document.body.classList.toggle('dark-mode', isDark);
     localStorage.setItem('darkMode', isDark);
 }

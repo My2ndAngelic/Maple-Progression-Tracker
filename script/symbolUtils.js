@@ -54,9 +54,9 @@ function getSymbolTypeInfo(type) {
 export async function renderSymbolsDetail(type) {
     try {
         const {csvFile, tableId} = getSymbolTypeInfo(type);        const [symbolData, accountData, jobList] = await Promise.all([
-            loadCSV(csvFile),
-            loadCSV('account.csv'),
-            loadCSV('joblist.csv')
+            loadCSV(`data/${csvFile}`),
+            loadCSV('data/account.csv'),
+            loadCSV('data/joblist.csv')
         ]);
 
         // Create level map for quick access

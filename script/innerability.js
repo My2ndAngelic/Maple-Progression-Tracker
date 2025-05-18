@@ -119,56 +119,196 @@ function displayInnerAbilityData(csvData, accountMap) {
     row.appendChild(levelCell);
     
     // Inner Ability cells
-    addIACell(row, character.p1ia1, 0); // P1 Line 1
-    addIACell(row, character.p1ia2, 1); // P1 Line 2
-    addIACell(row, character.p1ia3, 2); // P1 Line 3
-    addIACell(row, character.p2ia1, 3); // P2 Line 1
-    addIACell(row, character.p2ia2, 4); // P2 Line 2
-    addIACell(row, character.p2ia3, 5); // P2 Line 3
-    addIACell(row, character.p3ia1, 6); // P3 Line 1
-    addIACell(row, character.p3ia2, 7); // P3 Line 2
-    addIACell(row, character.p3ia3, 8); // P3 Line 3
+    addIACell(row, character.p1ia1);
+    addIACell(row, character.p1ia2);
+    addIACell(row, character.p1ia3);
+    addIACell(row, character.p2ia1);
+    addIACell(row, character.p2ia2);
+    addIACell(row, character.p2ia3);
+    addIACell(row, character.p3ia1);
+    addIACell(row, character.p3ia2);
+    addIACell(row, character.p3ia3);
     
     tbody.appendChild(row);
   });
 }
 
 /**
- * Add an inner ability cell to a row with appropriate styling
- * @param {HTMLElement} row - The table row element
- * @param {string} value - The inner ability value
+ * Get the full description of an inner ability
+ * @param {string} ability - The abbreviated ability text from the CSV
+ * @returns {string} The full description of the ability
  */
-function addIACell(row, value, columnIndex) {
-  const cell = document.createElement('td');
-  cell.textContent = value;
+// Maximum legendary tier values for inner abilities
+const MAX_LEGENDARY_VALUES = {
+  // Attack Speed & Special
+  'as': 1,
+  'passive': 1,
+  'aoe': 1,
   
-  // Only apply coloring to Line 1 cells (columnIndex 0, 3, 6 are the Line 1 cells for each preset)
-  if (value && (columnIndex === 0 || columnIndex === 3 || columnIndex === 6)) {
-    if (value.includes('AS+')) {
-      cell.classList.add('attack-speed');
-    } else if (value.includes('Boss+')) {
-      cell.classList.add('boss-damage');
-    } else if (value.includes('Buff+')) {
-      cell.classList.add('buff-duration');
-    } else if (value.includes('CDSkip+')) {
-      cell.classList.add('cooldown-skip');
-    } else if (value.includes('Meso+')) {
-      cell.classList.add('meso-obtain');
-    } else if (value.includes('Item+')) {
-      cell.classList.add('item-drop');
-    } else if (value.includes('BD+')) {
-      cell.classList.add('boss-damage');
-    } else if (value.includes('Passive+')) {
-      cell.classList.add('passive-skill');
-    } else if (value.includes('Abnormal+')) {
-      cell.classList.add('abnormal-status');
+  // Stats
+  'str': 40,
+  'dex': 40,
+  'int': 40,
+  'luk': 40,
+  'hp': 600,
+  'mp': 600,
+  'att': 30,
+  'matt': 30,
+  'allstat': 40,
+  
+  // Stat conversions
+  'str2dex': 10,
+  'dex2str': 10,
+  'int2luk': 10,
+  'luk2dex': 10,
+  
+  // Defense and Boss
+  'def': 400,
+  'boss': 20,
+  
+  // Level-based
+  'attlvl': 10,
+  'mattlvl': 10,
+  
+  // Damage types
+  'normal': 10,
+  'abnormal': 10,
+  
+  // Drop rates
+  'item': 20,
+  'meso': 20,
+  
+  // Critical and buffs
+  'crit': 30,
+  'buff': 50,
+  
+  // Cooldown
+  'cdskip': 20,
+  
+  // DEF conversion
+  'deffd': 50
+};
+
+function getAbilityDescription(ability) {
+  if (!ability) return '';
+  
+  // Handle multiple main stats (STR, DEX, INT, LUK) combinations
+  const parts = ability.split(/\s+/);
+  if (parts.length > 1) {
+    // Check if all parts are main stats
+    const isAllMainStats = parts.every(part => {
+      const type = part.match(/^(STR|DEX|INT|LUK)/i);
+      return type !== null;
+    });
+    
+    if (isAllMainStats) {
+      const descriptions = parts.map(part => getAbilityDescription(part));
+      return descriptions.join(', ');
+    } else {
+      // If not all main stats, treat as single ability
+      return ability;
     }
   }
   
-  if (!value) {
-    // Add a non-breaking space to empty cells to maintain proper spacing
-    cell.innerHTML = '&nbsp;';
+  // Extract the base ability type and value
+  const match = ability.match(/([A-Za-z]+)([+-])(\d+)(?:%)?/);
+  if (!match) return ability;
+
+  const [, type, sign, value] = match;
+  const typeLC = type.toLowerCase();
+
+  switch (typeLC) {
+    // Basic Stats
+    case 'str': return `STR ${sign}${value}`;
+    case 'dex': return `DEX ${sign}${value}`;
+    case 'int': return `INT ${sign}${value}`;
+    case 'luk': return `LUK ${sign}${value}`;
+    case 'hp': return `Max HP ${sign}${value}%`;
+    case 'mp': return `Max MP ${sign}${value}%`;
+    case 'att': return `Attack ${sign}${value}`;
+    case 'matt': return `Magic Attack ${sign}${value}`;
+    case 'damage': return `Damage ${sign}${value}%`;
+    case 'crit': return `Critical Rate ${sign}${value}%`;
+    case 'allstat': return `All Stats ${sign}${value}%`;
+
+    // Special Stats
+    case 'as': return `Attack Speed ${sign}${value}`;
+    case 'boss': return `Boss Damage ${sign}${value}%`;
+    case 'cdskip': return `${value}% chance to skip cooldowns`;
+    case 'meso': return `Mesos Obtained ${sign}${value}%`;
+    case 'item': return `Item Drop Rate ${sign}${value}%`;
+    case 'passive': return `Passive Skills ${sign}${value} Level`;
+    case 'abnormal': return `Damage to Abnormal Status monsters ${sign}${value}%`;
+    case 'buff': return `Buff Duration ${sign}${value}%`;
+    case 'normal': return `Damage to Normal Monsters ${sign}${value}%`;
+    case 'aoe': return `Enemies Hit by Multi-target Skills ${sign}${value}`;
+    case 'def': return `Final Damage: ${sign}${value}% of DEF`;
+
+    // Special conversions
+    case 'str2dex': return `${value}% of AP assigned to STR added to DEX`;
+    case 'dex2str': return `${value}% of AP assigned to DEX added to STR`;
+    case 'int2luk': return `${value}% of AP assigned to INT added to LUK`;
+    case 'luk2dex': return `${value}% of AP assigned to LUK added to DEX`;
+    case 'attlvl': return `Attack ${sign}1 for every ${value} levels`;
+    case 'mattlvl': return `Magic Attack ${sign}1 for every ${value} levels`;
+
+    default:
+      return ability;
   }
+}
+
+/**
+ * Add an inner ability cell to a row with appropriate styling and tooltip
+ * @param {HTMLElement} row - The table row element
+ * @param {string} value - The inner ability value
+ */
+function isMaxValue(ability) {
+  if (!ability) return false;
   
-  row.appendChild(cell);
+  // Extract ability type and value
+  const match = ability.match(/([a-z]+)([+-])(\d+)(?:%)?/i);
+  if (!match) return false;
+  
+  const [, type, , value] = match;
+  const typeLC = type.toLowerCase();
+  
+  // Get the max value for this ability type
+  const maxValue = MAX_LEGENDARY_VALUES[typeLC];
+  if (!maxValue) return false;
+  
+  // Compare the value
+  return parseInt(value) === maxValue;
+}
+
+/**
+ * Add a cell to the inner ability table
+ * @param {HTMLElement} row - The row to add the cell to
+ * @param {string} value - The value to add to the cell
+ * @param {string} tooltip - Optional tooltip text
+ */
+function addIACell(row, value, tooltip = '') {
+    const cell = document.createElement('td');
+    
+    if (value) {
+        // Add ability type class for coloring
+        const abilityType = value.match(/^([a-z]+)/i)?.[1]?.toLowerCase();
+        if (abilityType) {
+            cell.classList.add(`ability-${abilityType}`);
+        }
+        
+        // Check if it's a max value and should be bold
+        if (isMaxValue(value)) {
+            cell.style.fontWeight = 'bold';
+        }
+        
+        cell.textContent = value;
+        
+        // Add tooltip using the full ability description
+        const description = getAbilityDescription(value);
+        if (description) {
+            cell.title = description;
+        }
+    }
+    
+    row.appendChild(cell);
 }

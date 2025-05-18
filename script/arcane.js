@@ -1,4 +1,4 @@
-import {calculateSymbolForce} from './symbolUtils.js';
+import {calculateSymbolForce, renderSymbolsDetail} from './symbolUtils.js';
 
 const ARCANE_BASE_FORCE = 30;
 const ARCANE_LEVEL_MULTIPLIER = 10;

@@ -1,5 +1,5 @@
-import { loadCSV, createLevelMap } from "./csvHandling.js";
-import {createTableCell, prepareTable, sortAccountsByLevel} from "./tableUtils.js";
+import { loadCSV } from "./csvHandling.js";
+import { initializeUI } from "./ui.js";
 
 const EQUIPMENT_HEADERS = ['Character', 'Level', 'Weapon', 'Secondary', 'Emblem', 'Hat', 'Top', 'Bottom', 'Shoe', 'Cape', 'Gloves', 'Shoulder'];
 
@@ -32,68 +32,82 @@ function getEquipmentClass(equipment, column) {
 }
 
 /**
+ * Creates a table cell with appropriate equipment class if applicable
+ * @param {string} content - Cell content
+ * @param {string} columnName - Name of the column
+ * @returns {HTMLTableCellElement} - The created table cell
+ */
+function createTableCell(content, columnName) {
+  const td = document.createElement('td');
+  td.textContent = content || '';
+  
+  const equipmentClass = getEquipmentClass(content, columnName);
+  if (equipmentClass) {
+    td.className = equipmentClass;
+  }
+  
+  return td;
+}
+
+/**
  * Renders the armor table with data from equipment.csv
  */
-export async function renderArmorTable() {
+async function renderArmorTable() {
   try {
+    // Load data
     const [accountData, equipmentData] = await Promise.all([
-      loadCSV('data/account.csv'),
-      loadCSV('data/equipment.csv')
+      loadCSV('account.csv'),
+      loadCSV('equipment.csv')
     ]);
+
+    // Create account map for quick lookups
+    const accountMap = new Map(accountData.map(acc => [acc.IGN, acc]));
     
-    // Sort by level, descending
-    sortAccountsByLevel(accountData);
-      // Set up table headers
+    // Set up table
     const table = document.getElementById('armorTable');
     const thead = table.querySelector('thead');
+    const tbody = table.querySelector('tbody');
+    
+    // Create headers
     thead.innerHTML = `
       <tr>
         ${EQUIPMENT_HEADERS.map(header => `<th>${header}</th>`).join('')}
       </tr>
     `;
-
-    // Prepare table and get tbody reference
-    const tbody = prepareTable('armorTable');
-
-    // Create a level map for quick access to character levels
-    const levelMap = createLevelMap(accountData);
-
-    equipmentData.forEach(equipment => {
+    
+    // Sort equipment data by level
+    equipmentData.sort((a, b) => {
+      const levelA = accountMap.get(a.IGN)?.level || 0;
+      const levelB = accountMap.get(b.IGN)?.level || 0;
+      return Number(levelB) - Number(levelA);
+    });
+    
+    // Create rows
+    tbody.innerHTML = '';
+    equipmentData.forEach(row => {
       const tr = document.createElement('tr');
       
-      // Add IGN cell
-      const ignCell = createTableCell(equipment.IGN || '');
-      tr.appendChild(ignCell);
+      // Add character and level
+      tr.appendChild(createTableCell(row.IGN));
+      tr.appendChild(createTableCell(accountMap.get(row.IGN)?.level || ''));
       
-      // Add Level cell from account data
-      const levelCell = createTableCell(levelMap.get(equipment.IGN) || '');
-      tr.appendChild(levelCell);      // Add equipment data in the correct order, using the exact column names from the CSV
-      const columns = ['Weapon', 'Secondary', 'Emblem', 'Hat', 'Top', 'Bottom', 'Shoe', 'Cape', 'Gloves', 'Shoulder'];
-      
-      columns.forEach(column => {
-        const value = equipment[column] || '';
-        const cell = createTableCell(value);
-        const equipClass = getEquipmentClass(value, column);
-        if (equipClass) {
-          cell.classList.add(equipClass);
-        }
-        tr.appendChild(cell);
+      // Add equipment cells
+      EQUIPMENT_HEADERS.slice(2).forEach(header => {
+        tr.appendChild(createTableCell(row[header], header));
       });
       
       tbody.appendChild(tr);
     });
-  } catch (err) {
-    console.error('Error rendering armor table:', err);
+    
+  } catch (error) {
+    console.error('Error rendering armor table:', error);
   }
 }
 
-// For backward compatibility
-export const renderEquipmentTable = renderArmorTable;
-
-// Armor page initialization
+// Initialize if we're on the armor page
 if (document.getElementById('armorTable')) {
-  import('./ui.js').then(({ initializeUI }) => {
-    initializeUI();
-    renderArmorTable();
-  });
+  initializeUI();
+  renderArmorTable();
 }
+
+export { renderArmorTable };

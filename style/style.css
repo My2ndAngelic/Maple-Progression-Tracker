@@ -115,13 +115,22 @@ h1 {
   margin-bottom: 20px;
 }
 
-.data-table th, .data-table td {
+.data-table th, 
+.data-table td {
   padding: 8px 12px;
   border: 1px solid #ccc;
   text-align: left;
   font-size: 14px;
+  color: #000000;
 }
 
+/* First column should always be bold */
+.data-table td:first-child,
+.data-table th:first-child {
+  font-weight: bold;
+}
+
+/* Header styles */
 .data-table thead th {
   background-color: #333;
   color: white;
@@ -140,89 +149,6 @@ h1 {
 /* Hidden class for views */
 .hidden {
   display: none;
-}
-
-/* Pet snack conditional formatting */
-.pet-snack-yes {
-  background-color: #90ee90; /* Light green */
-}
-
-/* Archetype colors */
-.archetype-warrior {
-  background-color: #e00000; /* Bright Red */
-  color: white;
-}
-
-.archetype-magician {
-  background-color: #4dabf7; /* Blue */
-  color: white;
-}
-
-.archetype-archer {
-  background-color: #69db7c; /* Green */
-  color: white;
-}
-
-.archetype-thief {
-  background-color: #da77f2; /* Purple */
-  color: white;
-}
-
-.archetype-pirate {
-  background-color: #bc8f8f; /* Light Brown (Rosy Brown) */
-  color: white;
-}
-
-/* Equipment color classes - Light mode */
-.equipment-root-abyss {
-  background-color: #1e88e5;  /* Darker Blue */
-  color: #ffffff;
-}
-
-.equipment-deimos {
-  background-color: #ffcc80;  /* Light Orange */
-  color: #000000;
-}
-
-.equipment-evolving {
-  background-color: #a5d6a7;  /* Light Green */
-  color: #000000;
-}
-
-.equipment-absolab {
-  background-color: #cfd8dc;  /* Light Grey */
-  color: #000000;
-}
-
-.equipment-arcane {
-  background-color: #e1bee7;  /* Light Purple */
-  color: #000000;
-}
-
-.equipment-princess-no {
-  background-color: #b3e5fc;  /* Very Light Blue */
-  color: #000000;
-}
-
-.equipment-superior {
-  background-color: #ffd700;  /* Gold */
-  color: #000000;
-}
-
-.equipment-meister {
-  background-color: #c0c0c0;  /* Silver */
-  color: #000000;
-}
-
-.equipment-reinforced {
-  background-color: #cd7f32;  /* Bronze */
-  color: #ffffff;
-}
-
-/* Symbol level formatting */
-.symbol-max {
-  background-color: #4caf50;  /* Green */
-  color: #ffffff;
 }
 
 /* Dropdown menu styles */
@@ -280,37 +206,6 @@ h1 {
 
 .dropdown:hover button {
   background-color: #005f99;
-}
-
-/* Help page styles */
-.help-section {
-  margin-bottom: 2rem;
-}
-
-.help-section h2 {
-  color: #007acc;
-  margin-bottom: 1rem;
-}
-
-.help-section p {
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-.help-section ul {
-  list-style-type: disc;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-code {
-  background: #f4f4f4;
-  color: #333;
-  padding: 0.2rem 0.4rem;
-  border-radius: 3px;
-  font-family: 'Consolas', 'Monaco', monospace;
-  font-size: 0.9em;
-  border: 1px solid #ddd;
 }
 
 /* Inner Ability Table styles */

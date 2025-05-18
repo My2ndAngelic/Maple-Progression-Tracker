@@ -1,0 +1,127 @@
+/* Arcane Symbol Table Styles */
+
+/* Table layout */
+#arcaneTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Header styling */
+#arcaneTable th {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Cell styling */
+#arcaneTable td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  color: #333; /* Ensure text is dark in light mode */
+  font-size: 14px;
+}
+
+/* First column (Character) alignment */
+#arcaneTable td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Level column width */
+#arcaneTable th:nth-child(2),
+#arcaneTable td:nth-child(2) {
+  width: 60px;
+}
+
+/* Symbol columns should be equal width */
+#arcaneTable th:nth-child(n+3),
+#arcaneTable td:nth-child(n+3) {
+  width: calc((100% - 250px) / 6);
+}
+
+/* Highlighting for maxed symbols */
+#arcaneTable td.symbol-max {
+  background-color: #4caf50;  /* Green - same as in style.css */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Alternate row styling */
+#arcaneTable tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#arcaneTable tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+/* Remove hover effect per requirements */
+#arcaneTable tbody tr {
+  pointer-events: none;
+}
+
+#arcaneTable tbody tr:hover {
+  background-color: transparent !important;
+}
+
+/* Make sure data-table hover effect is also disabled for this table */
+.data-table#arcaneTable tbody tr:hover {
+  background-color: transparent !important;
+}
+
+/* Ensure no hover effects in dark mode too */
+body.dark-mode #arcaneTable tbody tr:hover {
+  background-color: transparent !important;
+}
+
+body.dark-mode .data-table#arcaneTable tbody tr:hover {
+  background-color: transparent !important;
+}
+
+/* Dark mode styles */
+body.dark-mode #arcaneTable th {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #555;
+  font-weight: bold;
+}
+
+body.dark-mode #arcaneTable {
+  border-collapse: collapse;
+  border: 1px solid #555;
+}
+
+body.dark-mode #arcaneTable td {
+  border-color: #555;
+  color: #ffffff;
+}
+
+body.dark-mode #arcaneTable tbody tr:nth-child(odd) {
+  background-color: #222;
+}
+
+body.dark-mode #arcaneTable tbody tr:nth-child(even) {
+  background-color: #181818;
+}
+
+body.dark-mode #arcaneTable td:first-child {
+  font-weight: bold;
+}
+
+body.dark-mode #arcaneTable td.symbol-max {
+  background-color: #2e7d32;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Remove hover effect in dark mode as well */
+body.dark-mode #arcaneTable tbody tr {
+  pointer-events: none;
+}

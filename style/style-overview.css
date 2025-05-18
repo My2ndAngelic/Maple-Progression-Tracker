@@ -1,0 +1,54 @@
+/* Overview page specific styles */
+
+/* Light mode styles */
+/* Archetype colors */
+.archetype-warrior {
+  background-color: #ff4444; /* Lighter Red */
+  color: white;
+}
+
+.archetype-magician {
+  background-color: #4dabf7; /* Blue */
+  color: white;
+}
+
+.archetype-archer {
+  background-color: #69db7c; /* Green */
+  color: white;
+}
+
+.archetype-thief {
+  background-color: #da77f2; /* Purple */
+  color: white;
+}
+
+.archetype-pirate {
+  background-color: #bc8f8f; /* Light Brown (Rosy Brown) */
+  color: white;
+}
+
+/* Dark mode styles */
+body.dark-mode .archetype-warrior {
+  background-color: #b30000; /* Dark Bright Red */
+  color: white;
+}
+
+body.dark-mode .archetype-magician {
+  background-color: #1a8cff; /* Dark Blue */
+  color: white;
+}
+
+body.dark-mode .archetype-archer {
+  background-color: #2ea745; /* Dark Green */
+  color: white;
+}
+
+body.dark-mode .archetype-thief {
+  background-color: #9933cc; /* Dark Purple */
+  color: white;
+}
+
+body.dark-mode .archetype-pirate {
+  background-color: #8b6b6b; /* Dark Rosy Brown */
+  color: white;
+}
