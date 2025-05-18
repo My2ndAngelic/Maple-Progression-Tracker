@@ -119,15 +119,15 @@ function displayInnerAbilityData(csvData, accountMap) {
     row.appendChild(levelCell);
     
     // Inner Ability cells
-    addIACell(row, character.p1ia1);
-    addIACell(row, character.p1ia2);
-    addIACell(row, character.p1ia3);
-    addIACell(row, character.p2ia1);
-    addIACell(row, character.p2ia2);
-    addIACell(row, character.p2ia3);
-    addIACell(row, character.p3ia1);
-    addIACell(row, character.p3ia2);
-    addIACell(row, character.p3ia3);
+    addIACell(row, character.p1ia1, 0); // P1 Line 1
+    addIACell(row, character.p1ia2, 1); // P1 Line 2
+    addIACell(row, character.p1ia3, 2); // P1 Line 3
+    addIACell(row, character.p2ia1, 3); // P2 Line 1
+    addIACell(row, character.p2ia2, 4); // P2 Line 2
+    addIACell(row, character.p2ia3, 5); // P2 Line 3
+    addIACell(row, character.p3ia1, 6); // P3 Line 1
+    addIACell(row, character.p3ia2, 7); // P3 Line 2
+    addIACell(row, character.p3ia3, 8); // P3 Line 3
     
     tbody.appendChild(row);
   });
@@ -138,12 +138,12 @@ function displayInnerAbilityData(csvData, accountMap) {
  * @param {HTMLElement} row - The table row element
  * @param {string} value - The inner ability value
  */
-function addIACell(row, value) {
+function addIACell(row, value, columnIndex) {
   const cell = document.createElement('td');
   cell.textContent = value;
   
-  // Apply styling based on the type of IA
-  if (value) {
+  // Only apply coloring to Line 1 cells (columnIndex 0, 3, 6 are the Line 1 cells for each preset)
+  if (value && (columnIndex === 0 || columnIndex === 3 || columnIndex === 6)) {
     if (value.includes('AS+')) {
       cell.classList.add('attack-speed');
     } else if (value.includes('Boss+')) {
@@ -163,7 +163,9 @@ function addIACell(row, value) {
     } else if (value.includes('Abnormal+')) {
       cell.classList.add('abnormal-status');
     }
-  } else {
+  }
+  
+  if (!value) {
     // Add a non-breaking space to empty cells to maintain proper spacing
     cell.innerHTML = '&nbsp;';
   }
