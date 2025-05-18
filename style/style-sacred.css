@@ -24,8 +24,14 @@
   padding: 8px 12px;
   text-align: center;
   border: 1px solid #ccc;
-  color: #333; /* Ensure text is dark in light mode */
   font-size: 14px;
+}
+
+/* Symbol max styling for light mode */
+#sacredTable td.symbol-max {
+  background-color: #4caf50 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
 }
 
 /* First column (Character) alignment */
@@ -40,17 +46,11 @@
   width: 60px;
 }
 
+
 /* Symbol columns should be equal width */
 #sacredTable th:nth-child(n+3),
 #sacredTable td:nth-child(n+3) {
   width: calc((100% - 250px) / 6);
-}
-
-/* Highlighting for maxed symbols */
-#sacredTable td.symbol-max {
-  background-color: #4caf50;  /* Green - same as in style.css */
-  color: #ffffff;
-  font-weight: bold;
 }
 
 /* Alternate row styling */
@@ -113,12 +113,6 @@ body.dark-mode #sacredTable tbody tr:nth-child(odd) {
 
 body.dark-mode #sacredTable tbody tr:nth-child(even) {
   background-color: #181818;
-}
-
-body.dark-mode #sacredTable td.symbol-max {
-  background-color: #2e7d32;
-  color: #ffffff;
-  font-weight: bold;
 }
 
 /* Remove hover effect in dark mode as well */

@@ -110,14 +110,6 @@
   font-size: 0.9em;
 }
 
-.legend-color {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  border-radius: 3px;
-}
-
 /* Inner Ability cell colors - only for first line of each preset */
 .ia-table td:nth-child(3).ability-as,
 .ia-table td:nth-child(6).ability-as,
@@ -146,15 +138,6 @@
 .ia-table td:nth-child(3).ability-buff,
 .ia-table td:nth-child(6).ability-buff,
 .ia-table td:nth-child(9).ability-buff { background-color: #ccb3ff; }
-
-/* Legend colors */
-.legend-color.attack-speed { background-color: #f5a9a9; }
-.legend-color.boss-damage { background-color: #a9f5a9; }
-.legend-color.buff-duration { background-color: #ccb3ff; }
-.legend-color.cooldown-skip { background-color: #f5a9f5; }
-.legend-color.meso-obtain { background-color: #f5f5a9; }
-.legend-color.item-drop { background-color: #a9f5f5; }
-.legend-color.passive-skill { background-color: #d6a5e0; }
 
 /* Tooltip styling */
 .ia-table td[title] {
@@ -208,11 +191,6 @@ body.dark-mode .ia-table td:empty::after {
   color: #555;
 }
 
-body.dark-mode .legend-container {
-  background-color: #222;
-  border-color: #444;
-}
-
 /* Dark mode inner ability colors - only for first line of each preset */
 body.dark-mode .ia-table td:nth-child(3).ability-as,
 body.dark-mode .ia-table td:nth-child(6).ability-as,
@@ -241,15 +219,6 @@ body.dark-mode .ia-table td:nth-child(9).ability-passive { background-color: #47
 body.dark-mode .ia-table td:nth-child(3).ability-buff,
 body.dark-mode .ia-table td:nth-child(6).ability-buff,
 body.dark-mode .ia-table td:nth-child(9).ability-buff { background-color: #331a4d; }
-
-/* Legend items */
-body.dark-mode .legend-color.attack-speed { background-color: #5c2828; }
-body.dark-mode .legend-color.boss-damage { background-color: #285c28; }
-body.dark-mode .legend-color.buff-duration { background-color: #331a4d; }
-body.dark-mode .legend-color.cooldown-skip { background-color: #5c285c; }
-body.dark-mode .legend-color.meso-obtain { background-color: #5c5c28; }
-body.dark-mode .legend-color.item-drop { background-color: #285c5c; }
-body.dark-mode .legend-color.passive-skill { background-color: #47285c; }
 
 /* Dark mode text colors */
 body.dark-mode .note {

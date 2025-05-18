@@ -161,14 +161,13 @@ const MAX_LEGENDARY_VALUES = {
   'fddef': 50,
   'deff': 500,
   
-  // Stat conversions
-  'str2dex': 10,
-  'dex2str': 10,
-  'int2luk': 10,
-  'luk2dex': 10,
+  // All possible stat conversions
+  'str2dex': 10, 'str2int': 10, 'str2luk': 10,
+  'dex2str': 10, 'dex2int': 10, 'dex2luk': 10,
+  'int2str': 10, 'int2dex': 10, 'int2luk': 10,
+  'luk2str': 10, 'luk2dex': 10, 'luk2int': 10,
   
-  // Defense and Boss
-  'def': 400,
+  // Boss
   'boss': 20,
   
   // Level-based
@@ -209,17 +208,16 @@ const MAX_UNIQUE_VALUES = {
   
   // Defense
   'defp': 15,
-  'fddef': 35,
   'deff': 350,
-  
-  // Stat conversions
-  'str2dex': 8,
-  'dex2str': 8,
-  'int2luk': 8,
-  'luk2dex': 8,
+  'fddef': 35,
+
+  // All possible stat conversions
+  'str2dex': 8, 'str2int': 8, 'str2luk': 8,
+  'dex2str': 8, 'dex2int': 8, 'dex2luk': 8,
+  'int2str': 8, 'int2dex': 8, 'int2luk': 8,
+  'luk2str': 8, 'luk2dex': 8, 'luk2int': 8,
   
   // Defense and Boss
-  'def': 300,
   'boss': 15,
   
   // Level-based
@@ -298,18 +296,20 @@ function getAbilityDescription(ability) {
     case 'buff': return `Buff Duration ${sign}${value}%`;
     case 'normal': return `Damage to Normal Monsters ${sign}${value}%`;
     case 'aoe': return `Enemies Hit by Multi-target Skills ${sign}${value}`;
-    case 'def': return `Final Damage: ${sign}${value}% of DEF`;
 
     // Defense Stats
     case 'defp': return `Defense ${sign}${value}%`;
     case 'fddef': return `Final Damage ${sign}${value}% of DEF`;
     case 'deff': return `Increased defense ${sign}${value}`;
     
-    // Special conversions
-    case 'str2dex': return `${value}% of AP assigned to STR added to DEX`;
-    case 'dex2str': return `${value}% of AP assigned to DEX added to STR`;
-    case 'int2luk': return `${value}% of AP assigned to INT added to LUK`;
-    case 'luk2dex': return `${value}% of AP assigned to LUK added to DEX`;
+    // Special conversions - handle all stat conversion combinations
+    case 'str2dex': case 'str2int': case 'str2luk':
+    case 'dex2str': case 'dex2int': case 'dex2luk':
+    case 'int2str': case 'int2dex': case 'int2luk':
+    case 'luk2str': case 'luk2dex': case 'luk2int': {
+      const [fromStat, toStat] = typeLC.split('2');
+      return `${value}% of AP assigned to ${fromStat.toUpperCase()} added to ${toStat.toUpperCase()}`;
+    }
     case 'attlvl': return `Attack ${sign}1 for every ${value} levels`;
     case 'mattlvl': return `Magic Attack ${sign}1 for every ${value} levels`;
 
