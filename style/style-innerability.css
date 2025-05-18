@@ -192,33 +192,40 @@ body.dark-mode .ia-table td:empty::after {
 }
 
 /* Dark mode inner ability colors - only for first line of each preset */
+/* Attack Speed - Deep Red */
 body.dark-mode .ia-table td:nth-child(3).ability-as,
 body.dark-mode .ia-table td:nth-child(6).ability-as,
-body.dark-mode .ia-table td:nth-child(9).ability-as { background-color: #5c2828; }
+body.dark-mode .ia-table td:nth-child(9).ability-as { background-color: #8B0000; }
 
+/* Boss Damage - Forest Green */
 body.dark-mode .ia-table td:nth-child(3).ability-boss,
 body.dark-mode .ia-table td:nth-child(6).ability-boss,
-body.dark-mode .ia-table td:nth-child(9).ability-boss { background-color: #285c28; }
+body.dark-mode .ia-table td:nth-child(9).ability-boss { background-color: #228B22; }
 
+/* Cooldown Skip - Royal Blue */
 body.dark-mode .ia-table td:nth-child(3).ability-cdskip,
 body.dark-mode .ia-table td:nth-child(6).ability-cdskip,
-body.dark-mode .ia-table td:nth-child(9).ability-cdskip { background-color: #5c285c; }
+body.dark-mode .ia-table td:nth-child(9).ability-cdskip { background-color: #4169E1; }
 
+/* Meso Obtain - Golden Brown */
 body.dark-mode .ia-table td:nth-child(3).ability-meso,
 body.dark-mode .ia-table td:nth-child(6).ability-meso,
-body.dark-mode .ia-table td:nth-child(9).ability-meso { background-color: #5c5c28; }
+body.dark-mode .ia-table td:nth-child(9).ability-meso { background-color: #B8860B; }
 
+/* Item Drop - Teal */
 body.dark-mode .ia-table td:nth-child(3).ability-item,
 body.dark-mode .ia-table td:nth-child(6).ability-item,
-body.dark-mode .ia-table td:nth-child(9).ability-item { background-color: #285c5c; }
+body.dark-mode .ia-table td:nth-child(9).ability-item { background-color: #008080; }
 
+/* Passive Skill - Deep Purple */
 body.dark-mode .ia-table td:nth-child(3).ability-passive,
 body.dark-mode .ia-table td:nth-child(6).ability-passive,
-body.dark-mode .ia-table td:nth-child(9).ability-passive { background-color: #47285c; }
+body.dark-mode .ia-table td:nth-child(9).ability-passive { background-color: #800080; }
 
+/* Buff Duration - Deep Orange */
 body.dark-mode .ia-table td:nth-child(3).ability-buff,
 body.dark-mode .ia-table td:nth-child(6).ability-buff,
-body.dark-mode .ia-table td:nth-child(9).ability-buff { background-color: #331a4d; }
+body.dark-mode .ia-table td:nth-child(9).ability-buff { background-color: #D35400; }
 
 /* Dark mode text colors */
 body.dark-mode .note {
