@@ -312,3 +312,55 @@ code {
   font-size: 0.9em;
   border: 1px solid #ddd;
 }
+
+/* Inner Ability Table styles */
+.ia-table th.preset-header {
+  border-bottom: none;
+  background-color: #f0f0f0;
+}
+
+.ia-table th.line-header {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+/* Inner Ability type colors */
+td.attack-speed {
+  background-color: #ffdddd;
+  font-weight: bold;
+}
+
+td.boss-damage {
+  background-color: #ddffdd;
+  font-weight: bold;
+}
+
+td.buff-duration {
+  background-color: #ddddff;
+  font-weight: bold;
+}
+
+td.cooldown-skip {
+  background-color: #ffddff;
+  font-weight: bold;
+}
+
+td.meso-obtain {
+  background-color: #ffffdd;
+  font-weight: bold;
+}
+
+td.item-drop {
+  background-color: #ddffff;
+  font-weight: bold;
+}
+
+td.passive-skill {
+  background-color: #f0d0ff;
+  font-weight: bold;
+}
+
+td.abnormal-status {
+  background-color: #ffd0a0;
+  font-weight: bold;
+}

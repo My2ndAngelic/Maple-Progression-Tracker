@@ -18,6 +18,7 @@ export const navbar = `
         <a href="sacred.html">Sacred</a>
       </div>
     </div>
+    <button id="innerabilityBtn" onclick="window.location.href='innerability.html'">Inner Ability</button>
     <button id="helpBtn" onclick="window.location.href='help.html'">Help</button>
     <button id="darkModeToggle">🌙 Dark Mode</button>
   </div>

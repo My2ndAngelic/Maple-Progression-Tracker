@@ -328,3 +328,74 @@ code {
   color: #e0e0e0;
   border-color: #444;
 }
+
+/* Inner Ability Table styles for dark mode - matching other tables */
+.ia-table th.preset-header {
+  border-bottom: none;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #000000;
+}
+
+.ia-table th.line-header {
+  font-weight: normal;
+  font-size: 0.9em;
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+/* Specific styling for the IGN and Level header cells in dark mode */
+.ia-table th[rowspan="2"] {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Inner Ability type colors - darker shades for dark mode */
+td.attack-speed {
+  background-color: #5c2828;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.boss-damage {
+  background-color: #285c28;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.buff-duration {
+  background-color: #28285c;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.cooldown-skip {
+  background-color: #5c285c;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.meso-obtain {
+  background-color: #5c5c28;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.item-drop {
+  background-color: #28585c;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.passive-skill {
+  background-color: #47285c;
+  color: #fff;
+  font-weight: bold;
+}
+
+td.abnormal-status {
+  background-color: #5c3a28;
+  color: #fff;
+  font-weight: bold;
+}

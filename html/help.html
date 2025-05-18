@@ -14,10 +14,11 @@
         <p>The MapleStory Account Tracker helps you monitor character progression across multiple aspects of the game:</p>
         <ul>
           <li>Character levels and basic information</li>
-          <li>Arcane Symbol progression</li>
-          <li>Sacred Symbol progression</li>
-          <li>Equipment status</li>
-          <li>Cash shop items</li>
+          <li>Job class and archetypes</li>
+          <li>Arcane Symbol progression and bonus stats</li>
+          <li>Sacred Symbol progression and bonus stats</li>
+          <li>Equipment status across armor, accessories and cash items</li>
+          <li>Inner Ability lines across all character presets</li>
         </ul>
       </div>
 
@@ -26,13 +27,13 @@
         <p>Use the navigation bar at the top to access different views:</p>
         <ul>
           <li><strong>Overview:</strong> Basic character information and symbol totals</li>
-          <li><strong>Help:</strong> Documentation and usage guides</li>
           <li><strong>Progression:</strong> Detailed character information including faction and class</li>
-          <li><strong>Equipment ▼:</strong> Dropdown menu for equipment management
+          <li><strong>Equipment ▼:</strong> Dropdown menu for equipment management</li>
+          <li><strong>Inner Ability:</strong> Character inner ability lines for all presets
             <ul>
               <li><strong>Armor:</strong> Core equipment pieces (weapons, armor, etc.)</li>
               <li><strong>Accessory:</strong> Additional equipment (rings, pendants, etc.)</li>
-              <li><strong>Cash Shop:</strong> Cash shop items and NX equipment</li>
+              <li><strong>Cash:</strong> Cash shop items and NX equipment</li>
             </ul>
           </li>
           <li><strong>Symbols ▼:</strong> Dropdown menu for symbol progression
@@ -41,6 +42,7 @@
               <li><strong>Sacred:</strong> Sacred Symbol levels</li>
             </ul>
           </li>
+          <li><strong>Help:</strong> Documentation and usage guides (this page)</li>
         </ul>
       </div>
 
@@ -62,17 +64,17 @@
         <h2>Class Organization</h2>
         <p>Characters are organized by their archetypes in the Progression view, with color coding for easy identification:</p>
         <ul>
-          <li><strong style="color: #e00000;">Warrior</strong> (Red): Characters that specialize in strength and defense</li>
-          <li><strong style="color: #4dabf7;">Magician</strong> (Blue): Characters that use magic and intelligence</li>
-          <li><strong style="color: #69db7c;">Archer</strong> (Green): Characters that excel in ranged combat</li>
-          <li><strong style="color: #da77f2;">Thief</strong> (Purple): Characters focusing on luck and stealth</li>
-          <li><strong style="color: #bc8f8f;">Pirate</strong> (Light Brown): Characters with unique combat styles</li>
+          <li><strong style="color: #e00000;">Warrior</strong> (Red)</li>
+          <li><strong style="color: #4dabf7;">Magician</strong> (Blue)</li>
+          <li><strong style="color: #69db7c;">Archer</strong> (Green)</li>
+          <li><strong style="color: #da77f2;">Thief</strong> (Purple)</li>
+          <li><strong style="color: #bc8f8f;">Pirate</strong> (Light Brown)</li>
         </ul>
       </div>
 
       <div class="help-section">
         <h2>Equipment Organization</h2>
-        <p>Equipment is organized into two categories for better tracking:</p>
+        <p>Equipment is organized into three categories for better tracking:</p>
         <ul>
           <li><strong>Armor:</strong> Main equipment pieces including:
             <ul>
@@ -81,7 +83,7 @@
               <li>Main armor pieces (Hat, Top, Bottom, Shoes, Cape, Gloves, Shoulder)</li>
             </ul>
           </li>
-          <li><strong>Accessories:</strong> All additional equipment slots including:
+          <li><strong>Accessory:</strong> All additional equipment slots including:
             <ul>
               <li>Face, Eye, and Ear accessories</li>
               <li>Rings (4 slots)</li>
@@ -91,6 +93,7 @@
               <li>Android and Heart</li>
             </ul>
           </li>
+          <li><strong>Cash:</strong> Cash shop items and cosmetics</li>
         </ul>
         <p>Special equipment types are color-coded in the interface:</p>
         <ul>
@@ -99,13 +102,47 @@
           <li>Reinforced items (bronze)</li>
           <li>AbsoLab/Absolab items (grey)</li>
           <li>Arcane/Umbra items (purple)</li>
+          <li>Princess No Secondary (special highlight)</li>
         </ul>
       </div>
 
       <div class="help-section">
         <h2>Theme</h2>
-        <p>Click the theme toggle button (🌙/☀️) in the navigation bar to switch between dark and light themes. Your preference will be saved for future visits.</p>
+        <p>Click the theme toggle button (🌙/☀️) in the right side of the navigation bar to switch between dark and light themes. Your preference will be saved for future visits.</p>
       </div>
+
+      <div class="help-section">
+        <h2>Keyboard Navigation</h2>
+        <p>The dropdown menus can be navigated using:</p>
+        <ul>
+          <li>Tab key to move between navigation elements</li>
+          <li>Arrow keys to navigate dropdown options</li>
+          <li>Enter or Space to select an option</li>
+          <li>Escape to close a dropdown without selecting</li>
+        </ul>
+      </div>
+      
+      <div class="help-section">
+        <h2>Inner Ability</h2>
+        <p>The Inner Ability page shows you all character inner abilities across three presets:</p>
+        <ul>
+          <li>Each character has up to 3 presets (P1, P2, P3)</li>
+          <li>Each preset has 3 ability lines (Line 1, Line 2, Line 3)</li>
+          <li>Inner abilities are color-coded by type for easier reference:
+            <ul>
+              <li>Attack Speed (AS+): Light red</li>
+              <li>Boss Damage (Boss+/BD+): Light green</li>
+              <li>Buff Duration (Buff+): Light blue</li>
+              <li>Cooldown Skip (CDSkip+): Light purple</li>
+              <li>Meso Obtain (Meso+): Light yellow</li>
+              <li>Item Drop (Item+): Light cyan</li>
+              <li>Passive Skill (Passive+): Light violet</li>
+              <li>Abnormal Status (Abnormal+): Light orange</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
       <div class="help-section">
         <h2>Updating Data</h2>
         <p>To update character information:</p>
@@ -116,8 +153,10 @@
         </ol>
         <p>For equipment updates:</p>
         <ul>
-          <li>Use <code>equipment.csv</code> for core equipment pieces (weapons, armor)</li>
-          <li>Use <code>accessory.csv</code> for accessories and additional equipment</li>
+          <li>Use <code>equipment.csv</code> for armor and main equipment pieces</li>
+          <li>Use <code>accessory.csv</code> for accessory equipment</li>
+          <li>Use <code>cash.csv</code> for cash shop items</li>
+          <li>Use <code>innerability.csv</code> for character inner abilities</li>
           <li>Make sure to match the equipment names exactly for proper color coding</li>
           <li>Leave cells empty if the slot is not filled rather than using "None" or "0"</li>
         </ul>
