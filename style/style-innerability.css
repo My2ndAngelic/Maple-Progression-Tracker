@@ -4,34 +4,33 @@
 .ia-table th,
 .ia-table td {
   text-align: center;
-  white-space: nowrap;
-  width: 9%; /* Default width for IA columns */
-  min-width: 100px; /* Slightly wider minimum to accommodate content */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 8px 4px; /* Adjusted padding to give more space for text */
+  padding: 8px 6px;
+  word-break: break-word;
+  hyphens: auto;
 }
 
-/* Make IGN column slightly wider */
+/* Make IGN column responsive but prioritized */
 .ia-table th:first-child,
 .ia-table td:first-child {
-  width: 10%;
-  min-width: 120px;
   text-align: left;
+  width: auto;
+  min-width: 120px;
 }
 
-/* Inner ability cells should have normal weight */
-.ia-table td:not(:first-child):not(:nth-child(2)) {
-  font-weight: normal;
-}
-
-/* Level column can be narrower */
+/* Level column compact */
 .ia-table th:nth-child(2),
 .ia-table td:nth-child(2) {
-  width: 4%;
-  min-width: 10px; /* Reduced from 60px to better fit level numbers */
-  padding-left: 2px;
-  padding-right: 2px;
+  width: auto;
+  min-width: 40px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* Inner ability columns - natural distribution */
+.ia-table td:not(:first-child):not(:nth-child(2)),
+.ia-table th:not(:first-child):not(:nth-child(2)) {
+  width: auto;
+  min-width: 80px;
 }
 
 /* Add some minimal padding for all cells */
@@ -54,18 +53,14 @@
 /* Inner ability table view layout */
 #innerAbilityView {
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 #innerAbilityTable {
   margin: 30px auto;
   border-collapse: collapse;
-  table-layout: fixed;
   width: 100%;
-}
-
-#innerAbilityView {
-  margin-top: 20px;
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  table-layout: auto;
 }
 
 /* Add horizontal lines between characters for better readability */
