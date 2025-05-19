@@ -49,8 +49,14 @@ body {
   margin-left: auto;
 }
 
-/* When both help and dark mode buttons are present, only the first should have auto margin */
-#helpBtn + #darkModeToggle {
+#aboutBtn {
+  margin-left: 10px;
+}
+
+/* When help, about, and dark mode buttons are present, only the first should have auto margin */
+#helpBtn + #aboutBtn,
+#helpBtn + #darkModeToggle,
+#aboutBtn + #darkModeToggle {
   margin-left: 10px;
 }
 

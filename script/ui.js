@@ -20,6 +20,7 @@ export const navbar = `
     </div>
     <button id="innerabilityBtn" onclick="window.location.href='innerability.html'">Inner Ability</button>
     <button id="helpBtn" onclick="window.location.href='help.html'">Help</button>
+    <button id="aboutBtn" onclick="window.location.href='about.html'">About</button>
     <button id="darkModeToggle">🌙 Dark Mode</button>
   </div>
   <h1>MapleStory Tracker</h1>
