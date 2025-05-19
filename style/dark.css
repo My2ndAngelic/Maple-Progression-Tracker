@@ -258,3 +258,8 @@ code {
   color: #e0e0e0;
   border-color: #444;
 }
+/* Dark mode version of symbol max styling */
+body.dark-mode .data-table td.symbol-max {
+  background-color: #1b5e20 !important;
+  font-weight: bold !important;
+}

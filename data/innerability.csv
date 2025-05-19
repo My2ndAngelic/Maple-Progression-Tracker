@@ -42,7 +42,7 @@ My2ndLara,Passive+1,,,,,,,,,['']
 My2ndZero,Boss+20,,,Meso+20,,,AS+1,,,['']
 My2ndStriker,,,,,,,,,,['']
 My2ndArk,Boss+20,,,,,,Passive+1,,,"['', '']"
-My2ndAdele,Meso+20,,Buff+49,,,,,,,
+My2ndAdele,Meso+20,,,Buff+49,,,,,,
 My2ndKine,Boss+20,,,AS+1,,,,,,['']
 My2ndKain,Item+19,,,Passive+1,,,Boss+18,,,['']
 My2ndIllium,AS+1,,,,,,,,,['']
