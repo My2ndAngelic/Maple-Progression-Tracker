@@ -1,46 +1,43 @@
-/* About page specific styles */
+/* Help page specific styles */
 
 /* Light mode styles */
-.about-section {
+.help-section {
   margin-bottom: 2rem;
 }
 
-.about-section h2 {
+.help-section h2 {
   color: #007acc;
   margin-bottom: 1rem;
 }
 
-.about-section p {
+.help-section p {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
-.about-section ul {
+.help-section ul {
   list-style-type: disc;
   margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
-/* Container styles */
-#container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* Content area styles */
-.about-content {
-  background-color: var(--background-color);
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+code {
+  background: #f4f4f4;
+  color: #333;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
 }
 
 /* Dark mode styles */
-[data-theme="dark"] .about-section h2 {
-  color: #66b8ff;
+body.dark-mode .help-section h2 {
+  color: #3399ff;
 }
 
-[data-theme="dark"] .about-section {
+body.dark-mode code {
+  background: #2d2d2d;
   color: #e0e0e0;
+  border-color: #444;
 }
