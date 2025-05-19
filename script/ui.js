@@ -29,10 +29,10 @@ export const navbar = `
 export function initializeUI() {
     // Insert navbar at the start of the body
     document.body.insertAdjacentHTML('afterbegin', navbar);
-    
+
     // Set the common title - inherit from index.html
     document.title = 'MapleStory Tracker';
-    
+
     // Initialize theme
     initializeTheme();
 }
@@ -57,7 +57,7 @@ function applyTheme(isDark) {
     if (!themeLink || !darkToggleBtn) return;
     // Set theme
     const basePath = window.location.pathname.includes('/html/') ? '../' : '';
-    themeLink.href = `${basePath}style/${isDark ? 'dark.css' : 'style.css'}`;
+    themeLink.href = `${basePath}style/${isDark ? 'style-dark.css' : 'style.css'}`;
     darkToggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
     // Add or remove dark-mode class on body element

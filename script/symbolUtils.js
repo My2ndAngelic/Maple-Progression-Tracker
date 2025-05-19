@@ -4,7 +4,7 @@ import {sortByLevelFactionArchetype} from "./tableUtils.js";
 
 export function calculateSymbolForce(levels, baseForce, levelMultiplier) {
     if (!levels) return '';
-    
+
     // Check if any symbols are above level 0
     const hasSymbols = levels.some(lvl => lvl > 0);
     if (!hasSymbols) return '';
@@ -30,7 +30,7 @@ export function getSymbolDisplayValue(level) {
  * @param {string} type - Either 'arcane' or 'sacred'
  * @returns {Object} Configuration object with csvFile and tableId
  */
-function getSymbolTypeInfo(type) {    
+function getSymbolTypeInfo(type) {
     const typeMap = {
         'arcane': {
             csvFile: 'arcane.csv',
@@ -53,7 +53,8 @@ function getSymbolTypeInfo(type) {
  */
 export async function renderSymbolsDetail(type) {
     try {
-        const {csvFile, tableId} = getSymbolTypeInfo(type);        const [symbolData, accountData, jobList] = await Promise.all([
+        const {csvFile, tableId} = getSymbolTypeInfo(type);
+        const [symbolData, accountData, jobList] = await Promise.all([
             loadCSV(`data/${csvFile}`),
             loadCSV('data/account.csv'),
             loadCSV('data/joblist.csv')
@@ -63,17 +64,20 @@ export async function renderSymbolsDetail(type) {
         const levelMap = new Map(accountData.map(char => [char.IGN, char.level]));
         // Create job map for sorting
         const jobMap = {};
-        jobList.forEach(j => { jobMap[j.jobName] = j; });
+        jobList.forEach(j => {
+            jobMap[j.jobName] = j;
+        });
 
         // Merge symbolData with accountData for sorting
         const merged = symbolData.map(char => {
             const acc = accountData.find(a => a.IGN === char.IGN) || {};
-            return { ...char, ...acc };
+            return {...char, ...acc};
         });
         sortByLevelFactionArchetype(merged, jobMap);
 
         // Get symbol names (all column names except IGN)
-        const columns = Object.keys(symbolData[0] || {}).filter(key => key !== 'IGN');        const table = document.getElementById(tableId);
+        const columns = Object.keys(symbolData[0] || {}).filter(key => key !== 'IGN');
+        const table = document.getElementById(tableId);
         const thead = table.querySelector('thead');
         const tbody = table.querySelector('tbody');
 
@@ -83,7 +87,7 @@ export async function renderSymbolsDetail(type) {
 
         // Create header row using predefined headers
         const headerRow = document.createElement('tr');
-        const { headers } = getSymbolTypeInfo(type);
+        const {headers} = getSymbolTypeInfo(type);
         headerRow.innerHTML = headers.map(header => `<th>${header}</th>`).join('');
         thead.appendChild(headerRow);
 
@@ -101,7 +105,8 @@ export async function renderSymbolsDetail(type) {
             // Add symbol level cells
             columns.forEach(symbol => {
                 const td = document.createElement('td');
-                const symbolValue = char[symbol] || '0';                if (symbolValue === '0' || symbolValue === 0) {
+                const symbolValue = char[symbol] || '0';
+                if (symbolValue === '0' || symbolValue === 0) {
                     td.textContent = '';
                 } else {
                     td.textContent = symbolValue;

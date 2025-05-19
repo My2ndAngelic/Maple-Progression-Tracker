@@ -2,10 +2,10 @@
 
 /* Light mode styles */
 .pet-snack-yes {
-  background-color: #90ee90; /* Light green */
+    background-color: #90ee90; /* Light green */
 }
 
 /* Dark mode styles */
 body.dark-mode .pet-snack-yes {
-  background-color: #2d632d; /* Dark green */
+    background-color: #2d632d; /* Dark green */
 }

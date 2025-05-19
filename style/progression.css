@@ -2,44 +2,52 @@
 
 /* Light mode styles */
 .archetype-warrior {
-  background-color: #ff4444;
-  color: white;
+    background-color: #ff4444;
+    color: white;
 }
+
 .archetype-magician {
-  background-color: #4dabf7;
-  color: white;
+    background-color: #4dabf7;
+    color: white;
 }
+
 .archetype-archer {
-  background-color: #69db7c;
-  color: white;
+    background-color: #69db7c;
+    color: white;
 }
+
 .archetype-thief {
-  background-color: #da77f2;
-  color: white;
+    background-color: #da77f2;
+    color: white;
 }
+
 .archetype-pirate {
-  background-color: #bc8f8f;
-  color: white;
+    background-color: #bc8f8f;
+    color: white;
 }
 
 /* Dark mode styles */
 body.dark-mode .archetype-warrior {
-  background-color: #b30000;
-  color: white;
+    background-color: #b30000;
+    color: white;
 }
+
 body.dark-mode .archetype-magician {
-  background-color: #1a8cff;
-  color: white;
+    background-color: #1a8cff;
+    color: white;
 }
+
 body.dark-mode .archetype-archer {
-  background-color: #2ea745;
-  color: white;
+    background-color: #2ea745;
+    color: white;
 }
+
 body.dark-mode .archetype-thief {
-  background-color: #9933cc;
-  color: white;
+    background-color: #9933cc;
+    color: white;
 }
+
 body.dark-mode .archetype-pirate {
-  background-color: #8b6b6b;
-  color: white;
+    background-color: #8b6b6b;
+    color: white;
 }
