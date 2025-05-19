@@ -1,0 +1,273 @@
+# MapleStory Job Classes and Metadata
+
+jobs:
+  # Anima
+  - jobName: Lara
+    faction: Anima
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Hoyoung
+    faction: Anima
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+
+  # Child of God
+  - jobName: Zero
+    faction: Child Of God
+    archetype: Warrior
+    linkSkillMaxLevel: 5
+    mainstat: STR
+
+  # Cygnus Knights
+  - jobName: Blaze Wizard
+    faction: Cygnus Knight
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Dawn Warrior
+    faction: Cygnus Knight
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Mihile
+    faction: Cygnus Knight
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Wind Archer
+    faction: Cygnus Knight
+    archetype: Archer
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Night Walker
+    faction: Cygnus Knight
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+  - jobName: Thunder Breaker
+    faction: Cygnus Knight
+    archetype: Pirate
+    linkSkillMaxLevel: 2
+    mainstat: STR
+
+  # Nova
+  - jobName: Angelic Buster
+    faction: Nova
+    archetype: Pirate
+    linkSkillMaxLevel: 3
+    mainstat: DEX
+  - jobName: Kaiser
+    faction: Nova
+    archetype: Warrior
+    linkSkillMaxLevel: 3
+    mainstat: STR
+  - jobName: Cadena
+    faction: Nova
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+  
+  # Explorers
+  - jobName: Dark Knight
+    faction: Explorer
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Hero
+    faction: Explorer
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Paladin
+    faction: Explorer
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Bowmaster
+    faction: Explorer
+    archetype: Archer
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Marksman
+    faction: Explorer
+    archetype: Archer
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Pathfinder
+    faction: Explorer
+    archetype: Archer
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Bishop
+    faction: Explorer
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Arch Mage (Ice/Lightning)
+    faction: Explorer
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Arch Mage (Fire/Poison)
+    faction: Explorer
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Buccaneer
+    faction: Explorer
+    archetype: Pirate
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Corsair
+    faction: Explorer
+    archetype: Pirate
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Cannon Master
+    faction: Explorer
+    archetype: Pirate
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Dual Blade
+    faction: Explorer
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+  - jobName: Night Lord
+    faction: Explorer
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+  - jobName: Shadower
+    faction: Explorer
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+    
+  # Heroes
+  - jobName: Aran
+    faction: Heroes
+    archetype: Warrior
+    linkSkillMaxLevel: 3
+    mainstat: STR
+  - jobName: Evan
+    faction: Heroes
+    archetype: Magician
+    linkSkillMaxLevel: 3
+    mainstat: INT
+  - jobName: Luminous
+    faction: Heroes
+    archetype: Magician
+    linkSkillMaxLevel: 3
+    mainstat: INT
+  - jobName: Mercedes
+    faction: Heroes
+    archetype: Archer
+    linkSkillMaxLevel: 3
+    mainstat: DEX
+  - jobName: Phantom
+    faction: Heroes
+    archetype: Thief
+    linkSkillMaxLevel: 3
+    mainstat: LUK
+  - jobName: Shade
+    faction: Heroes
+    archetype: Pirate
+    linkSkillMaxLevel: 3
+    mainstat: STR
+
+  # Resistance
+  - jobName: Battle Mage
+    faction: Resistance
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Blaster
+    faction: Resistance
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Mechanic
+    faction: Resistance
+    archetype: Pirate
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Wild Hunter
+    faction: Resistance
+    archetype: Archer
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Xenon
+    faction: Resistance
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: STR DEX LUK
+  - jobName: Demon Avenger
+    faction: Resistance
+    archetype: Warrior
+    linkSkillMaxLevel: 3
+    mainstat: HP
+  - jobName: Demon Slayer
+    faction: Resistance
+    archetype: Warrior
+    linkSkillMaxLevel: 3
+    mainstat: STR
+
+  # Sengoku
+  - jobName: Hayato
+    faction: Sengoku
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Kanna
+    faction: Sengoku
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+
+  # Flora
+  - jobName: Adele
+    faction: Flora
+    archetype: Warrior
+    linkSkillMaxLevel: 2
+    mainstat: STR
+  - jobName: Ark
+    faction: Flora
+    archetype: Pirate
+    linkSkillMaxLevel: 3
+    mainstat: STR
+  - jobName: Illium
+    faction: Flora
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+  - jobName: Kain
+    faction: Flora
+    archetype: Archer
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Khali
+    faction: Flora
+    archetype: Thief
+    linkSkillMaxLevel: 2
+    mainstat: LUK
+
+  # Other
+  - jobName: Kinesis
+    faction: Other
+    archetype: Magician
+    linkSkillMaxLevel: 2
+    mainstat: INT
+
+  - jobName: Mo Xuan
+    faction: Jianghu
+    archetype: Pirate
+    linkSkillMaxLevel: 2
+    mainstat: DEX
+  - jobName: Lynn
+    faction: Jianghu
+    archetype: Magician
+    linkSkillMaxLevel: 3
+    mainstat: INT

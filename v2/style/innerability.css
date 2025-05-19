@@ -1,0 +1,266 @@
+/* Inner Ability Table Specific Styles */
+
+/* Table cell styles */
+.ia-table th,
+.ia-table td {
+    text-align: center;
+    padding: 8px 6px;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Make IGN column responsive but prioritized */
+.ia-table th:first-child,
+.ia-table td:first-child {
+    text-align: left;
+    width: auto;
+    min-width: 120px;
+}
+
+/* Level column compact */
+.ia-table th:nth-child(2),
+.ia-table td:nth-child(2) {
+    width: auto;
+    min-width: 40px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Inner ability columns - natural distribution */
+.ia-table td:not(:first-child):not(:nth-child(2)),
+.ia-table th:not(:first-child):not(:nth-child(2)) {
+    width: auto;
+    min-width: 80px;
+}
+
+/* Add some minimal padding for all cells */
+.ia-table td,
+.ia-table th {
+    padding: 10px 6px;
+    border: 1px solid #ccc;
+}
+
+/* Style preset header row */
+.data-table.ia-table th.preset-header {
+    font-weight: bold;
+    background-color: #666666;
+    color: white;
+    border-bottom: none;
+    padding: 6px 8px;
+    text-align: center;
+}
+
+/* Inner ability table view layout */
+#innerAbilityView {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+#innerAbilityTable {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+/* Add horizontal lines between characters for better readability */
+.ia-table tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for the line header cells (Line 1, Line 2, Line 3) */
+.ia-table th.line-header {
+    font-size: 0.9em;
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Empty cells styling */
+.ia-table td:empty::after {
+    content: "—";
+    color: #ccc;
+}
+
+/* Legend Styles */
+.legend-container {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.legend-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+/* Inner Ability cell colors - only for first line of each preset */
+.ia-table td:nth-child(3).ability-as,
+.ia-table td:nth-child(6).ability-as,
+.ia-table td:nth-child(9).ability-as {
+    background-color: #f5a9a9;
+}
+
+.ia-table td:nth-child(3).ability-boss,
+.ia-table td:nth-child(6).ability-boss,
+.ia-table td:nth-child(9).ability-boss {
+    background-color: #a9f5a9;
+}
+
+.ia-table td:nth-child(3).ability-cdskip,
+.ia-table td:nth-child(6).ability-cdskip,
+.ia-table td:nth-child(9).ability-cdskip {
+    background-color: #f5a9f5;
+}
+
+.ia-table td:nth-child(3).ability-meso,
+.ia-table td:nth-child(6).ability-meso,
+.ia-table td:nth-child(9).ability-meso {
+    background-color: #f5f5a9;
+}
+
+.ia-table td:nth-child(3).ability-item,
+.ia-table td:nth-child(6).ability-item,
+.ia-table td:nth-child(9).ability-item {
+    background-color: #a9f5f5;
+}
+
+.ia-table td:nth-child(3).ability-passive,
+.ia-table td:nth-child(6).ability-passive,
+.ia-table td:nth-child(9).ability-passive {
+    background-color: #d6a5e0;
+}
+
+.ia-table td:nth-child(3).ability-buff,
+.ia-table td:nth-child(6).ability-buff,
+.ia-table td:nth-child(9).ability-buff {
+    background-color: #ccb3ff;
+}
+
+/* Tooltip styling */
+.ia-table td[title] {
+    cursor: help;
+    position: relative;
+}
+
+/* Style for cells with max legendary values */
+
+/* Make tooltips more visible */
+[title] {
+    cursor: help;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #666;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Header styling */
+#innerAbilityView h2 {
+    margin-bottom: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .ia-table th.preset-header {
+    background-color: #ccc;
+    color: #000000;
+    border-bottom: none;
+}
+
+body.dark-mode .ia-table th.line-header {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-weight: bold;
+}
+
+body.dark-mode .ia-table td,
+body.dark-mode .ia-table th {
+    border: 1px solid #ccc;
+}
+
+body.dark-mode .ia-table td:empty::after {
+    color: #555;
+}
+
+/* Dark mode inner ability colors - only for first line of each preset */
+/* Attack Speed - Deep Red */
+body.dark-mode .ia-table td:nth-child(3).ability-as,
+body.dark-mode .ia-table td:nth-child(6).ability-as,
+body.dark-mode .ia-table td:nth-child(9).ability-as {
+    background-color: #8B0000;
+}
+
+/* Boss Damage - Forest Green */
+body.dark-mode .ia-table td:nth-child(3).ability-boss,
+body.dark-mode .ia-table td:nth-child(6).ability-boss,
+body.dark-mode .ia-table td:nth-child(9).ability-boss {
+    background-color: #228B22;
+}
+
+/* Cooldown Skip - Royal Blue */
+body.dark-mode .ia-table td:nth-child(3).ability-cdskip,
+body.dark-mode .ia-table td:nth-child(6).ability-cdskip,
+body.dark-mode .ia-table td:nth-child(9).ability-cdskip {
+    background-color: #4169E1;
+}
+
+/* Meso Obtain - Golden Brown */
+body.dark-mode .ia-table td:nth-child(3).ability-meso,
+body.dark-mode .ia-table td:nth-child(6).ability-meso,
+body.dark-mode .ia-table td:nth-child(9).ability-meso {
+    background-color: #B8860B;
+}
+
+/* Item Drop - Teal */
+body.dark-mode .ia-table td:nth-child(3).ability-item,
+body.dark-mode .ia-table td:nth-child(6).ability-item,
+body.dark-mode .ia-table td:nth-child(9).ability-item {
+    background-color: #008080;
+}
+
+/* Passive Skill - Deep Purple */
+body.dark-mode .ia-table td:nth-child(3).ability-passive,
+body.dark-mode .ia-table td:nth-child(6).ability-passive,
+body.dark-mode .ia-table td:nth-child(9).ability-passive {
+    background-color: #800080;
+}
+
+/* Buff Duration - Deep Orange */
+body.dark-mode .ia-table td:nth-child(3).ability-buff,
+body.dark-mode .ia-table td:nth-child(6).ability-buff,
+body.dark-mode .ia-table td:nth-child(9).ability-buff {
+    background-color: #D35400;
+}
+
+/* Dark mode text colors */
+body.dark-mode .note {
+    color: #aaa;
+}
+
+body.dark-mode .description {
+    color: #bbb;
+}
+

@@ -1,0 +1,49 @@
+/* Equipment color classes - Light mode */
+.equipment-root-abyss {
+    background-color: #297fd5; /* Lighter Blue */
+}
+
+.equipment-deimos {
+    background-color: #ff9800; /* Orange */
+}
+
+.equipment-evolving {
+    background-color: #4caf50; /* Green */
+}
+
+.equipment-absolab {
+    background-color: #757575; /* Grey */
+}
+
+.equipment-arcane {
+    background-color: #9c27b0; /* Purple */
+}
+
+.equipment-princess-no {
+    background-color: #29b6f6; /* Lighter Light Blue */
+}
+
+/* Equipment color classes - Dark mode */
+body.dark-mode .equipment-root-abyss {
+    background-color: #0d47a1; /* Darker Blue */
+}
+
+body.dark-mode .equipment-deimos {
+    background-color: #e65100; /* Darker Orange */
+}
+
+body.dark-mode .equipment-evolving {
+    background-color: #2e7d32; /* Darker Green */
+}
+
+body.dark-mode .equipment-absolab {
+    background-color: #424242; /* Darker Grey */
+}
+
+body.dark-mode .equipment-arcane {
+    background-color: #6a1b9a; /* Darker Purple */
+}
+
+body.dark-mode .equipment-princess-no {
+    background-color: #0288d1; /* Darker Light Blue */
+}

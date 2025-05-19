@@ -1,0 +1,43 @@
+/* Help page specific styles */
+
+/* Light mode styles */
+.help-section {
+    margin-bottom: 2rem;
+}
+
+.help-section h2 {
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+
+.help-section p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.help-section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+code {
+    background: #f4f4f4;
+    color: #333;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+}
+
+/* Dark mode styles */
+body.dark-mode .help-section h2 {
+    color: #3399ff;
+}
+
+body.dark-mode code {
+    background: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}

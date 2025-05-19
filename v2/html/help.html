@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="../style/style.css" id="themeStylesheet" rel="stylesheet"/>
+    <link href="../style/help.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="container">
+    <h1>Help</h1>
+    <div class="help-content" id="helpView">
+        <div class="help-section">
+            <h2>Overview</h2>
+            <p>The MapleStory Account Tracker helps you monitor character progression across multiple aspects of the
+                game:</p>
+            <ul>
+                <li>Character levels, job class, and basic information</li>
+                <li>Symbol progression (Arcane and Sacred) with stat calculations</li>
+                <li>Equipment tracking with set bonus indicators</li>
+                <li>Inner Ability optimization with visual guides</li>
+                <li>Cash shop item management</li>
+                <li>Progress tracking and analysis</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Navigation</h2>
+            <p>Use the navigation bar at the top to access different views:</p>
+            <ul>
+                <li><strong>Overview:</strong> Basic character information and symbol totals</li>
+                <li><strong>Progression:</strong> Detailed character information including faction and class</li>
+                <li><strong>Equipment ▼:</strong> Dropdown menu for equipment management</li>
+                <li><strong>Inner Ability:</strong> Character inner ability lines for all presets
+                    <ul>
+                        <li><strong>Armor:</strong> Core equipment pieces (weapons, armor, etc.)</li>
+                        <li><strong>Accessory:</strong> Additional equipment (rings, pendants, etc.)</li>
+                        <li><strong>Cash:</strong> Cash shop items and NX equipment</li>
+                    </ul>
+                </li>
+                <li><strong>Symbols ▼:</strong> Dropdown menu for symbol progression
+                    <ul>
+                        <li><strong>Arcane:</strong> Arcane Symbol levels</li>
+                        <li><strong>Sacred:</strong> Sacred Symbol levels</li>
+                    </ul>
+                </li>
+                <li><strong>Help:</strong> Documentation and usage guides (this page)</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Data Files</h2>
+            <p>The tracker uses CSV files in the <code>data/</code> folder:</p>
+            <ul>
+                <li><code>account.csv</code>: Basic character information</li>
+                <li><code>joblist.csv</code>: Job/class information</li>
+                <li><code>arcane.csv</code>: Arcane Symbol levels</li>
+                <li><code>sacred.csv</code>: Sacred Symbol levels</li>
+                <li><code>equipment.csv</code>: Armor and main equipment tracking</li>
+                <li><code>accessory.csv</code>: Accessory equipment tracking</li>
+                <li><code>cash.csv</code>: Cash shop items</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Class Organization</h2>
+            <p>Characters are organized by their archetypes with intuitive color coding and enhanced filtering:</p>
+            <ul>
+                <li><strong style="color: #e00000;">Warrior</strong></li>
+                <li><strong style="color: #4dabf7;">Magician</strong></li>
+                <li><strong style="color: #69db7c;">Archer</strong></li>
+                <li><strong style="color: #da77f2;">Thief</strong></li>
+                <li><strong style="color: #bc8f8f;">Pirate</strong></li>
+            </ul>
+            <p>The Progression view now includes:</p>
+            <ul>
+                <li>Sorting by level, class, or character name</li>
+                <li>Filtering by class type or level range</li>
+                <li>Visual indicators for main and secondary stats</li>
+                <li>Progress tracking across all systems</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Equipment Features</h2>
+            <p>Equipment tracking is organized into three specialized views with enhanced visualization:</p>
+            <ul>
+                <li><strong>Armor View:</strong>
+                    <ul>
+                        <li>Weapons and Secondary weapons with class-specific displays</li>
+                        <li>Emblems and class-specific items</li>
+                        <li>Main armor pieces with set tracking</li>
+                        <li>Visual indicators for upgrade status</li>
+                        <li>Tooltips showing detailed item information</li>
+                    </ul>
+                </li>
+                <li><strong>Accessory View:</strong>
+                    <ul>
+                        <li>Face, Eye, and Ear accessories</li>
+                        <li>Multiple ring and pendant slots with set indicators</li>
+                        <li>Special items (Badge, Medal, Android Heart)</li>
+                        <li>Set bonus tracking and visualization</li>
+                        <li>Equipment grade indicators</li>
+                    </ul>
+                </li>
+                <li><strong>Cash View:</strong>
+                    <ul>
+                        <li>NX equipment organization</li>
+                        <li>Cosmetic overlay tracking</li>
+                        <li>Special cash items and effects</li>
+                        <li>Category-based organization</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Equipment Highlighting System:</p>
+            <ul>
+                <li>Superior items (gold)</li>
+                <li>Meister items (silver)</li>
+                <li>Reinforced items (bronze)</li>
+                <li>AbsoLab/Absolab items (grey)</li>
+                <li>Arcane/Umbra items (purple)</li>
+                <li>Princess No Secondary (special highlight)</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Theme Options</h2>
+            <p>The tracker features a comprehensive theming system:</p>
+            <ul>
+                <li><strong>Theme Toggle:</strong> Use the 🌙/☀️ button in the navigation bar</li>
+                <li><strong>Light Theme:</strong> Classic bright interface for regular use</li>
+                <li><strong>Dark Theme:</strong> Eye-friendly dark mode with adjusted colors</li>
+                <li><strong>Persistent Settings:</strong> Your theme preference is saved automatically</li>
+                <li><strong>Consistent Design:</strong> Color coding and indicators remain clear in both themes</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Keyboard Navigation</h2>
+            <p>The dropdown menus can be navigated using:</p>
+            <ul>
+                <li>Tab key to move between navigation elements</li>
+                <li>Arrow keys to navigate dropdown options</li>
+                <li>Enter or Space to select an option</li>
+                <li>Escape to close a dropdown without selecting</li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Inner Ability System</h2>
+            <p>The Inner Ability page provides comprehensive tracking with enhanced visualization:</p>
+            <ul>
+                <li><strong>Multiple Presets:</strong> Track up to 3 presets per character</li>
+                <li><strong>Visual Indicators:</strong>
+                    <ul>
+                        <li>Color-coded ability types for quick recognition</li>
+                        <li>Bold text highlighting for maximum legendary values</li>
+                        <li>Detailed hover tooltips with full ability descriptions</li>
+                        <li>Automatic sorting by character level</li>
+                    </ul>
+                </li>
+                <li><strong>Format Reference:</strong>
+                    <table class="ia-table data-table help-ia-table">
+                        <tr>
+                            <th>Format</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td class="attack-speed">AS+1</td>
+                            <td>Attack Speed +1</td>
+                        </tr>
+                        <tr>
+                            <td class="boss-damage">BOSS+20</td>
+                            <td>Boss Damage +20%</td>
+                        </tr>
+                        <tr>
+                            <td class="buff-duration">BUFF+50</td>
+                            <td>Buff Duration +50%</td>
+                        </tr>
+                        <tr>
+                            <td class="cooldown-skip">CDSKIP+20</td>
+                            <td>20% chance to skip cooldown</td>
+                        </tr>
+                        <tr>
+                            <td class="meso-obtain">MESO+20</td>
+                            <td>Meso Obtained +20%</td>
+                        </tr>
+                        <tr>
+                            <td class="item-drop">ITEM+20</td>
+                            <td>Item Drop Rate +20%</td>
+                        </tr>
+                        <tr>
+                            <td class="passive-skill">PASSIVE+1</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Passive Skills +1 Level</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">STR+40</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">STR +40</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">DEX+40</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">DEX +40</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">INT+40</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">INT +40</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">LUK+40</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">LUK +40</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">HP+600</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Max HP +600%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">MP+600</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Max MP +600%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">ATT+30</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Attack +30</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">MATT+30</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Magic Attack +30</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">ALLSTAT+40</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">All Stats +40</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">CRIT+30</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Critical Rate +30%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">AOE+1</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Enemies Hit by Multi-target Skills +1</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">NORMAL+10</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Damage to Normal Monsters +10%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">ABNORMAL+10</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Damage to Abnormal Status monsters +10%
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">ATTLVL+10</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Attack +1 for every 10 levels</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">MATTLVL+10</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Magic Attack +1 for every 10 levels</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">DefP+20</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Defense +20%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">FDDef+50</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Final Damage +50% of DEF</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">DefF+500</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">Increased defense +500</td>
+                        </tr>
+                    </table>
+                    <h3>Color Legend</h3>
+                    <p>Light Mode Colors:</p>
+                    <ul>
+                        <li>Attack Speed: Light red (#ffdddd)</li>
+                        <li>Boss Damage: Light green (#ddffdd)</li>
+                        <li>Buff Duration: Light blue (#ddddff)</li>
+                        <li>Cooldown Skip: Light magenta (#ffddff)</li>
+                        <li>Meso Obtain: Light yellow (#ffffdd)</li>
+                        <li>Item Drop: Light cyan (#ddffff)</li>
+                        <li>Passive Skill: Light lavender (#d6a5e0)</li>
+                        <li><em>Note: All ability cells have bold text</em></li>
+                    </ul>
+                    <p>Dark Mode Colors:</p>
+                    <ul>
+                        <li>Attack Speed: Dark red (#5c2828)</li>
+                        <li>Boss Damage: Dark green (#285c28)</li>
+                        <li>Buff Duration: Dark blue (#28285c)</li>
+                        <li>Cooldown Skip: Dark magenta (#5c285c)</li>
+                        <li>Meso Obtain: Dark gold (#5c5c28)</li>
+                        <li>Item Drop: Dark turquoise (#285c5c)</li>
+                        <li>Passive Skill: Dark purple (#47285c)</li>
+                        <li><em>Note: All dark mode colors have white text for better contrast</em></li>
+                    </ul>
+                    <p><em>Note: Color highlighting appears only on the first line of each preset for clarity.</em></p>
+                </li>
+                <li><strong>Preset Management:</strong>
+                    <ul>
+                        <li>Each character can have up to three unique preset configurations</li>
+                        <li>Presets can be used for different purposes (bossing, farming, support)</li>
+                        <li>All presets maintain their own color coding and value tracking</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="help-section">
+            <h2>Updating Data</h2>
+            <p>To update character information:</p>
+            <ol>
+                <li>Open the relevant CSV file in the <code>data/</code> folder</li>
+                <li>Add or modify entries as needed</li>
+                <li>Save the file and refresh the page to see updates</li>
+            </ol>
+            <p>For equipment updates:</p>
+            <ul>
+                <li>Use <code>equipment.csv</code> for armor and main equipment pieces</li>
+                <li>Use <code>accessory.csv</code> for accessory equipment</li>
+                <li>Use <code>cash.csv</code> for cash shop items</li>
+                <li>Use <code>innerability.csv</code> for character inner abilities</li>
+                <li>Make sure to match the equipment names exactly for proper color coding</li>
+                <li>Leave cells empty if the slot is not filled rather than using "None" or "0"</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../script/help.js" type="module"></script>
+</body>
+</html>
