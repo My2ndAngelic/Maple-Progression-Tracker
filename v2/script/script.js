@@ -5,6 +5,18 @@ import {createDataMap, createSymbolsMap, loadCSV} from "./csvHandling.js";
 
 function createTableRow(char, job, arcanePower, arcaneStat, sacredForce, sacredStat) {
     const tr = document.createElement('tr');
+    
+    // Add archetype class(es) to the row
+    if (job.archetype) {
+        const archetypes = job.archetype.toLowerCase().split(' ');
+        if (archetypes.length > 1) {
+            // For hybrid classes like Xenon
+            tr.classList.add(archetypes.join('-'));
+        } else {
+            tr.classList.add(archetypes[0]);
+        }
+    }
+    
     const cellData = [
         char.IGN || '',
         char.level || '',

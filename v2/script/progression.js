@@ -22,7 +22,13 @@ export function createProgressionRow(ign, charData, jobData) {
         const cell = createTableCell(text);
         // Add archetype color class to the archetype column (index 3)
         if (index === 3 && text) {
-            cell.classList.add(`archetype-${text.toLowerCase()}`);
+            const archetypes = text.toLowerCase().split(' ');
+            if (archetypes.length > 1) {
+                // For hybrid classes like Xenon
+                cell.classList.add(archetypes.join('-'));
+            } else {
+                cell.classList.add(archetypes[0]);
+            }
         }
         tr.appendChild(cell);
     });

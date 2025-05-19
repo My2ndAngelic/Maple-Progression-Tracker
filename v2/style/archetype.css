@@ -1,0 +1,36 @@
+/* Archetype colors */
+/* Single archetype colors */
+td.warrior { background-color: rgba(255, 59, 59, 0.2); }
+td.magician { background-color: rgba(147, 88, 255, 0.2); }
+td.archer { background-color: rgba(79, 227, 79, 0.2); }
+td.thief { background-color: rgba(122, 122, 122, 0.2); }
+td.pirate { background-color: rgba(255, 192, 89, 0.2); }
+/* Hybrid class (Xenon) */
+td.thief-pirate {
+    position: relative;
+}
+
+td.thief-pirate::before,
+td.thief-pirate::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+td.thief-pirate::before {
+    left: 0;
+    background-color: rgba(122, 122, 122, 0.2); /* thief color */
+}
+
+td.thief-pirate::after {
+    right: 0;
+    background-color: rgba(255, 192, 89, 0.2); /* pirate color */
+}
+
+/* Make sure the text stays on top of the backgrounds */
+td.thief-pirate {
+    position: relative;
+    z-index: 1;
+}

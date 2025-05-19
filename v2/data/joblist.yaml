@@ -201,7 +201,7 @@ jobs:
     mainstat: DEX
   - jobName: Xenon
     faction: Resistance
-    archetype: Thief
+    archetype: Thief Pirate
     linkSkillMaxLevel: 2
     mainstat: STR DEX LUK
   - jobName: Demon Avenger
