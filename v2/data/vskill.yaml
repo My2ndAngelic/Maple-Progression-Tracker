@@ -1,89 +1,84 @@
-# MapleStory V Skills Metadata
-
-# Core skills that every class can use
 common_skills:
   decent:
-    - Decent Speed Infusion
-    - Decent Sharp Eyes
-    - Decent Combat Orders
-    - Decent Hyper Body
-    - Decent Mystic Door
-    - Decent Holy Symbol
+    - "Decent Speed Infusion"
+    - "Decent Sharp Eyes"
+    - "Decent Combat Orders"
+    - "Decent Hyper Body"
+    - "Decent Mystic Door"
+    - "Decent Holy Symbol"
   utility:
-    - Rope Lift
-    - Erda Nova
-    - Erda Shower
-    - Blink
-    - Will of Erda
+    - "Rope Lift"
+    - "Erda Nova"
+    - "Erda Shower"
+    - "Blink"
+    - "Will of Erda"
   special:
-    - True Arachnid Reflection  # Only from Esfera quest
-    - Solar Crest  # Only from Hard Seren
+    - "True Arachnid Reflection"
+    - "Solar Crest"
 
-# Skills based on archetype
 archetype_skills:
   warrior:
-    - Weapon Aura
-    - Impenetrable Skin
+    - "Weapon Aura"
+    - "Impenetrable Skin"
   magician:
-    - Ethereal Form
-    - Mana Overload
+    - "Ethereal Form"
+    - "Mana Overload"
   archer:
-    - True Sharp Eyes
-    - Guided Arrow
+    - "True Sharp Eyes"
+    - "Guided Arrow"
   thief:
-    - Shadow Walker
-    - Blade Tempest
-    - Last Resort  # Shared with Xenon
-    - Venom Burst  # Shared with Xenon
+    - "Shadow Walker"
+    - "Blade Tempest"
+    - "Last Resort"
+    - "Venom Burst"
   pirate:
-    - Loaded Dice  # Shared with Xenon
-    - Overdrive    # Shared with Xenon
+    - "Loaded Dice"
+    - "Overdrive"
 
-# Skills based on faction
 faction_skills:
   explorer:
     common:
-      - Maple World Goddess's Blessing  # All Maple World classes (Explorers, Heroes, non-Demon Resistance, Lynn)
-    warrior:  # Explorer Warrior specific
-      - Blitz Shield
-      - Combat Orders
-    magician:  # Explorer Magician specific
-      - Unreliable Memory
-      - Benediction
-    archer:  # Explorer Archer specific
-      - Cardinal Force
-      - Concentration
-    thief:  # Explorer Thief specific
-      - Last Resort
-      - Epic Adventure
-    pirate:  # Explorer Pirate specific
-      - Pirate's Banner
-      - Stimulating Conversation
+      - "Maple World Goddess's Blessing"
+    warrior:
+      - "Blitz Shield"
+      - "Combat Orders"
+    magician:
+      - "Unreliable Memory"
+      - "Benediction"
+    archer:
+      - "Cardinal Force"
+      - "Concentration"
+    thief:
+      - "Last Resort"
+      - "Epic Adventure"
+    pirate:
+      - "Pirate's Banner"
+      - "Stimulating Conversation"
   heroes:
-    - Freud's Wisdom  # All Heroes of Maple
+    - "Freud's Wisdom"
   resistance:
-    - Resistance Infantry  # All non-Demon Resistance
+    - "Resistance Infantry"
   demon:
-    - Defender of the Demon  # All Demons
+    - "Defender of the Demon"
   otherworld:
-    - Otherworld Goddess's Blessing  # Demon Slayer, Demon Avenger, Kinesis
+    - "Otherworld Goddess's Blessing"
   cygnus:
-    - Phalanx Charge
-    - Empress Cygnus's Blessing  # Upgrades to Transcendent Cygnus's Blessing
+    - "Phalanx Charge"
+    - "Empress Cygnus's Blessing"
   sengoku:
-    - Sengoku Force, Assemble!
-    - Princess Sakuno's Blessing
+    - "Sengoku Force, Assemble!"
+    - "Princess Sakuno's Blessing"
   nova:
-    - Might of the Nova  # All Nova classes
+    - "Might of the Nova"
   flora:
-    - Conversion Overdrive  # All Flora classes
+    - "Conversion Overdrive"
   anima:
-    - Lotus Flower  # All Anima classes
+    - "Lotus Flower"
   grandis:
-    - Grandis Goddess's Blessing  # All Grandis classes (Kaiser, Cadena, AB, Illium, Ark, Hoyoung)
+    - "Grandis Goddess's Blessing"
   transcendent:
-    - Transcendent  # All Transcendents
+    - "Transcendent"
   friends:
-    - Afterimage of the Otherworld  # All Friends World classes
+    - "Afterimage of the Otherworld"
   jianghu:
-    - Ring of Samsara  # Levels with same node as Power of Destiny
+    - "Ring of Samsara"

@@ -4,18 +4,18 @@ regions:
   arcane:
     maxLevel: 20
     areas:
-      - Vanishing Journey
-      - Chu Chu Island
-      - Lachelein
-      - Arcana
-      - Morass
-      - Esfera
+      - "Vanishing Journey"
+      - "Chu Chu Island"
+      - "Lachelein"
+      - "Arcana"
+      - "Morass"
+      - "Esfera"
   sacred:
     maxLevel: 11
     areas:
-      - Cernium
-      - Hotel Arcus
-      - Odium
-      - Shangri-La
-      - Arteria
-      - Carcion
+      - "Cernium"
+      - "Hotel Arcus"
+      - "Odium"
+      - "Shangri-La"
+      - "Arteria"
+      - "Carcion"
