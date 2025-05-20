@@ -2,8 +2,8 @@ jobs:
   - jobName: "Lara"
     faction: "Anima"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
         passive:
@@ -66,686 +66,686 @@ jobs:
   - jobName: "Hoyoung"
     faction: "Anima"
     archetype: "Thief"
-    linkSkillMaxLevel: !!null "null"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Zero"
     faction: "Child Of God"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!null "null"
-    mainstat: "STR"
+    linkSkillMaxLevel: 
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Blaze Wizard"
     faction: "Cygnus Knight"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Dawn Warrior"
     faction: "Cygnus Knight"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Mihile"
     faction: "Cygnus Knight"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Wind Archer"
     faction: "Cygnus Knight"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Night Walker"
     faction: "Cygnus Knight"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 2
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Thunder Breaker"
     faction: "Cygnus Knight"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Angelic Buster"
     faction: "Nova"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 3
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Kaiser"
     faction: "Nova"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "STR"
+    linkSkillMaxLevel: 3
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Cadena"
     faction: "Nova"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 2
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Dark Knight"
     faction: "Explorer"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Hero"
     faction: "Explorer"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Paladin"
     faction: "Explorer"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Bowmaster"
     faction: "Explorer"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Marksman"
     faction: "Explorer"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Pathfinder"
     faction: "Explorer"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Bishop"
     faction: "Explorer"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Arch Mage (Ice/Lightning)"
     faction: "Explorer"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Arch Mage (Fire/Poison)"
     faction: "Explorer"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Buccaneer"
     faction: "Explorer"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Corsair"
     faction: "Explorer"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Cannoneer"
     faction: "Explorer"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Dual Blade"
     faction: "Explorer"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 2
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Night Lord"
     faction: "Explorer"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 2
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Shadower"
     faction: "Explorer"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 2
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Aran"
     faction: "Heroes"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "STR"
+    linkSkillMaxLevel: 3
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Evan"
     faction: "Heroes"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "INT"
+    linkSkillMaxLevel: 3
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Luminous"
     faction: "Heroes"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "INT"
+    linkSkillMaxLevel: 3
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Mercedes"
     faction: "Heroes"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 3
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Phantom"
     faction: "Heroes"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 3
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Shade"
     faction: "Heroes"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "STR"
+    linkSkillMaxLevel: 3
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Battle Mage"
     faction: "Resistance"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Blaster"
     faction: "Resistance"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Mechanic"
     faction: "Resistance"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Wild Hunter"
     faction: "Resistance"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Xenon"
     faction: "Resistance"
     archetype: "Thief Pirate"
-    linkSkillMaxLevel: !!int "2"
+    linkSkillMaxLevel: 2
     mainstat: "STR DEX LUK"
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Demon Avenger"
     faction: "Resistance"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "HP"
+    linkSkillMaxLevel: 3
+    mainstat: HP
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Demon Slayer"
     faction: "Resistance"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "STR"
+    linkSkillMaxLevel: 3
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Hayato"
     faction: "Sengoku"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Kanna"
     faction: "Sengoku"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Adele"
     faction: "Flora"
     archetype: "Warrior"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "STR"
+    linkSkillMaxLevel: 2
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Ark"
     faction: "Flora"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "STR"
+    linkSkillMaxLevel: 3
+    mainstat: STR
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Illium"
     faction: "Flora"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Kain"
     faction: "Flora"
     archetype: "Archer"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Khali"
     faction: "Flora"
     archetype: "Thief"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "LUK"
+    linkSkillMaxLevel: 2
+    mainstat: LUK
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Kinesis"
     faction: "Other"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "INT"
+    linkSkillMaxLevel: 2
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Mo Xuan"
     faction: "Jianghu"
     archetype: "Pirate"
-    linkSkillMaxLevel: !!int "2"
-    mainstat: "DEX"
+    linkSkillMaxLevel: 2
+    mainstat: DEX
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
   - jobName: "Lynn"
     faction: "Jianghu"
     archetype: "Magician"
-    linkSkillMaxLevel: !!int "3"
-    mainstat: "INT"
+    linkSkillMaxLevel: 3
+    mainstat: INT
     skill:
       hyper:
-        passive: !!null "null"
-        active: !!null "null"
-      v: !!null "null"
+        passive: 
+        active: 
+      v: 
       hexa:
-        origin: !!null "null"
-        mastery: !!null "null"
-        enhancement: !!null "null"
+        origin: 
+        mastery: 
+        enhancement: 
