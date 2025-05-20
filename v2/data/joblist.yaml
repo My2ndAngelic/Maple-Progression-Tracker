@@ -1,523 +1,751 @@
-# MapleStory Job Classes and Metadata
-
 jobs:
-  # Anima
-  - jobName: Lara
-    faction: Anima
-    archetype: Magician
+  - jobName: "Lara"
+    faction: "Anima"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Earth Break"
-      - "Dragon Break"
-      - "Flash Break"
-      - "Intention Break"
-  - jobName: Hoyoung
-    faction: Anima
-    archetype: Thief
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive:
+          - "Decent Advanced Blessing"
+          - "Decent Speed Infusion"
+        active:
+          - "Unconstrained Dragon Vein"
+          - "Vine Coil"
+          - "Arbor Away"
+          - "Rope Lift"
+          - "Decent Mystic Door"
+          - "Decent Sharp Eyes"
+          - "Decent Hyper Body"
+          - "Decent Combat Orders"
+          - "Blink"
+          - "Erda Nova"
+          - "Will of Erda"
+          - "Decent Holy Symbol"
+          - "Erda Shower"
+          - "Decent Holy Fountain"
+          - "True Arachnid Reflection"
+          - "Solar Crest"
+          - "Lotus Flower"
+          - "Grandis Goddess's Blessing"
+          - "Mana Overload"
+          - "Ethereal Form"
+          - "Big Stretch"
+          - "Land's Connection"
+          - "Surging Essence"
+          - "Winding Mountain Ridge"
+          - "Sol Janus"
+          - "Universe in Bloom"
+          - "HEXA Essence Sprinkle"
+          - "HEXA Dragon Vein Eruption"
+          - "HEXA Eruption: Heaving River"
+          - "HEXA Eruption: Whirlwind"
+          - "HEXA Eruption: Sunrise Well"
+      v:
+        - "Big Stretch"
+        - "Land's Connection"
+        - "Surging Essence"
+        - "Winding Mountain Ridge"
+        - "Sol Janus"
+        - "Universe in Bloom"
+      hexa:
+        origin: []
+        mastery:
+          - "HEXA Essence Sprinkle"
+          - "HEXA Dragon Vein Eruption"
+          - "HEXA Eruption: Heaving River"
+          - "HEXA Eruption: Whirlwind"
+          - "HEXA Eruption: Sunrise Well"
+        enhancement:
+          - "Sol Janus"
+          - "Universe in Bloom"
+          - "Big Stretch"
+          - "Land's Connection"
+          - "Surging Essence"
+          - "Winding Mountain Ridge"
+  - jobName: "Hoyoung"
+    faction: "Anima"
+    archetype: "Thief"
+    linkSkillMaxLevel: 
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Zero"
+    faction: "Child Of God"
+    archetype: "Warrior"
+    linkSkillMaxLevel: 
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Blaze Wizard"
+    faction: "Cygnus Knight"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Clone"
-      - "Scroll - Butterfly Dream"
-      - "Scroll - Warp Gate"
-      - "Scroll - Degeneration"
-
-  # Child of God
-  - jobName: Zero
-    faction: Child Of God
-    archetype: Warrior
-    linkSkillMaxLevel: 5
-    mainstat: STR
-    vskills:
-      - "Joint Attack"
-      - "Storm Break"
-      - "Divine Leer"
-      - "Rage of Pharaoh"
-
-  # Cygnus Knights
-  - jobName: Blaze Wizard
-    faction: Cygnus Knight
-    archetype: Magician
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Dawn Warrior"
+    faction: "Cygnus Knight"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Orbital Flame - Boost"
-      - "Cataclysm"
-      - "Imperial Recall"
-      - "Fires of Justice"
-  - jobName: Dawn Warrior
-    faction: Cygnus Knight
-    archetype: Warrior
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Mihile"
+    faction: "Cygnus Knight"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Rift of Damnation"
-      - "Soul Eclipse"
-      - "True Light of Dawn"
-      - "Master of the Sword"
-  - jobName: Mihile
-    faction: Cygnus Knight
-    archetype: Warrior
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Wind Archer"
+    faction: "Cygnus Knight"
+    archetype: "Archer"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Radiant Cross"
-      - "Sacred Cube"
-      - "Light of Courage"
-      - "Queen of Tomorrow"
-  - jobName: Wind Archer
-    faction: Cygnus Knight
-    archetype: Archer
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Night Walker"
+    faction: "Cygnus Knight"
+    archetype: "Thief"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Storm Bringer"
-      - "Monsoon"
-      - "Gale Barrier"
-      - "Emerald Dust"
-  - jobName: Night Walker
-    faction: Cygnus Knight
-    archetype: Thief
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Thunder Breaker"
+    faction: "Cygnus Knight"
+    archetype: "Pirate"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Shadow Spear"
-      - "Shadow Illusion"
-      - "Dark Omen"
-      - "Dark Blessing"
-  - jobName: Thunder Breaker
-    faction: Cygnus Knight
-    archetype: Pirate
-    linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Thunder - Boost"
-      - "Thunderbolt"
-      - "Lightning God Spear Strike"
-      - "God of the Sea"
-
-  # Nova
-  - jobName: Angelic Buster
-    faction: Nova
-    archetype: Pirate
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Angelic Buster"
+    faction: "Nova"
+    archetype: "Pirate"
     linkSkillMaxLevel: 3
-    mainstat: DEX
-    vskills:
-      - "Spotlight"
-      - "Supreme Supernova"
-      - "Mighty Mascot"
-      - "Finale Ribbon"
-  - jobName: Kaiser
-    faction: Nova
-    archetype: Warrior
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Kaiser"
+    faction: "Nova"
+    archetype: "Warrior"
     linkSkillMaxLevel: 3
-    mainstat: STR
-    vskills:
-      - "Guardian of Nova"
-      - "Dragon Blaze"
-      - "Draco Slasher"
-      - "Ancestral Prominence"
-  - jobName: Cadena
-    faction: Nova
-    archetype: Thief
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Cadena"
+    faction: "Nova"
+    archetype: "Thief"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Chain Arts - Void Strike"
-      - "Chain Arts - Crush"
-      - "Chain Arts - Takedown"
-      - "Chain Arts - Reign of Pain"
-
-  # Explorers
-  - jobName: Dark Knight
-    faction: Explorer
-    archetype: Warrior
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Dark Knight"
+    faction: "Explorer"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Final Pact - Dark"
-      - "Dark Thirst"
-      - "Sacrifice"
-      - "Evil Eye - Chaos"
-  - jobName: Hero
-    faction: Explorer
-    archetype: Warrior
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Hero"
+    faction: "Explorer"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Final Attack - Advanced"
-      - "Burning Soul Blade"
-      - "Worldreaver"
-      - "Puncture"
-  - jobName: Paladin
-    faction: Explorer
-    archetype: Warrior
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Paladin"
+    faction: "Explorer"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Final Attack - Advanced"
-      - "Blast"
-      - "Divine Charge"
-      - "Sanctuary"
-  - jobName: Bowmaster
-    faction: Explorer
-    archetype: Archer
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Bowmaster"
+    faction: "Explorer"
+    archetype: "Archer"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Quiver Flow"
-      - "Arrow Stream - Boost"
-      - "Inhuman Speed"
-      - "Preparation"
-  - jobName: Marksman
-    faction: Explorer
-    archetype: Archer
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Marksman"
+    faction: "Explorer"
+    archetype: "Archer"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Split Shot"
-      - "Perfect Shot"
-      - "Charged Arrow"
-      - "Ultimate Shot"
-  - jobName: Pathfinder
-    faction: Explorer
-    archetype: Archer
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Pathfinder"
+    faction: "Explorer"
+    archetype: "Archer"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Triple Impact"
-      - "Ancient Astra"
-      - "Obsidian Barrier"
-      - "Raven Tempest"
-  - jobName: Bishop
-    faction: Explorer
-    archetype: Magician
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Bishop"
+    faction: "Explorer"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Angel Ray - Boost"
-      - "Heavens Door"
-      - "Angel of Balance"
-      - "Righteously Indignant"
-  - jobName: Arch Mage (Ice/Lightning)
-    faction: Explorer
-    archetype: Magician
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Arch Mage (Ice/Lightning)"
+    faction: "Explorer"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Chain Lightning - Boost"
-      - "Freezing Breath"
-      - "Ice Age"
-      - "Lightning Sphere"
-  - jobName: Arch Mage (Fire/Poison)
-    faction: Explorer
-    archetype: Magician
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Arch Mage (Fire/Poison)"
+    faction: "Explorer"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Dot Punisher: Boost"
-      - "Poison Nova"
-      - "Unstable Memorize"
-      - "Viral Slime"
-  - jobName: Buccaneer
-    faction: Explorer
-    archetype: Pirate
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Buccaneer"
+    faction: "Explorer"
+    archetype: "Pirate"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Dragon Strike"
-      - "Serpent Vortex"
-      - "Nautilus Strike"
-      - "Power Unity"
-  - jobName: Corsair
-    faction: Explorer
-    archetype: Pirate
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Corsair"
+    faction: "Explorer"
+    archetype: "Pirate"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Death Star"
-      - "Cutthroat Instinct"
-      - "Eight-Legs Easton"
-      - "Rapid Fire - Boost"
-  - jobName: Cannon Master
-    faction: Explorer
-    archetype: Pirate
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Cannoneer"
+    faction: "Explorer"
+    archetype: "Pirate"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Big Beautiful Bomb"
-      - "ICBM"
-      - "Rolling Rainbow"
-      - "Anchors Aweigh"
-  - jobName: Dual Blade
-    faction: Explorer
-    archetype: Thief
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Dual Blade"
+    faction: "Explorer"
+    archetype: "Thief"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Blade Clone"
-      - "Fatal Strike"
-      - "Asura"
-      - "Phantom Blow - Boost"
-  - jobName: Night Lord
-    faction: Explorer
-    archetype: Thief
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Night Lord"
+    faction: "Explorer"
+    archetype: "Thief"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Dark Lord's Secret Scroll"
-      - "Death Star"
-      - "Bleed Dart"
-      - "Spread Throw - Boost"
-  - jobName: Shadower
-    faction: Explorer
-    archetype: Thief
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Shadower"
+    faction: "Explorer"
+    archetype: "Thief"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Shadow Formation"
-      - "Trickblade"
-      - "Sonic Blow - Boost"
-      - "Heart Breaker"
-
-  # Heroes
-  - jobName: Aran
-    faction: Heroes
-    archetype: Warrior
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Aran"
+    faction: "Heroes"
+    archetype: "Warrior"
     linkSkillMaxLevel: 3
-    mainstat: STR
-    vskills:
-      - "Maha's Domain"
-      - "Install Maha"
-      - "Beyond Blade"
-      - "Hunter's Prey"
-  - jobName: Evan
-    faction: Heroes
-    archetype: Magician
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Evan"
+    faction: "Heroes"
+    archetype: "Magician"
     linkSkillMaxLevel: 3
-    mainstat: INT
-    vskills:
-      - "Dragon Master"
-      - "Zodiac Ray"
-      - "Magic Debris"
-      - "Imperial Breath"
-  - jobName: Luminous
-    faction: Heroes
-    archetype: Magician
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Luminous"
+    faction: "Heroes"
+    archetype: "Magician"
     linkSkillMaxLevel: 3
-    mainstat: INT
-    vskills:
-      - "Gate of Light"
-      - "Baptism of Light and Darkness"
-      - "Aether Conduit"
-      - "Light Reflection"
-  - jobName: Mercedes
-    faction: Heroes
-    archetype: Archer
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Mercedes"
+    faction: "Heroes"
+    archetype: "Archer"
     linkSkillMaxLevel: 3
-    mainstat: DEX
-    vskills:
-      - "Elemental Ghost"
-      - "Sylphidia"
-      - "Irkalla's Wrath"
-      - "Rolling Moonsault"
-  - jobName: Phantom
-    faction: Heroes
-    archetype: Thief
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Phantom"
+    faction: "Heroes"
+    archetype: "Thief"
     linkSkillMaxLevel: 3
-    mainstat: LUK
-    vskills:
-      - "Ace in the Hole"
-      - "Joker"
-      - "Carte Rose Finale"
-      - "Tempest"
-  - jobName: Shade
-    faction: Heroes
-    archetype: Pirate
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Shade"
+    faction: "Heroes"
+    archetype: "Pirate"
     linkSkillMaxLevel: 3
-    mainstat: STR
-    vskills:
-      - "Spirit Bond - Max"
-      - "Spirit Flow"
-      - "Spirit Frenzy"
-      - "Spirit Gate"
-
-  # Resistance
-  - jobName: Battle Mage
-    faction: Resistance
-    archetype: Magician
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Battle Mage"
+    faction: "Resistance"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Grim Harvest"
-      - "Abyssal Lightning"
-      - "Master of Death"
-      - "Altar of Annihilation"
-  - jobName: Blaster
-    faction: Resistance
-    archetype: Warrior
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Blaster"
+    faction: "Resistance"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Hyper Magnum Punch"
-      - "Burning Breaker"
-      - "Revolving Cannon"
-      - "Hurricane Mixer"
-  - jobName: Mechanic
-    faction: Resistance
-    archetype: Pirate
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Mechanic"
+    faction: "Resistance"
+    archetype: "Pirate"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Metal Armor - Alloy Resistance"
-      - "Full Metal Barrage"
-      - "Massive Fire - IRON-B"
-      - "Support Unit - H-EX"
-  - jobName: Wild Hunter
-    faction: Resistance
-    archetype: Archer
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Wild Hunter"
+    faction: "Resistance"
+    archetype: "Archer"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Jaguar Storm"
-      - "Jaguar Soul"
-      - "Wild Arrow Blast - Reinforce"
-      - "Another Bite"
-  - jobName: Xenon
-    faction: Resistance
-    archetype: Thief Pirate
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Xenon"
+    faction: "Resistance"
+    archetype: "Thief Pirate"
     linkSkillMaxLevel: 2
-    mainstat: STR DEX LUK
-    vskills:
-      - "Omega Blaster"
-      - "Hypogram Field - Force Field"
-      - "Hologram Gravity"
-      - "Amaranth Generator"
-  - jobName: Demon Avenger
-    faction: Resistance
-    archetype: Warrior
+    mainstat: "STR DEX LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Demon Avenger"
+    faction: "Resistance"
+    archetype: "Warrior"
     linkSkillMaxLevel: 3
-    mainstat: HP
-    vskills:
-      - "Execution"
-      - "Blood Feast"
-      - "Dimensional Sword"
-      - "Demonic Blast"
-  - jobName: Demon Slayer
-    faction: Resistance
-    archetype: Warrior
+    mainstat: "HP"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Demon Slayer"
+    faction: "Resistance"
+    archetype: "Warrior"
     linkSkillMaxLevel: 3
-    mainstat: STR
-    vskills:
-      - "Demon Strike"
-      - "Spirit of Rage"
-      - "Demonic Fortitude"
-      - "Dark Metamorphosis"
-
-  # Sengoku
-  - jobName: Hayato
-    faction: Sengoku
-    archetype: Warrior
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Hayato"
+    faction: "Sengoku"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Instant Blade"
-      - "Blade Flash"
-      - "Falcon's Honor"
-      - "Shinsoku"
-  - jobName: Kanna
-    faction: Sengoku
-    archetype: Magician
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Kanna"
+    faction: "Sengoku"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Binding Tempest"
-      - "Spirit's Domain"
-      - "Yosuzume"
-      - "Liberated Spirit Circle"
-
-  # Flora
-  - jobName: Adele
-    faction: Flora
-    archetype: Warrior
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Adele"
+    faction: "Flora"
+    archetype: "Warrior"
     linkSkillMaxLevel: 2
-    mainstat: STR
-    vskills:
-      - "Noble Summons"
-      - "Aether Forge"
-      - "Grave Proclamation"
-      - "Restore"
-  - jobName: Ark
-    faction: Flora
-    archetype: Pirate
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Ark"
+    faction: "Flora"
+    archetype: "Pirate"
     linkSkillMaxLevel: 3
-    mainstat: STR
-    vskills:
-      - "Impending Death"
-      - "Endless Nightmare"
-      - "Creeping Terror"
-      - "Devastation"
-  - jobName: Illium
-    faction: Flora
-    archetype: Magician
+    mainstat: "STR"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Illium"
+    faction: "Flora"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Crystal Battery"
-      - "Crystal Gate"
-      - "Radiant Wing"
-      - "Crystal Attack"
-  - jobName: Kain
-    faction: Flora
-    archetype: Archer
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Kain"
+    faction: "Flora"
+    archetype: "Archer"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Dragon Scale"
-      - "Dragon Flash"
-      - "Lasting Impact"
-      - "Death's Blessing"
-  - jobName: Khali
-    faction: Flora
-    archetype: Thief
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Khali"
+    faction: "Flora"
+    archetype: "Thief"
     linkSkillMaxLevel: 2
-    mainstat: LUK
-    vskills:
-      - "Abyss's Call"
-      - "Serpent Screw"
-      - "Abyss Hex"
-      - "Karmic Retribution"
-
-  # Other
-  - jobName: Kinesis
-    faction: Other
-    archetype: Magician
+    mainstat: "LUK"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Kinesis"
+    faction: "Other"
+    archetype: "Magician"
     linkSkillMaxLevel: 2
-    mainstat: INT
-    vskills:
-      - "Psychic Tornado"
-      - "Ultimate - BPM"
-      - "Mind Break"
-      - "Mind Over Matter"
-
-  - jobName: Mo Xuan
-    faction: Jianghu
-    archetype: Pirate
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Mo Xuan"
+    faction: "Jianghu"
+    archetype: "Pirate"
     linkSkillMaxLevel: 2
-    mainstat: DEX
-    vskills:
-      - "Moonflower Dance"
-      - "Soul Siphon"
-      - "Blade Storm"
-      - "Blooming Forest"
-  - jobName: Lynn
-    faction: Jianghu
-    archetype: Magician
+    mainstat: "DEX"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"
+  - jobName: "Lynn"
+    faction: "Jianghu"
+    archetype: "Magician"
     linkSkillMaxLevel: 3
-    mainstat: INT
-    vskills:
-      - "Soul Eclipse"
-      - "Soul Shear"
-      - "Primal Force"
-      - "Spirit Bond"
+    mainstat: "INT"
+    skill:
+      hyper:
+        passive: !!null "null"
+        active: !!null "null"
+      v: !!null "null"
+      hexa:
+        origin: !!null "null"
+        mastery: !!null "null"
+        enhancement: !!null "null"

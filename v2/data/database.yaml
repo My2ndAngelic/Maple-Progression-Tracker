@@ -1151,7 +1151,7 @@ characters:
       pet_snack: false
   My2ndIL:
     basic:
-      job_name: Arch Mage (Ice/Lightning)
+      job_name: "Arch Mage (Ice/Lightning)"
       level: 220
     equipment:
       armor:
@@ -1395,7 +1395,7 @@ characters:
       pet_snack: true
   My3rdCannon:
     basic:
-      job_name: Cannon Master
+      job_name: Cannoneer
       level: 220
     equipment:
       armor:
