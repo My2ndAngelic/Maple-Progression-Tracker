@@ -111,7 +111,7 @@ def find_v_skills(section):
 def find_hexa_skills(section):
     return {'origin': find_skills_under_h3(section, "Class-Specific Skills"),
             'mastery': find_skills_under_h3(section, "Mastery Skills"),
-            'enhancement': find_skills_under_h3(section, "Enhancement")
+            'enhancement': find_skills_under_h3(section, "Enhancements")
             }
 
 
