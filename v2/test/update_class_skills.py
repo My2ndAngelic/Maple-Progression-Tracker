@@ -5,10 +5,25 @@ import sys
 import re
 import time
 
-def fetch_lara_skills():
+def fetch_class_skills(class_name):
     # For testing, use the local HTML file
-    with open('./v2/test/lara_skills.html', 'r', encoding='utf-8') as file:
-        html = file.read()
+    # Construct the URL based on the class name
+    url = f"https://maplestorywiki.net/w/{class_name}/Skills"
+    
+    # For testing, use local file if it exists, otherwise fetch from web
+    try:
+        with open(f'./v2/test/{class_name.lower()}_skills.html', 'r', encoding='utf-8') as file:
+            html = file.read()
+    except FileNotFoundError:
+        response = requests.get(url)
+        if response.status_code == 200:
+            html = response.text
+            # Save the HTML for future use
+            with open(f'./v2/test/{class_name.lower()}_skills.html', 'w', encoding='utf-8') as file:
+                file.write(html)
+        else:
+            print(f"Failed to fetch skills for {class_name}. Status code: {response.status_code}")
+            html = ""
     soup = BeautifulSoup(html, 'html.parser')
     skills = {
         'hyper': {
@@ -111,9 +126,8 @@ def find_v_skills(section):
 def find_hexa_skills(section):
     return {'origin': find_skills_under_h3(section, "Class-Specific Skills"),
             'mastery': find_skills_under_h3(section, "Mastery Skills"),
-            'enhancement': find_skills_under_h3(section, "Enhancement")
+            'enhancement': find_skills_under_h3(section, "Enhancements")
             }
-
 
 # def update_lara_skills(yaml_file):
 #     # Load YAML as raw text to preserve formatting and nulls
@@ -161,7 +175,7 @@ def find_hexa_skills(section):
 
 if __name__ == "__main__":
     yaml_file = './v2/data/joblist.yaml'
-    fetch_lara_skills()
+    print(fetch_class_skills("Pathfinder"))
     # print(fetch_lara_skills())
     # update_lara_skills(yaml_file)
     print("\nAll operations completed successfully")
