@@ -2,7 +2,7 @@ jobs:
   - jobName: "Lara"
     faction: "Anima"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -66,7 +66,7 @@ jobs:
   - jobName: "Hoyoung"
     faction: "Anima"
     archetype: "Thief"
-    linkSkillMaxLevel: 
+    linkSkillMaxLevel: !!null "null"
     mainstat: "LUK"
     skill:
       hyper:
@@ -80,7 +80,7 @@ jobs:
   - jobName: "Zero"
     faction: "Child Of God"
     archetype: "Warrior"
-    linkSkillMaxLevel: 
+    linkSkillMaxLevel: !!null "null"
     mainstat: "STR"
     skill:
       hyper:
@@ -94,7 +94,7 @@ jobs:
   - jobName: "Blaze Wizard"
     faction: "Cygnus Knight"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -108,7 +108,7 @@ jobs:
   - jobName: "Dawn Warrior"
     faction: "Cygnus Knight"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -122,7 +122,7 @@ jobs:
   - jobName: "Mihile"
     faction: "Cygnus Knight"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -136,7 +136,7 @@ jobs:
   - jobName: "Wind Archer"
     faction: "Cygnus Knight"
     archetype: "Archer"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -150,7 +150,7 @@ jobs:
   - jobName: "Night Walker"
     faction: "Cygnus Knight"
     archetype: "Thief"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "LUK"
     skill:
       hyper:
@@ -164,7 +164,7 @@ jobs:
   - jobName: "Thunder Breaker"
     faction: "Cygnus Knight"
     archetype: "Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -178,7 +178,7 @@ jobs:
   - jobName: "Angelic Buster"
     faction: "Nova"
     archetype: "Pirate"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "DEX"
     skill:
       hyper:
@@ -192,7 +192,7 @@ jobs:
   - jobName: "Kaiser"
     faction: "Nova"
     archetype: "Warrior"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "STR"
     skill:
       hyper:
@@ -206,7 +206,7 @@ jobs:
   - jobName: "Cadena"
     faction: "Nova"
     archetype: "Thief"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "LUK"
     skill:
       hyper:
@@ -220,7 +220,7 @@ jobs:
   - jobName: "Dark Knight"
     faction: "Explorer"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -234,7 +234,7 @@ jobs:
   - jobName: "Hero"
     faction: "Explorer"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -248,7 +248,7 @@ jobs:
   - jobName: "Paladin"
     faction: "Explorer"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -262,7 +262,7 @@ jobs:
   - jobName: "Bowmaster"
     faction: "Explorer"
     archetype: "Archer"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -276,7 +276,7 @@ jobs:
   - jobName: "Marksman"
     faction: "Explorer"
     archetype: "Archer"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -290,7 +290,7 @@ jobs:
   - jobName: "Pathfinder"
     faction: "Explorer"
     archetype: "Archer"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -304,7 +304,7 @@ jobs:
   - jobName: "Bishop"
     faction: "Explorer"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -318,7 +318,7 @@ jobs:
   - jobName: "Arch Mage (Ice/Lightning)"
     faction: "Explorer"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -332,7 +332,7 @@ jobs:
   - jobName: "Arch Mage (Fire/Poison)"
     faction: "Explorer"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -346,7 +346,7 @@ jobs:
   - jobName: "Buccaneer"
     faction: "Explorer"
     archetype: "Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -360,7 +360,7 @@ jobs:
   - jobName: "Corsair"
     faction: "Explorer"
     archetype: "Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -374,7 +374,7 @@ jobs:
   - jobName: "Cannoneer"
     faction: "Explorer"
     archetype: "Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -388,7 +388,7 @@ jobs:
   - jobName: "Dual Blade"
     faction: "Explorer"
     archetype: "Thief"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "LUK"
     skill:
       hyper:
@@ -402,7 +402,7 @@ jobs:
   - jobName: "Night Lord"
     faction: "Explorer"
     archetype: "Thief"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "LUK"
     skill:
       hyper:
@@ -416,7 +416,7 @@ jobs:
   - jobName: "Shadower"
     faction: "Explorer"
     archetype: "Thief"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "LUK"
     skill:
       hyper:
@@ -430,7 +430,7 @@ jobs:
   - jobName: "Aran"
     faction: "Heroes"
     archetype: "Warrior"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "STR"
     skill:
       hyper:
@@ -444,7 +444,7 @@ jobs:
   - jobName: "Evan"
     faction: "Heroes"
     archetype: "Magician"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "INT"
     skill:
       hyper:
@@ -458,7 +458,7 @@ jobs:
   - jobName: "Luminous"
     faction: "Heroes"
     archetype: "Magician"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "INT"
     skill:
       hyper:
@@ -472,7 +472,7 @@ jobs:
   - jobName: "Mercedes"
     faction: "Heroes"
     archetype: "Archer"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "DEX"
     skill:
       hyper:
@@ -486,7 +486,7 @@ jobs:
   - jobName: "Phantom"
     faction: "Heroes"
     archetype: "Thief"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "LUK"
     skill:
       hyper:
@@ -500,7 +500,7 @@ jobs:
   - jobName: "Shade"
     faction: "Heroes"
     archetype: "Pirate"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "STR"
     skill:
       hyper:
@@ -514,7 +514,7 @@ jobs:
   - jobName: "Battle Mage"
     faction: "Resistance"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -528,7 +528,7 @@ jobs:
   - jobName: "Blaster"
     faction: "Resistance"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -542,7 +542,7 @@ jobs:
   - jobName: "Mechanic"
     faction: "Resistance"
     archetype: "Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -556,7 +556,7 @@ jobs:
   - jobName: "Wild Hunter"
     faction: "Resistance"
     archetype: "Archer"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -570,7 +570,7 @@ jobs:
   - jobName: "Xenon"
     faction: "Resistance"
     archetype: "Thief Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR DEX LUK"
     skill:
       hyper:
@@ -584,7 +584,7 @@ jobs:
   - jobName: "Demon Avenger"
     faction: "Resistance"
     archetype: "Warrior"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "HP"
     skill:
       hyper:
@@ -598,7 +598,7 @@ jobs:
   - jobName: "Demon Slayer"
     faction: "Resistance"
     archetype: "Warrior"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "STR"
     skill:
       hyper:
@@ -612,7 +612,7 @@ jobs:
   - jobName: "Hayato"
     faction: "Sengoku"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -626,7 +626,7 @@ jobs:
   - jobName: "Kanna"
     faction: "Sengoku"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -640,7 +640,7 @@ jobs:
   - jobName: "Adele"
     faction: "Flora"
     archetype: "Warrior"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "STR"
     skill:
       hyper:
@@ -654,7 +654,7 @@ jobs:
   - jobName: "Ark"
     faction: "Flora"
     archetype: "Pirate"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "STR"
     skill:
       hyper:
@@ -668,7 +668,7 @@ jobs:
   - jobName: "Illium"
     faction: "Flora"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -682,7 +682,7 @@ jobs:
   - jobName: "Kain"
     faction: "Flora"
     archetype: "Archer"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -696,7 +696,7 @@ jobs:
   - jobName: "Khali"
     faction: "Flora"
     archetype: "Thief"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "LUK"
     skill:
       hyper:
@@ -710,7 +710,7 @@ jobs:
   - jobName: "Kinesis"
     faction: "Other"
     archetype: "Magician"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "INT"
     skill:
       hyper:
@@ -724,7 +724,7 @@ jobs:
   - jobName: "Mo Xuan"
     faction: "Jianghu"
     archetype: "Pirate"
-    linkSkillMaxLevel: 2
+    linkSkillMaxLevel: !!int "2"
     mainstat: "DEX"
     skill:
       hyper:
@@ -738,7 +738,7 @@ jobs:
   - jobName: "Lynn"
     faction: "Jianghu"
     archetype: "Magician"
-    linkSkillMaxLevel: 3
+    linkSkillMaxLevel: !!int "3"
     mainstat: "INT"
     skill:
       hyper:

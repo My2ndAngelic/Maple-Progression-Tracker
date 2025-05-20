@@ -75,7 +75,7 @@ def fetch_lara_skills():
                 # Skip if it's too long to be a skill name (likely a description)
                 if len(name.split()) > 4:
                     continue
-                    
+                print(name)
                 return name
                 
         return None
