@@ -15,20 +15,20 @@ characters:
         gloves: AbsoLab
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -43,21 +43,21 @@ characters:
         Hotel Arcus: 6
         Odium: 4
         Shangri-La: 2
-        Arteria: null
-        Carcion: null
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Meso+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Item+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndAngelic:
@@ -69,27 +69,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Evolving
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -101,24 +101,24 @@ characters:
         Esfera: 20
       sacred:
         Cernium: 3
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndSniper:
@@ -130,27 +130,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -162,24 +162,24 @@ characters:
         Esfera: 9
       sacred:
         Cernium: 2
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Meso+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   thanhbinh5:
@@ -191,27 +191,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -223,24 +223,24 @@ characters:
         Esfera: 12
       sacred:
         Cernium: 3
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndShade:
@@ -252,27 +252,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -284,24 +284,24 @@ characters:
         Esfera: 9
       sacred:
         Cernium: 2
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: CDSkip+17
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndRanger:
@@ -320,20 +320,20 @@ characters:
         gloves: Arcane Umbra
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -344,25 +344,25 @@ characters:
         Morass: 9
         Esfera: 6
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndHero:
@@ -374,27 +374,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -405,25 +405,25 @@ characters:
         Morass: 9
         Esfera: 8
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndMikhail:
@@ -435,27 +435,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
         gloves: AbsoLab
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -466,25 +466,25 @@ characters:
         Morass: 9
         Esfera: 9
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+17
         line_2: Abnormal+7
         line_3: Item+8
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndWA:
@@ -503,20 +503,20 @@ characters:
         gloves: AbsoLab
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -527,25 +527,25 @@ characters:
         Morass: 20
         Esfera: 20
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndPaladin:
@@ -564,20 +564,20 @@ characters:
         gloves: AbsoLab
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -588,25 +588,25 @@ characters:
         Morass: 6
         Esfera: 6
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndKhali:
@@ -618,27 +618,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -649,25 +649,25 @@ characters:
         Morass: 11
         Esfera: 11
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: CDSkip+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndMoXuan:
@@ -683,44 +683,44 @@ characters:
         Morass: 1
         Esfera: 1
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: CDSkip+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Meso+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
     equipment:
       armor: {}
       accessory:
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
   My2ndPF:
     basic:
@@ -731,27 +731,27 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
@@ -762,25 +762,25 @@ characters:
         Morass: 6
         Esfera: 3
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndLumin:
@@ -792,117 +792,117 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 7
         Chu Chu Island: 7
         Lachelein: 2
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   thanhbinh6:
     basic:
-      job_name: evan
+      job_name: Evan
       level: 221
     equipment:
       armor:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My3rdPhantom:
@@ -914,56 +914,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Meso+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Item+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: CDSkip+16
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   M2AMercedes:
@@ -975,56 +975,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 4
         Chu Chu Island: 3
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: CDSkip+15
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Boss+17
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndHoyoung:
@@ -1036,56 +1036,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Passive+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Boss+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: CDSkip+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndBW:
@@ -1097,117 +1097,117 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Passive+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndIL:
     basic:
       job_name: Arch Mage (Ice/Lightning)
-      level: 220i
+      level: 220
     equipment:
       armor:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Buff+50
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Item+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndBishop:
@@ -1219,56 +1219,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 6
         Chu Chu Island: 4
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Buff+50
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Item+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndFPMage:
@@ -1280,56 +1280,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 6
         Chu Chu Island: 3
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndBucc:
@@ -1341,56 +1341,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 9
         Chu Chu Island: 4
         Lachelein: 2
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Buff+50
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Item+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My3rdCannon:
@@ -1402,56 +1402,56 @@ characters:
         hat: Frozen
         top: Frozen
         bottom: x
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 4
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Item+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndCorsair:
@@ -1463,56 +1463,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 8
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndNL:
@@ -1524,56 +1524,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 6
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndBlaster:
@@ -1585,56 +1585,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Frozen
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Meso+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Boss+15
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: CDSkip+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndHayato:
@@ -1646,56 +1646,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 5
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: CDSkip+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Item+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Meso+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndBT:
@@ -1707,56 +1707,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndDBlader:
@@ -1768,56 +1768,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Wolf Katara
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 8
         Chu Chu Island: 4
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Buff+44
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndShadow:
@@ -1829,56 +1829,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Deimos Shield
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 8
         Chu Chu Island: 3
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My3rdCadena:
@@ -1890,56 +1890,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Meso+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Boss+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   thanhbinh15:
@@ -1951,56 +1951,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndMech:
@@ -2012,56 +2012,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Passive+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Item+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndKanna:
@@ -2073,56 +2073,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: AbsoLab
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 5
         Chu Chu Island: 1
         Lachelein: 1
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: CDSkip+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Item+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Boss+17
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndDW:
@@ -2134,56 +2134,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 8
         Chu Chu Island: 7
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Item+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Meso+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndNW:
@@ -2195,56 +2195,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 9
         Chu Chu Island: 8
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+15
         line_2: Item+13
-        line_3: null
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndDA:
@@ -2256,56 +2256,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true
   My2ndDS:
@@ -2317,56 +2317,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No & RF
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndLara:
@@ -2377,47 +2377,47 @@ characters:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Passive+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     equipment:
       armor: {}
       accessory:
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
   My2ndZero:
     basic:
@@ -2427,47 +2427,47 @@ characters:
       arcane:
         Vanishing Journey: 6
         Chu Chu Island: 5
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Meso+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     equipment:
       armor: {}
       accessory:
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
   My2ndStriker:
     basic:
@@ -2477,47 +2477,47 @@ characters:
       arcane:
         Vanishing Journey: 5
         Chu Chu Island: 2
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     equipment:
       armor: {}
       accessory:
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
   My2ndArk:
     basic:
@@ -2528,56 +2528,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 3
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Passive+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndAdele:
@@ -2588,47 +2588,47 @@ characters:
       arcane:
         Vanishing Journey: 6
         Chu Chu Island: 2
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Meso+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Buff+49
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     equipment:
       armor: {}
       accessory:
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
   My2ndKine:
     basic:
@@ -2639,56 +2639,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Boss+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndKain:
@@ -2700,56 +2700,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Item+19
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: Passive+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
         line_1: Boss+18
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndIllium:
@@ -2761,56 +2761,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My3rdKaiser:
@@ -2822,56 +2822,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 2
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   Wild01Hunter:
@@ -2883,56 +2883,56 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Regular
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 5
         Chu Chu Island: 1
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_2:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: false
   My2ndXenon:
@@ -2944,55 +2944,55 @@ characters:
         hat: Root Abyss
         top: Root Abyss
         bottom: Root Abyss
-        shoe: null
-        cape: null
+        shoe: 
+        cape: 
         secondary: Princess No
         shoulder: Magnus
-        gloves: null
+        gloves: 
       accessory:
         emblem: Gold
-        face: null
-        eye: null
-        ear: null
-        ring_1: null
-        ring_2: null
-        ring_3: null
-        ring_4: null
-        pendant_1: null
-        pendant_2: null
-        belt: null
-        badge: null
-        medal: null
-        android: null
-        heart: null
+        face: 
+        eye: 
+        ear: 
+        ring_1: 
+        ring_2: 
+        ring_3: 
+        ring_4: 
+        pendant_1: 
+        pendant_2: 
+        belt: 
+        badge: 
+        medal: 
+        android: 
+        heart: 
       etc: {}
     symbol:
       arcane:
         Vanishing Journey: 7
         Chu Chu Island: 5
-        Lachelein: null
-        Arcana: null
-        Morass: null
-        Esfera: null
+        Lachelein: 
+        Arcana: 
+        Morass: 
+        Esfera: 
       sacred:
-        Cernium: null
-        Hotel Arcus: null
-        Odium: null
-        Shangri-La: null
-        Arteria: null
-        Carcion: null
+        Cernium: 
+        Hotel Arcus: 
+        Odium: 
+        Shangri-La: 
+        Arteria: 
+        Carcion: 
     innerAbility:
       preset_1:
         line_1: Meso+20
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_2:
         line_1: AS+1
-        line_2: null
-        line_3: null
+        line_2: 
+        line_3: 
       preset_3:
-        line_1: null
-        line_2: null
-        line_3: null
+        line_1: 
+        line_2: 
+        line_3: 
     cash:
       pet_snack: true

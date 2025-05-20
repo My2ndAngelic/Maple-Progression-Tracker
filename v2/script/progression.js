@@ -81,8 +81,6 @@ export async function renderProgressionTable() {
             })
             .sort(([, a], [, b]) => Number(b.basic.level) - Number(a.basic.level));
             
-        console.log('Found characters:', sortedEntries.length); // Debug log
-
         // Create rows
         for (const [ign, charData] of sortedEntries) {
             // Look up job using case-insensitive matching

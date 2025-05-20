@@ -1,3 +1,5 @@
+import {loadCSV} from "./csvHandling.js";
+
 import {sortByLevelFactionArchetype} from "./tableUtils.js";
 
 export function calculateSymbolForce(levels, baseForce, levelMultiplier) {
@@ -64,10 +66,7 @@ export async function renderSymbolsDetail(type) {
         const symbolData = jsyaml.load(symbolYaml);
         const jobList = jsyaml.load(joblistYaml);
 
-        // Get list of symbol areas for this type
-        const symbolRegions = symbolData.regions[type].areas;
-
-        // Create job map for sorting, using jobName instead of name
+        // Create job map for sorting
         const jobMap = {};
         jobList.jobs.forEach(job => {
             jobMap[job.jobName] = job;
@@ -84,17 +83,15 @@ export async function renderSymbolsDetail(type) {
                 };
 
                 // Add symbol levels from the symbols section
-                const symbols = charData.symbols?.[type] || {};
+                const symbols = charData.symbol?.[type] || {};
+                const symbolRegions = symbolData.regions[type]?.areas || [];
                 symbolRegions.forEach(region => {
-                    entry[region] = symbols[region] || 0;
+                    entry[region] = symbols[region];
                 });
 
                 return entry;
             })
             .filter(char => char.IGN && char.level && char.jobName); // Only include characters with complete info
-
-        console.log('Found characters:', tableData.length); // Debug log
-        console.log('Job map:', Object.keys(jobMap)); // Debug log
 
         // Sort the data
         sortByLevelFactionArchetype(tableData, jobMap);
@@ -112,25 +109,28 @@ export async function renderSymbolsDetail(type) {
         thead.appendChild(headerRow);
 
         // Create a row for each character
-        console.log('Rendering characters...'); // Debug log
-        tableData.forEach((char, index) => {
-            console.log(`Character ${index + 1}:`, char.IGN, char.jobName); // Debug character info
+        tableData.forEach((char) => {
             const tr = document.createElement('tr');
             
             // Add IGN and Level cells
             tr.innerHTML = `<td>${char.IGN}</td><td>${char.level}</td>`;
 
             // Add symbol level cells
+            const symbolRegions = symbolData.regions[type].areas;
             symbolRegions.forEach(region => {
                 const td = document.createElement('td');
-                const symbolValue = char[region] || 0;
-                
-                if (symbolValue === 0) {
+                const symbolValue = char[region];
+                if (!symbolValue || symbolValue === 0) {
                     td.textContent = '';
                 } else {
-                    td.textContent = symbolValue;
-                    if (symbolValue === maxLevel) {
-                        td.classList.add('symbol-max');
+                    const level = parseInt(symbolValue);
+                    if (!isNaN(level) && level > 0) {
+                        td.textContent = level;
+                        if (level === maxLevel) {
+                            td.classList.add('symbol-max');
+                        }
+                    } else {
+                        td.textContent = '';
                     }
                 }
                 tr.appendChild(td);
@@ -138,8 +138,6 @@ export async function renderSymbolsDetail(type) {
 
             tbody.appendChild(tr);
         });
-
-        console.log('Total rows rendered:', tbody.children.length); // Debug log
     } catch (err) {
         console.error(`Error rendering ${type} symbol details:`, err);
         console.error('Stack:', err.stack); // More detailed error info

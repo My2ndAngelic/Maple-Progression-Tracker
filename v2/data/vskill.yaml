@@ -23,16 +23,13 @@ common_skills:
 archetype_skills:
   warrior:
     - Weapon Aura
-    - Worldreaver
-    - Spinning Cross
+    - Impenetrable Skin
   magician:
     - Ethereal Form
     - Mana Overload
-    - Spirit of Snow
   archer:
     - True Sharp Eyes
-    - Guide Arrow
-    - Arrow Rain
+    - Guided Arrow
   thief:
     - Shadow Walker
     - Blade Tempest
@@ -41,12 +38,27 @@ archetype_skills:
   pirate:
     - Loaded Dice  # Shared with Xenon
     - Overdrive    # Shared with Xenon
-    - Nautilus Strike
 
 # Skills based on faction
 faction_skills:
-  maple_world:
-    - Maple World Goddess's Blessing  # All Maple World classes (Explorers, Heroes, non-Demon Resistance, Lynn)
+  explorer:
+    common:
+      - Maple World Goddess's Blessing  # All Maple World classes (Explorers, Heroes, non-Demon Resistance, Lynn)
+    warrior:  # Explorer Warrior specific
+      - Blitz Shield
+      - Combat Orders
+    magician:  # Explorer Magician specific
+      - Unreliable Memory
+      - Benediction
+    archer:  # Explorer Archer specific
+      - Cardinal Force
+      - Concentration
+    thief:  # Explorer Thief specific
+      - Last Resort
+      - Epic Adventure
+    pirate:  # Explorer Pirate specific
+      - Pirate's Banner
+      - Stimulating Conversation
   heroes:
     - Freud's Wisdom  # All Heroes of Maple
   resistance:
@@ -74,5 +86,4 @@ faction_skills:
   friends:
     - Afterimage of the Otherworld  # All Friends World classes
   jianghu:
-    - Power of Destiny  # All Jianghu classes
     - Ring of Samsara  # Levels with same node as Power of Destiny
