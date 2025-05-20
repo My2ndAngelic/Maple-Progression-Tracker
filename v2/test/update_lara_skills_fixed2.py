@@ -33,26 +33,14 @@ def fetch_lara_skills():
     content = soup.find('div', {'id': 'mw-content-text'})
     if not content:
         return skills
-   
-    for section in content.find_all(['h2', 'h3']):
-        title_span = section.find('span', {'class': 'mw-headline'})
-        if not title_span:
-            continue
-        section_title = title_span.get_text().strip()
-        section_id = title_span.get('id', '')
-        # print(f"Processing section: {section_title} (ID: {section_id})")
-
-        match section_id:
-            case "Hyper_Skills":
-                print("Found Hyper Skills section")
-            case "Class-Specific_Skills":
-                print("Found V class specific skills section")
-            case "Class-Specific_Skills_2":
-                print("Found Hexa class specific skills section")
-            case "Mastery_Skills":
-                print("Found Hexa mastery skills section")
-            case "Enhancements_2":
-                print("Found Hexa enhancement skills section")
+    
+    for section in content.find_all('h2'):
+        print(f"H2: {section.get_text(strip=True)}")
+        sibling = section.find_next_sibling()
+        while sibling and sibling.name != 'h2':
+            if sibling.name == 'h3':
+                print(f"LMAO: {sibling.get_text(strip=True)}")
+            sibling = sibling.find_next_sibling()
            
     return skills
 
