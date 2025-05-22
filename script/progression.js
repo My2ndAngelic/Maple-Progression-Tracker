@@ -9,6 +9,7 @@ import {createTableCell, prepareTable, sortAccountsByLevel} from "./tableUtils.j
  */
 export function createProgressionRow(char, job) {
     const tr = document.createElement('tr');
+    // Basic cell data without the links
     const cellData = [
         char.IGN || '',
         char.level || '',
@@ -17,6 +18,8 @@ export function createProgressionRow(char, job) {
         job.fullName || '',
         job.mainstat || ''
     ];
+    
+    // Create regular cells
     cellData.forEach((text, index) => {
         const cell = createTableCell(text);
         // Add archetype color class to the archetype column (index 3)
@@ -25,6 +28,41 @@ export function createProgressionRow(char, job) {
         }
         tr.appendChild(cell);
     });
+    
+    // Create the links cell (last column)
+    const linksCell = document.createElement('td');
+    
+    // Find all properties in job that contain URLs
+    const linkTypes = Object.keys(job).filter(key => {
+        const value = job[key];
+        return value && 
+               typeof value === 'string' && 
+               value.startsWith('http') &&
+               key !== 'jobName' &&
+               key !== 'faction' &&
+               key !== 'archetype' &&
+               key !== 'fullName' &&
+               key !== 'mainstat';
+    });
+    
+    // Create links for each URL found
+    if (linkTypes.length > 0) {
+        linkTypes.forEach((linkType, idx) => {
+            const link = document.createElement('a');
+            link.href = job[linkType];
+            link.textContent = linkType;
+            link.target = '_blank'; // Open in new tab
+            link.className = 'progression-link';
+            linksCell.appendChild(link);
+            
+            // Add separator between links
+            if (idx < linkTypes.length - 1) {
+                linksCell.appendChild(document.createTextNode(' | '));
+            }
+        });
+    }
+    
+    tr.appendChild(linksCell);
     return tr;
 }
 
@@ -50,6 +88,7 @@ export async function renderProgressionTable() {
         <th>Archetype</th>
         <th>Class</th>
         <th>Main Stat</th>
+        <th>Links</th>
       </tr>
     `;
 

@@ -26,6 +26,34 @@
     color: white;
 }
 
+/* Links styling */
+#progressionTable a.progression-link {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+#progressionTable a.progression-link:first-child {
+    margin-left: 0;
+}
+
+#progressionTable a.progression-link:hover {
+    color: #005999;
+    text-decoration: underline;
+}
+
+/* Dark mode link styling */
+body.dark-mode #progressionTable a.progression-link {
+    color: #4dabf7;
+}
+
+body.dark-mode #progressionTable a.progression-link:hover {
+    color: #7fc3f7;
+}
+
 /* Dark mode styles */
 body.dark-mode .archetype-warrior {
     background-color: #b30000;
