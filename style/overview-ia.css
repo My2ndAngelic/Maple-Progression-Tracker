@@ -64,33 +64,33 @@
 
 /* Dark mode styling */
 body.dark-mode #charTable thead tr:nth-child(2) th.preset-header {
-    background-color: #444444;
-    color: white;
+    background-color: #777777;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:nth-child(2) th.arcane-header {
-    background-color: #004080;
-    color: white;
+    background-color: #66aaff;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:nth-child(2) th.sacred-header {
-    background-color: #805020;
-    color: white;
+    background-color: #bb8855;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(3) {
-    background-color: #222222;
-    color: white;
+    background-color: #999999;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(6) {
-    background-color: #002040;
-    color: white;
+    background-color: #99ccff;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(7) {
-    background-color: #402010;
-    color: white;
+    background-color: #cc9966;
+    color: black;
 }
 
 /* Coloring for Inner Ability cells on overview page */

@@ -38,16 +38,16 @@
 
 /* Dark mode styling for group headers */
 body.dark-mode #charTable thead tr:first-child th.ia-group-header {
-    background-color: #222222;
-    color: white;
+    background-color: #999999;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:first-child th.arcane-group-header {
-    background-color: #002040;
-    color: white;
+    background-color: #99ccff;
+    color: black;
 }
 
 body.dark-mode #charTable thead tr:first-child th.sacred-group-header {
-    background-color: #402010;
-    color: white;
+    background-color: #cc9966;
+    color: black;
 }
