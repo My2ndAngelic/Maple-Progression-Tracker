@@ -417,3 +417,6 @@ function addIACell(row, value, tooltip = '') {
 
     row.appendChild(cell);
 }
+
+// Export the getAbilityDescription function
+export { getAbilityDescription };

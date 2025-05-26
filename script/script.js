@@ -4,6 +4,9 @@ import {calculateGrandSacredForce, calculateGrandSacredStat, calculateGrandSacre
 import {prepareTable, sortByLevelFactionArchetype} from "./tableUtils.js";
 import {createDataMap, createSymbolsMap, loadCSV} from "./csvHandling.js";
 
+// Import the getAbilityDescription function from innerability.js
+import {getAbilityDescription} from "./innerability.js";
+
 function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sacredStat, expBonus, mesoBonus, dropBonus, innerAbilityData) {
     const tr = document.createElement('tr');
     
@@ -35,8 +38,12 @@ function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sa
         // Special handling for inner ability columns (index 2, 3, 4)
         if (index >= 2 && index <= 4) {
             if (text) {
-                // Keep the original short code instead of getting the full description
-                td.textContent = text;
+                // Convert the short code to the full description
+                const fullDescription = getAbilityDescription(text);
+                td.textContent = fullDescription;
+                
+                // Add tooltip for full text on hover
+                td.title = fullDescription;
                 
                 // Extract ability type for coloring
                 const abilityType = text.match(/^([a-z]+)/i)?.[1]?.toLowerCase();
@@ -108,9 +115,9 @@ export async function renderTable() {
         <th colspan="5" class="sacred-group-header">Sacred</th>
       </tr>
       <tr>
-        <th class="preset-header">Preset 1</th>
-        <th class="preset-header">Preset 2</th>
-        <th class="preset-header">Preset 3</th>
+        <th class="preset-header">IA Preset 1</th>
+        <th class="preset-header">IA Preset 2</th>
+        <th class="preset-header">IA Preset 3</th>
         <th class="arcane-header">Force</th>
         <th class="arcane-header">Stats</th>
         <th class="sacred-header">Force</th>
