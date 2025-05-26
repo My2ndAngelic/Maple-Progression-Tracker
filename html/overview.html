@@ -7,6 +7,25 @@
     <link href="../style/innerability.css" rel="stylesheet"/>
     <link href="../style/overview-ia.css" rel="stylesheet"/>
     <link href="../style/overview-numeric.css" rel="stylesheet"/>
+    <script>
+        // Ensure dark mode works directly on this page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize theme state from localStorage first
+            const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+            const themeLink = document.getElementById('themeStylesheet');
+            
+            // Apply the saved theme or default to light mode
+            if (savedDarkMode) {
+                document.body.classList.add('dark-mode');
+                themeLink.href = '../style/style-dark.css';
+            } else {
+                document.body.classList.remove('dark-mode');
+                themeLink.href = '../style/style.css';
+            }
+            
+            // The dark mode toggle event listener is now handled in script.js
+        });
+    </script>
 </head>
 <body>
 <div id="container">

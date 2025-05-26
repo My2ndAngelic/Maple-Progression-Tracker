@@ -43,12 +43,31 @@ function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sa
                 td.textContent = fullDescription;
                 
                 // Add tooltip for full text on hover
-                td.title = fullDescription;
+                // td.title = fullDescription;
                 
                 // Extract ability type for coloring
                 const abilityType = text.match(/^([a-z]+)/i)?.[1]?.toLowerCase();
                 if (abilityType) {
                     td.classList.add(`ability-${abilityType}`);
+                }
+                
+                // Check if it's a maxed value and make it bold
+                // Detect max values by checking the ability type and value
+                const match = text.match(/([a-z]+)([+-])(\d+)(?:%)?/i);
+                if (match) {
+                    const [, type, , value] = match;
+                    const typeLC = type.toLowerCase();
+                    const numValue = parseInt(value);
+                    
+                    // Define max values for common abilities (similar to innerability.js)
+                    const maxValues = {
+                        'as': 1, 'boss': 20, 'cdskip': 20, 'meso': 20, 'item': 20,
+                        'buff': 50, 'passive': 1, 'crit': 30, 'att': 30, 'matt': 30
+                    };
+                    
+                    if (maxValues[typeLC] && numValue >= maxValues[typeLC]) {
+                        td.style.fontWeight = 'bold';
+                    }
                 }
             } else {
                 td.textContent = '-';
@@ -171,8 +190,30 @@ export async function renderTable() {
 
 // Overview page initialization
 if (document.getElementById('charTable')) {
-    import('./ui.js').then(({initializeUI}) => {
-        initializeUI();
-        renderTable();
-    });
+    // Make renderTable available globally so it can be called from theme toggle
+    window.renderTable = renderTable;
+    
+    // Initialize the table first
+    renderTable();
+    
+    // Check if navbar already exists to avoid duplication
+    if (!document.getElementById('navbar')) {
+        import('./ui.js').then(({initializeUI, applyTheme}) => {
+            initializeUI();
+            
+            // Manually initialize theme toggle for overview page
+            const darkToggleBtn = document.getElementById('darkModeToggle');
+            if (darkToggleBtn) {
+                darkToggleBtn.addEventListener('click', () => {
+                    const currentTheme = localStorage.getItem('darkMode') === 'true';
+                    applyTheme(!currentTheme);
+                    
+                    // Rerender the table after theme change
+                    setTimeout(renderTable, 50);
+                });
+            }
+        }).catch(err => {
+            console.error('Error initializing UI:', err);
+        });
+    }
 }

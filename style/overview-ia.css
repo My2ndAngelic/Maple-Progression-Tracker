@@ -122,33 +122,91 @@ body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(7) {
     background-color: #ccb3ff;
 }
 
+/* Additional ability classes */
+#charTable td.ability-str,
+#charTable td.ability-dex,
+#charTable td.ability-int,
+#charTable td.ability-luk,
+#charTable td.ability-hp,
+#charTable td.ability-mp,
+#charTable td.ability-allstat {
+    background-color: #e0e0e0;
+}
+
+#charTable td.ability-att,
+#charTable td.ability-matt,
+#charTable td.ability-damage,
+#charTable td.ability-crit {
+    background-color: #d1c4e9;
+}
+
+#charTable td.ability-abnormal,
+#charTable td.ability-normal,
+#charTable td.ability-aoe {
+    background-color: #ffe0b2;
+}
+
 /* Dark Mode Colors */
 body.dark-mode #charTable td.ability-as {
     background-color: #8B0000;
+    color: white;
 }
 
 body.dark-mode #charTable td.ability-boss {
     background-color: #228B22;
+    color: white;
 }
 
 body.dark-mode #charTable td.ability-cdskip {
     background-color: #4169E1;
+    color: white;
 }
 
 body.dark-mode #charTable td.ability-meso {
     background-color: #B8860B;
+    color: white;
 }
 
 body.dark-mode #charTable td.ability-item {
     background-color: #008080;
+    color: white;
 }
 
 body.dark-mode #charTable td.ability-passive {
     background-color: #800080;
+    color: white;
 }
 
 body.dark-mode #charTable td.ability-buff {
     background-color: #D35400;
+    color: white;
+}
+
+/* Additional ability classes for dark mode */
+body.dark-mode #charTable td.ability-str,
+body.dark-mode #charTable td.ability-dex,
+body.dark-mode #charTable td.ability-int,
+body.dark-mode #charTable td.ability-luk,
+body.dark-mode #charTable td.ability-hp,
+body.dark-mode #charTable td.ability-mp,
+body.dark-mode #charTable td.ability-allstat {
+    background-color: #555555;
+    color: white;
+}
+
+body.dark-mode #charTable td.ability-att,
+body.dark-mode #charTable td.ability-matt,
+body.dark-mode #charTable td.ability-damage,
+body.dark-mode #charTable td.ability-crit {
+    background-color: #663399;
+    color: white;
+}
+
+body.dark-mode #charTable td.ability-abnormal,
+body.dark-mode #charTable td.ability-normal,
+body.dark-mode #charTable td.ability-aoe {
+    background-color: #996600;
+    color: white;
 }
 
 /* Inner ability column text alignment */
@@ -157,7 +215,7 @@ body.dark-mode #charTable td.ability-buff {
 #charTable td:nth-child(5) {
     text-align: left;
     padding: 8px 10px;
-    min-width: 200px;
+    min-width: 180px;
     max-width: 250px;
     font-weight: normal;
     font-size: 0.9em;
