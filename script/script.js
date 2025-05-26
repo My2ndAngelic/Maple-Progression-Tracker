@@ -134,9 +134,9 @@ export async function renderTable() {
         <th colspan="5" class="sacred-group-header">Sacred</th>
       </tr>
       <tr>
-        <th class="preset-header">IA Preset 1</th>
-        <th class="preset-header">IA Preset 2</th>
-        <th class="preset-header">IA Preset 3</th>
+        <th class="preset-header">Preset 1</th>
+        <th class="preset-header">Preset 2</th>
+        <th class="preset-header">Preset 3</th>
         <th class="arcane-header">Force</th>
         <th class="arcane-header">Stats</th>
         <th class="sacred-header">Force</th>
