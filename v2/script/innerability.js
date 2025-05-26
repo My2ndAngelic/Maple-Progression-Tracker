@@ -298,7 +298,7 @@ function getAbilityDescription(ability) {
 
         // Special Stats
         case 'as':
-            return `Attack Speed ${sign}${value}`;
+            return `Attack Speed ${sign}${value} level`;
         case 'boss':
             return `Boss Damage ${sign}${value}%`;
         case 'cdskip':
@@ -408,13 +408,11 @@ function addIACell(row, value, tooltip = '') {
             cell.style.fontWeight = 'bold';
         }
 
-        cell.textContent = value;
-
-        // Add tooltip using the full ability description
+        // Display the full description instead of abbreviated value
         const description = getAbilityDescription(value);
-        if (description) {
-            cell.title = description;
-        }
+        cell.textContent = description || value;
+        
+        // Remove tooltip functionality completely
     }
 
     row.appendChild(cell);

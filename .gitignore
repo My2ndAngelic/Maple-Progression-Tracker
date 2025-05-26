@@ -109,4 +109,5 @@ fabric.properties
 !.idea/runConfigurations
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,webstorm+all
-test/clean_sacred_csv.py
+
+v2/test/skill_html/

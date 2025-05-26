@@ -6,6 +6,7 @@ common_skills:
     - "Decent Hyper Body"
     - "Decent Mystic Door"
     - "Decent Holy Symbol"
+    - "Decent Holy Fountain"
   utility:
     - "Rope Lift"
     - "Erda Nova"
@@ -27,7 +28,6 @@ archetype_skills:
     - "True Sharp Eyes"
     - "Guided Arrow"
   thief:
-    - "Shadow Walker"
     - "Blade Tempest"
     - "Last Resort"
     - "Venom Burst"
@@ -41,26 +41,22 @@ faction_skills:
       - "Maple World Goddess's Blessing"
     warrior:
       - "Blitz Shield"
-      - "Combat Orders"
     magician:
       - "Unreliable Memory"
-      - "Benediction"
     archer:
-      - "Cardinal Force"
-      - "Concentration"
+      - "Evole"
     thief:
-      - "Last Resort"
-      - "Epic Adventure"
+      - "Shadow Walker"
     pirate:
-      - "Pirate's Banner"
       - "Stimulating Conversation"
   heroes:
     - "Freud's Wisdom"
   resistance:
+    - "Maple World Goddess's Blessing"
     - "Resistance Infantry"
   demon:
     - "Defender of the Demon"
-  otherworld:
+  friends:
     - "Otherworld Goddess's Blessing"
   cygnus:
     - "Phalanx Charge"

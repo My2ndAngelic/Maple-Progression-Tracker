@@ -294,11 +294,11 @@ function getAbilityDescription(ability) {
         case 'crit':
             return `Critical Rate ${sign}${value}%`;
         case 'allstat':
-            return `All Stats ${sign}${value}%`;
+            return `All Stats ${sign}${value}`;
 
         // Special Stats
         case 'as':
-            return `Attack Speed ${sign}${value}`;
+            return `Attack Speed ${sign}${value} level`;
         case 'boss':
             return `Boss Damage ${sign}${value}%`;
         case 'cdskip':
@@ -310,11 +310,11 @@ function getAbilityDescription(ability) {
         case 'passive':
             return `Passive Skills ${sign}${value} Level`;
         case 'abnormal':
-            return `Damage to Abnormal Status monsters ${sign}${value}%`;
+            return `${sign}${value}% Damage to monsters inflicted with Abnormal Status`;
         case 'buff':
             return `Buff Duration ${sign}${value}%`;
         case 'normal':
-            return `Damage to Normal Monsters ${sign}${value}%`;
+            return `Damage to normal monsters ${sign}${value}%`;
         case 'aoe':
             return `Enemies Hit by Multi-target Skills ${sign}${value}`;
 
@@ -408,13 +408,11 @@ function addIACell(row, value, tooltip = '') {
             cell.style.fontWeight = 'bold';
         }
 
-        cell.textContent = value;
-
-        // Add tooltip using the full ability description
+        // Display the full description instead of abbreviated value
         const description = getAbilityDescription(value);
-        if (description) {
-            cell.title = description;
-        }
+        cell.textContent = description || value;
+        
+        // Remove tooltip functionality completely
     }
 
     row.appendChild(cell);

@@ -4,10 +4,11 @@ from bs4 import BeautifulSoup
 import sys
 import re
 import time
+import os
 
 def fetch_lara_skills():
     # For testing, use the local HTML file
-    with open('./v2/test/lara_skills.html', 'r', encoding='utf-8') as file:
+    with open('v2/test/skill_html/blaze_wizard_skills.html', 'r', encoding='utf-8') as file:
         html = file.read()
     soup = BeautifulSoup(html, 'html.parser')
     skills = {
@@ -160,7 +161,8 @@ def find_hexa_skills(section):
         # print('Lara block not found, no changes made.')
 
 if __name__ == "__main__":
-    yaml_file = './v2/data/joblist.yaml'
+    # yaml_file = './v2/data/joblist.yaml'
+    # print(os.getcwd())
     fetch_lara_skills()
     # print(fetch_lara_skills())
     # update_lara_skills(yaml_file)

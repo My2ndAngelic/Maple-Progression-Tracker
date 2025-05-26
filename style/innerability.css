@@ -26,11 +26,12 @@
     padding-right: 4px;
 }
 
-/* Inner ability columns - natural distribution */
+/* Inner ability columns - natural distribution with increased width for full descriptions */
 .ia-table td:not(:first-child):not(:nth-child(2)),
 .ia-table th:not(:first-child):not(:nth-child(2)) {
     width: auto;
-    min-width: 80px;
+    min-width: 120px; /* Increased from 80px to accommodate longer text */
+    font-size: 0.9em; /* Slightly smaller font to fit more text */
 }
 
 /* Add some minimal padding for all cells */
