@@ -103,7 +103,7 @@ body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(7) {
 }
 
 #charTable td.ability-cdskip {
-    background-color: #f5a9f5;
+    background-color: #a9d0f5;
 }
 
 #charTable td.ability-meso {
@@ -119,7 +119,7 @@ body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(7) {
 }
 
 #charTable td.ability-buff {
-    background-color: #ccb3ff;
+    background-color: #ffdeb3;
 }
 
 /* Additional ability classes */
