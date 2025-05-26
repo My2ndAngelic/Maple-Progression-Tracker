@@ -27,7 +27,7 @@ export function getSymbolDisplayValue(level) {
 
 /**
  * Returns configuration for a specific symbol type
- * @param {string} type - Either 'arcane' or 'sacred'
+ * @param {string} type - Either 'arcane', 'sacred' or 'grandsacred'
  * @returns {Object} Configuration object with csvFile and tableId
  */
 function getSymbolTypeInfo(type) {
@@ -41,6 +41,11 @@ function getSymbolTypeInfo(type) {
             csvFile: 'sacred.csv',
             tableId: 'sacredTable',
             headers: ['Character', 'Level', 'Cernium', 'Hotel Arcus', 'Odium', 'Shangri-La', 'Arteria', 'Carcion']
+        },
+        'grandsacred': {
+            csvFile: 'grandsacred.csv',
+            tableId: 'grandSacredTable',
+            headers: ['Character', 'Level', 'Tallahart']
         }
     };
     return typeMap[type] || {};
@@ -114,6 +119,8 @@ export async function renderSymbolsDetail(type) {
                     if (type === 'arcane' && level === 20) {
                         td.classList.add('symbol-max');
                     } else if (type === 'sacred' && level === 11) {
+                        td.classList.add('symbol-max');
+                    } else if (type === 'grandsacred' && level === 11) {
                         td.classList.add('symbol-max');
                     }
                 }

@@ -16,6 +16,7 @@ export const navbar = `
       <div class="dropdown-content">
         <a href="arcane.html">Arcane</a>
         <a href="sacred.html">Sacred</a>
+        <a href="grandsacred.html">Grand Sacred</a>
       </div>
     </div>
     <button id="innerabilityBtn" onclick="window.location.href='innerability.html'">Inner Ability</button>
