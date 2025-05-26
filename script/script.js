@@ -4,12 +4,22 @@ import {calculateGrandSacredForce, calculateGrandSacredStat, calculateGrandSacre
 import {prepareTable, sortByLevelFactionArchetype} from "./tableUtils.js";
 import {createDataMap, createSymbolsMap, loadCSV} from "./csvHandling.js";
 
-function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sacredStat, expBonus, mesoBonus, dropBonus) {
+function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sacredStat, expBonus, mesoBonus, dropBonus, innerAbilityData) {
     const tr = document.createElement('tr');
+    
+    // Get inner ability data for each preset
+    const p1ia1 = innerAbilityData?.P1_IA1 || '';
+    const p2ia1 = innerAbilityData?.P2_IA1 || '';
+    const p3ia1 = innerAbilityData?.P3_IA1 || '';
+    
     const cellData = [
         char.IGN || '',
         char.level || '',
-        // job.linkSkillMaxLevel || '',  // Link Skill column commented out
+        // Inner ability cells (3 columns for P1, P2, P3 - Line 1 only)
+        p1ia1,
+        p2ia1,
+        p3ia1,
+        // Other data
         arcanePower,
         arcaneStat,
         totalSacredForce,
@@ -22,13 +32,29 @@ function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sa
     cellData.forEach((text, index) => {
         const td = document.createElement('td');
 
-        // Special handling for numerical columns (index 2-9)
-        if (index >= 2 && index <= 9) {
+        // Special handling for inner ability columns (index 2, 3, 4)
+        if (index >= 2 && index <= 4) {
+            if (text) {
+                // Keep the original short code instead of getting the full description
+                td.textContent = text;
+                
+                // Extract ability type for coloring
+                const abilityType = text.match(/^([a-z]+)/i)?.[1]?.toLowerCase();
+                if (abilityType) {
+                    td.classList.add(`ability-${abilityType}`);
+                }
+            } else {
+                td.textContent = '-';
+            }
+        }
+        // Special handling for numerical columns (index 5-11, shifted due to new IA columns)
+        else if (index >= 5 && index <= 11) {
             // Hide cell content if it's 0, undefined, null, or empty string
             if (text === 0 || text === '0' || text === undefined || text === null || text === '') {
                 td.textContent = '';
             } else {
                 td.textContent = text;
+                td.classList.add('numeric-cell');
             }
         } else {
             // Default handling for other columns
@@ -40,22 +66,34 @@ function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sa
     return tr;
 }
 
-// setView function removed - unused
-
 export async function renderTable() {
     try {
-        const [accountData, jobList, arcaneData, sacredData, grandSacredData] = await Promise.all([
+        const [accountData, jobList, arcaneData, sacredData, grandSacredData, innerAbilityData] = await Promise.all([
             loadCSV('data/account.csv'),
             loadCSV('data/joblist.csv'),
             loadCSV('data/arcane.csv'),
             loadCSV('data/sacred.csv'),
-            loadCSV('data/grandsacred.csv')
+            loadCSV('data/grandsacred.csv'),
+            loadCSV('data/innerability.csv')
         ]);
 
         const jobMap = createDataMap(jobList, 'jobName');
         const arcaneMap = createSymbolsMap(arcaneData);
         const sacredMap = createSymbolsMap(sacredData);
         const grandSacredMap = createSymbolsMap(grandSacredData);
+        
+        // Create inner ability map with IGN as key
+        const innerAbilityMap = {};
+        
+        // Process innerAbilityData to create a map for easy access
+        if (innerAbilityData.length > 0) {
+            innerAbilityData.forEach(ia => {
+                if (ia.IGN) {
+                    innerAbilityMap[ia.IGN] = ia;
+                }
+            });
+        }
+        
         sortByLevelFactionArchetype(accountData, jobMap);
         const table = document.getElementById('charTable');
 
@@ -63,15 +101,23 @@ export async function renderTable() {
         const thead = table.querySelector('thead');
         thead.innerHTML = `
       <tr>
-        <th>Character</th>
-        <th>Level</th>
-        <th>Arcane Force</th>
-        <th>Arcane Stats</th>
-        <th>Sacred Force</th>
-        <th>Sacred Stats</th>
-        <th>EXP Bonus (%)</th>
-        <th>Meso Bonus (%)</th>
-        <th>Drop Bonus (%)</th>
+        <th rowspan="2">Character</th>
+        <th rowspan="2">Level</th>
+        <th colspan="3" class="ia-group-header">Inner Ability</th>
+        <th colspan="2" class="arcane-group-header">Arcane</th>
+        <th colspan="5" class="sacred-group-header">Sacred</th>
+      </tr>
+      <tr>
+        <th class="preset-header">Preset 1</th>
+        <th class="preset-header">Preset 2</th>
+        <th class="preset-header">Preset 3</th>
+        <th class="arcane-header">Force</th>
+        <th class="arcane-header">Stats</th>
+        <th class="sacred-header">Force</th>
+        <th class="sacred-header">Stats</th>
+        <th class="sacred-header">EXP</th>
+        <th class="sacred-header">Meso</th>
+        <th class="sacred-header">Drop</th>
       </tr>
     `;
 
@@ -97,8 +143,18 @@ export async function renderTable() {
             const totalSacredForce = ((sacredForce === '' || isNaN(sacredForce) ? 0 : sacredForce) + 
                                     (grandSacredForce === '' || isNaN(grandSacredForce) ? 0 : grandSacredForce)) || '';
 
+            // Get inner ability data for this character
+            const iaData = innerAbilityMap[char.IGN] || {};
+            
+            // Process inner ability data for proper display
+            const processedIAData = {
+                P1_IA1: iaData['P1 IA1'] || '',
+                P2_IA1: iaData['P2 IA1'] || '',
+                P3_IA1: iaData['P3 IA1'] || ''
+            };
+
             const row = createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sacredStat, 
-                                      expBonus, mesoBonus, dropBonus);
+                                      expBonus, mesoBonus, dropBonus, processedIAData);
             tbody.appendChild(row);
         });
     } catch (err) {

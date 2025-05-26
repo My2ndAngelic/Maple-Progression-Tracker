@@ -1,0 +1,162 @@
+/* Overview Inner Ability Styling */
+
+/* Overview Headers Styling */
+
+/* Preset header styling - second row */
+#charTable thead tr:nth-child(2) th.preset-header {
+    background-color: #666666;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.9em;
+    border-top: none;
+}
+
+/* Inner Ability header styling - first row */
+#charTable thead tr:nth-child(1) th:nth-child(3) {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+}
+
+/* Arcane header styling - first row */
+#charTable thead tr:nth-child(1) th:nth-child(6) {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+}
+
+/* Arcane header styling - second row */
+#charTable thead tr:nth-child(2) th.arcane-header {
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.9em;
+    border-top: none;
+}
+
+/* Sacred header styling - first row */
+#charTable thead tr:nth-child(1) th:nth-child(7) {
+    background-color: #663300;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+}
+
+/* Sacred header styling - second row */
+#charTable thead tr:nth-child(2) th.sacred-header {
+    background-color: #996633;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    font-size: 0.9em;
+    border-top: none;
+}
+
+/* Dark mode styling */
+body.dark-mode #charTable thead tr:nth-child(2) th.preset-header {
+    background-color: #444444;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:nth-child(2) th.arcane-header {
+    background-color: #004080;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:nth-child(2) th.sacred-header {
+    background-color: #805020;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(3) {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(6) {
+    background-color: #002040;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:nth-child(1) th:nth-child(7) {
+    background-color: #402010;
+    color: white;
+}
+
+/* Coloring for Inner Ability cells on overview page */
+#charTable td.ability-as {
+    background-color: #f5a9a9;
+}
+
+#charTable td.ability-boss {
+    background-color: #a9f5a9;
+}
+
+#charTable td.ability-cdskip {
+    background-color: #f5a9f5;
+}
+
+#charTable td.ability-meso {
+    background-color: #f5f5a9;
+}
+
+#charTable td.ability-item {
+    background-color: #a9f5f5;
+}
+
+#charTable td.ability-passive {
+    background-color: #d6a5e0;
+}
+
+#charTable td.ability-buff {
+    background-color: #ccb3ff;
+}
+
+/* Dark Mode Colors */
+body.dark-mode #charTable td.ability-as {
+    background-color: #8B0000;
+}
+
+body.dark-mode #charTable td.ability-boss {
+    background-color: #228B22;
+}
+
+body.dark-mode #charTable td.ability-cdskip {
+    background-color: #4169E1;
+}
+
+body.dark-mode #charTable td.ability-meso {
+    background-color: #B8860B;
+}
+
+body.dark-mode #charTable td.ability-item {
+    background-color: #008080;
+}
+
+body.dark-mode #charTable td.ability-passive {
+    background-color: #800080;
+}
+
+body.dark-mode #charTable td.ability-buff {
+    background-color: #D35400;
+}
+
+/* Inner ability column text center alignment */
+#charTable td:nth-child(3),
+#charTable td:nth-child(4),
+#charTable td:nth-child(5) {
+    text-align: center;
+    padding: 8px 6px;
+    min-width: 60px;
+    font-weight: normal;
+}

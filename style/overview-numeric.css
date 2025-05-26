@@ -1,0 +1,53 @@
+/* Numeric cell alignment */
+#charTable td:nth-child(6),  /* Arcane Force */
+#charTable td:nth-child(7),  /* Arcane Stats */
+#charTable td:nth-child(8),  /* Sacred Force */
+#charTable td:nth-child(9),  /* Sacred Stats */
+#charTable td:nth-child(10), /* EXP */
+#charTable td:nth-child(11), /* Meso */
+#charTable td:nth-child(12), /* Drop */
+#charTable td.numeric-cell {
+    text-align: right;
+    padding-right: 12px;
+}
+
+/* Group header styling for all sections */
+#charTable thead tr:first-child th.ia-group-header {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center !important;
+    border-bottom: none;
+}
+
+#charTable thead tr:first-child th.arcane-group-header {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    text-align: center !important;
+    border-bottom: none;
+}
+
+#charTable thead tr:first-child th.sacred-group-header {
+    background-color: #663300;
+    color: white;
+    font-weight: bold;
+    text-align: center !important;
+    border-bottom: none;
+}
+
+/* Dark mode styling for group headers */
+body.dark-mode #charTable thead tr:first-child th.ia-group-header {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:first-child th.arcane-group-header {
+    background-color: #002040;
+    color: white;
+}
+
+body.dark-mode #charTable thead tr:first-child th.sacred-group-header {
+    background-color: #402010;
+    color: white;
+}
