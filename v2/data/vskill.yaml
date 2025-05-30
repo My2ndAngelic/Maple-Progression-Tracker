@@ -35,10 +35,20 @@ archetype_skills:
     - "Loaded Dice"
     - "Overdrive"
 
+blessing_skills:
+  common:
+    - "Maple World Goddess's Blessing"
+  sengoku:
+    - "Princess Sakuno's Blessing"
+  cygnus:
+    - "Empress Cygnus's Blessing"
+  grandis:
+    - "Grandis Goddess's Blessing"
+  transcendent:
+    - "Transcendent Rhinne's Prayer"
+
 faction_skills:
   explorer:
-    common:
-      - "Maple World Goddess's Blessing"
     warrior:
       - "Blitz Shield"
     magician:
@@ -52,29 +62,23 @@ faction_skills:
   heroes:
     - "Freud's Wisdom"
   resistance:
-    - "Maple World Goddess's Blessing"
-    - "Resistance Infantry"
-  demon:
-    - "Defender of the Demon"
+    common:
+        - "Resistance Infantry"
+    demon:
+      - "Defender of the Demon"
   friends:
-    - "Otherworld Goddess's Blessing"
+    - "Afterimage of the Otherworld"
   cygnus:
     - "Phalanx Charge"
-    - "Empress Cygnus's Blessing"
   sengoku:
     - "Sengoku Force, Assemble!"
-    - "Princess Sakuno's Blessing"
   nova:
     - "Might of the Nova"
   flora:
     - "Conversion Overdrive"
   anima:
     - "Lotus Flower"
-  grandis:
-    - "Grandis Goddess's Blessing"
   transcendent:
     - "Transcendent"
-  friends:
-    - "Afterimage of the Otherworld"
   jianghu:
     - "Ring of Samsara"

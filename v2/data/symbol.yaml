@@ -19,3 +19,7 @@ regions:
       - "Shangri-La"
       - "Arteria"
       - "Carcion"
+  grand_sacred:
+    maxLevel: 11
+    areas:
+      - "Tallahart"
