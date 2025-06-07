@@ -9,7 +9,7 @@ wa,Cygnus Knight,Archer,Wind Archer,2,STR
 nw,Cygnus Knight,Thief,Night Walker,2,LUK
 tb,Cygnus Knight,Pirate,Thunder Breaker,2,STR
 dk,Explorer,Warrior,Dark Knight,2,STR
-hero,Explorer,Warrior,Hero,2,STR
+hero,Explorer,Warrior,Heroes,2,STR
 pally,Explorer,Warrior,Paladin,2,STR
 fp,Explorer,Magician,Arch Mage (Fire & Poison),2,INT
 il,Explorer,Magician,Arch Mage (Ice & Lightning),2,INT
@@ -28,12 +28,12 @@ khali,Flora,Thief,Khali,2,LUK
 adele,Flora,Warrior,Adele,2,STR
 ark,Flora,Pirate,Ark,3,STR
 kine,Friendstory,Magician,Kinesis,2,INT
-aran,Hero,Warrior,Aran,3,STR
-evan,Hero,Magician,Evan,3,INT
-lumi,Hero,Magician,Luminous,3,INT
-merc,Hero,Archer,Mercedes,3,DEX
-phantom,Hero,Thief,Phantom,3,LUK
-shade,Hero,Pirate,Shade,3,STR
+aran,Heroes,Warrior,Aran,3,STR
+evan,Heroes,Magician,Evan,3,INT
+lumi,Heroes,Magician,Luminous,3,INT
+merc,Heroes,Archer,Mercedes,3,DEX
+phantom,Heroes,Thief,Phantom,3,LUK
+shade,Heroes,Pirate,Shade,3,STR
 lynn,Jianghu,Magician,Lynn,3,INT
 mx,Jianghu,Pirate,Mo Xuan,2,DEX
 kaiser,Nova,Warrior,Kaiser,3,STR
@@ -50,3 +50,4 @@ mech,Resistance,Pirate,Mechanic,2,DEX
 kanna,Sengoku,Magician,Kanna,2,INT
 hayato,Sengoku,Warrior,Hayato,2,STR
 sia,SHINE,Magician,Sia,2,INT
+ren,Anima,Warrior,Ren,2,STR
