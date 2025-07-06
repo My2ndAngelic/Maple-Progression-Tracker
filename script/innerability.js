@@ -292,7 +292,7 @@ function getAbilityDescription(ability) {
         case 'damage':
             return `Damage ${sign}${value}%`;
         case 'crit':
-            return `Critical Rate ${sign}${value}%`;
+            return `Critical Rate: ${sign}${value}%`;
         case 'allstat':
             return `All Stats ${sign}${value}`;
 
@@ -304,17 +304,17 @@ function getAbilityDescription(ability) {
         case 'cdskip':
             return `${value}% chance to skip cooldowns`;
         case 'meso':
-            return `Mesos Obtained ${sign}${value}%`;
+            return `Mesos Obtained: ${sign}${value}%`;
         case 'item':
             return `Item Drop Rate ${sign}${value}%`;
         case 'passive':
             return `Passive Skills ${sign}${value} Level`;
         case 'abnormal':
-            return `${sign}${value}% Damage to monsters inflicted with Abnormal Status`;
+            return `${sign}${value}% damage when attacking targets inflicted with Abnormal Status.`;
         case 'buff':
             return `Buff Duration ${sign}${value}%`;
         case 'normal':
-            return `Damage to normal monsters ${sign}${value}%`;
+            return `${value}% damage to normal mosters`;
         case 'aoe':
             return `Enemies Hit by Multi-target Skills ${sign}${value}`;
 
