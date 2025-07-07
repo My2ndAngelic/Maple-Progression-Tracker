@@ -274,17 +274,17 @@ function getAbilityDescription(ability) {
     switch (typeLC) {
         // Basic Stats
         case 'str':
-            return `STR ${sign}${value}`;
+            return `STR: ${sign}${value}`;
         case 'dex':
-            return `DEX ${sign}${value}`;
+            return `DEX: ${sign}${value}`;
         case 'int':
-            return `INT ${sign}${value}`;
+            return `INT: ${sign}${value}`;
         case 'luk':
-            return `LUK ${sign}${value}`;
+            return `LUK: ${sign}${value}`;
         case 'hp':
-            return `Max HP ${sign}${value}%`;
+            return `Max HP: ${sign}${value}%`;
         case 'mp':
-            return `Max MP ${sign}${value}%`;
+            return `Max MP: ${sign}${value}%`;
         case 'att':
             return `Attack ${sign}${value}`;
         case 'matt':
