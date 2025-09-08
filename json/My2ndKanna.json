@@ -1,0 +1,24 @@
+{
+  "totalCount": 1,
+  "ranks": [
+    {
+      "characterID": 0,
+      "characterName": "My2ndKanna",
+      "exp": 897455893,
+      "gap": 44531707605,
+      "jobDetail": 12,
+      "jobID": 207,
+      "level": 221,
+      "rank": 175940,
+      "startRank": 0,
+      "worldID": 19,
+      "characterImgURL": "https://msavatar1.nexon.net/Character/ANCEDGIIGJOGKFHCNDAPDOBENOMGJDJBNCJKMKIKMPNDOCFAMGCLGGEMPJDBKEABAPGGBCKAIMDPNNJFNMKCLOEAKENLCJFCDOOJFFJMLIMJJLGGOOJALCELLJFANKIDJHFLJFNHKLOLIKDDJOGHBFBPGDHAHFMBIMILAOJBMOKIIABBKCGLODNNBMNDLPDBDKDIDAFOELOAKADFFMNHMFKGFFMGLKEILBFGPGCOGDIAPBGDAKIKBFMPAHMPDLNI.png",
+      "isSearchTarget": true,
+      "legionLevel": 0,
+      "raidPower": 0,
+      "tierName": "",
+      "tierID": 0,
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "totalCount": 1,
+  "ranks": [
+    {
+      "characterID": 0,
+      "characterName": "My2ndShadow",
+      "exp": 7882403526,
+      "gap": 0,
+      "jobDetail": 22,
+      "jobID": 4,
+      "level": 220,
+      "rank": 349338,
+      "startRank": 0,
+      "worldID": 19,
+      "characterImgURL": "https://msavatar1.nexon.net/Character/GCDPKOEEOINPODMKBJDNDJKAELFKHLPMEDEDNPFHAAMMIMJLJIBFJKFGDGGCIDJIKONKFHIPMPNIJHMGHLMPMCFAGFLEGBDFEONFKBPNENLDNJPAADKPJNBFDGAPLJEHJOLGNEOAIDNJIOCOMILJBKFJKPGIOLBLDFDCBBEGINENFAELNJDJIGCJLAECDMGBIGDKFFBOJENKCNHLIIIGKEIKHONBLKFHIAABAPHAFFFBKECPHBHCLDGGIODINFHK.png",
+      "isSearchTarget": true,
+      "legionLevel": 0,
+      "raidPower": 0,
+      "tierName": "",
+      "tierID": 0,
+      "score": 0
+    }
+  ]
+}

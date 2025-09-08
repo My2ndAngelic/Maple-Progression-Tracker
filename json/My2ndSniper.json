@@ -1,0 +1,24 @@
+{
+  "totalCount": 1,
+  "ranks": [
+    {
+      "characterID": 0,
+      "characterName": "My2ndSniper",
+      "exp": 1170548425428,
+      "gap": 0,
+      "jobDetail": 22,
+      "jobID": 3,
+      "level": 260,
+      "rank": 349338,
+      "startRank": 0,
+      "worldID": 19,
+      "characterImgURL": "https://msavatar1.nexon.net/Character/KLPDDCIKMBPMHIEJHIEMGFBLPBEDHGLIAFINLCMDBMDNJBJHJKMCOIOGELKFALLCPFNFJOCELNLNKIKLEEEHNHIIGACBAHIMNDOHNJPKGKLOKNKGCICAECPELPLFHPJJOICPKOGIHNFIGMBHOPEANOFNEIPOFCECAABBJHNBNNNHMFJDHICCOBGKGIDGOJIDPBJEDCJLGGDCIFEIKNGEBKPLHELHIPPOFACLOLDJGFIGJPGDNKBJNFANOLCGGPFG.png",
+      "isSearchTarget": true,
+      "legionLevel": 0,
+      "raidPower": 0,
+      "tierName": "",
+      "tierID": 0,
+      "score": 0
+    }
+  ]
+}

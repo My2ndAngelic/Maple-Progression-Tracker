@@ -1,0 +1,24 @@
+{
+  "totalCount": 1,
+  "ranks": [
+    {
+      "characterID": 0,
+      "characterName": "My2ndDarkKn",
+      "exp": 1403258201761,
+      "gap": 3322903572878,
+      "jobDetail": 32,
+      "jobID": 1,
+      "level": 271,
+      "rank": 60889,
+      "startRank": 0,
+      "worldID": 19,
+      "characterImgURL": "https://msavatar1.nexon.net/Character/ACPOPNLFIINICBBLAJOHHBNBOGHCNGJECKKEPLLIOMNNGHANFHEPACDLMGEIJCKMMECBCGPGDMCOALINAGJLFJLGPPDHBNIPJPJPHEGAGKFAMEGBGDLEMGIJENHNBFGLIPIEJEBFLJGHAODKKMIPLNNPIMEGNLFLHACJABAONOIKJCPGHNCKFKOJIEMJHIMKECMPNJNKLHGGDMMBLJAKDJFNGOJLOCNBFCBOCIMOKPLLHLCFPNKOGCMJNHCMDAGH.png",
+      "isSearchTarget": true,
+      "legionLevel": 0,
+      "raidPower": 0,
+      "tierName": "",
+      "tierID": 0,
+      "score": 0
+    }
+  ]
+}
