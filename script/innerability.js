@@ -322,7 +322,7 @@ function getAbilityDescription(ability) {
         case 'defp':
             return `Defense ${sign}${value}%`;
         case 'fddef':
-            return `Final Damage ${sign}${value}% of DEF`;
+            return `Final Damage: ${sign}${value}% of DEF`;
         case 'deff':
             return `Increased defense ${sign}${value}`;
 
