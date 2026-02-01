@@ -1,33 +1,33 @@
 jobName,faction,archetype,fullName,linkSkillMaxLevel,mainstat,Guide,Discord,Wiki,Website
-lara,Anima,Magician,Lara,2,INT
-hy,Anima,Thief,Hoyoung,2,LUK
+lara,Anima,Magician,Lara,3,INT
+hy,Anima,Thief,Hoyoung,3,LUK
 zero,Child Of God,Warrior,Zero,5,STR
-bw,Cygnus Knight,Magician,Blaze Wizard,2,INT
-dw,Cygnus Knight,Warrior,Dawn Warrior,2,STR
-mihile,Cygnus Knight,Warrior,Mihile,2,STR
-wa,Cygnus Knight,Archer,Wind Archer,2,STR
-nw,Cygnus Knight,Thief,Night Walker,2,LUK
-tb,Cygnus Knight,Pirate,Thunder Breaker,2,STR
-dk,Explorer,Warrior,Dark Knight,2,STR
-hero,Explorer,Warrior,Hero,2,STR
-pally,Explorer,Warrior,Paladin,2,STR
-fp,Explorer,Magician,Arch Mage (Fire & Poison),2,INT
-il,Explorer,Magician,Arch Mage (Ice & Lightning),2,INT
-bishop,Explorer,Magician,Bishop,2,INT
-bm,Explorer,Archer,Bowmaster,2,DEX
-mm,Explorer,Archer,Marksman,2,DEX
-pf,Explorer,Archer,Pathfinder,2,DEX
-db,Explorer,Thief,Blade Master,2,LUK
-nl,Explorer,Thief,Night Lord,2,LUK
-shad,Explorer,Thief,Shadower,2,LUK
-bucc,Explorer,Pirate,Buccaneer,2,STR
-cm,Explorer,Pirate,Cannon Master,2,STR
-sair,Explorer,Pirate,Corsair,2,DEX
-illium,Flora,Magician,Illium,2,INT
-khali,Flora,Thief,Khali,2,LUK
-adele,Flora,Warrior,Adele,2,STR
+bw,Cygnus Knight,Magician,Blaze Wizard,3,INT
+dw,Cygnus Knight,Warrior,Dawn Warrior,3,STR
+mihile,Cygnus Knight,Warrior,Mihile,3,STR
+wa,Cygnus Knight,Archer,Wind Archer,3,STR
+nw,Cygnus Knight,Thief,Night Walker,3,LUK
+tb,Cygnus Knight,Pirate,Thunder Breaker,3,STR
+dk,Explorer,Warrior,Dark Knight,3,STR
+hero,Explorer,Warrior,Hero,3,STR
+pally,Explorer,Warrior,Paladin,3,STR
+fp,Explorer,Magician,Arch Mage (Fire & Poison),3,INT
+il,Explorer,Magician,Arch Mage (Ice & Lightning),3,INT
+bishop,Explorer,Magician,Bishop,3,INT
+bm,Explorer,Archer,Bowmaster,3,DEX
+mm,Explorer,Archer,Marksman,3,DEX
+pf,Explorer,Archer,Pathfinder,3,DEX
+db,Explorer,Thief,Blade Master,3,LUK
+nl,Explorer,Thief,Night Lord,3,LUK
+shad,Explorer,Thief,Shadower,3,LUK
+bucc,Explorer,Pirate,Buccaneer,3,STR
+cm,Explorer,Pirate,Cannon Master,3,STR
+sair,Explorer,Pirate,Corsair,3,DEX
+illium,Flora,Magician,Illium,3,INT
+khali,Flora,Thief,Khali,3,LUK
+adele,Flora,Warrior,Adele,3,STR
 ark,Flora,Pirate,Ark,3,STR
-kine,Friendstory,Magician,Kinesis,2,INT
+kine,Friendstory,Magician,Kinesis,3,INT
 aran,Heroes,Warrior,Aran,3,STR
 evan,Heroes,Magician,Evan,3,INT
 lumi,Heroes,Magician,Luminous,3,INT
@@ -35,19 +35,19 @@ merc,Heroes,Archer,Mercedes,3,DEX,https://docs.google.com/document/d/1Sz5rdODR3c
 phantom,Heroes,Thief,Phantom,3,LUK
 shade,Heroes,Pirate,Shade,3,STR
 lynn,Jianghu,Magician,Lynn,3,INT
-mx,Jianghu,Pirate,Mo Xuan,2,DEX
+mx,Jianghu,Pirate,Mo Xuan,3,DEX
 kaiser,Nova,Warrior,Kaiser,3,STR
-kain,Nova,Archer,Kain,2,DEX
-cadena,Nova,Thief,Cadena,2,LUK
+kain,Nova,Archer,Kain,3,DEX
+cadena,Nova,Thief,Cadena,3,LUK
 ab,Nova,Pirate,Angelic Buster,3,DEX
-blaster,Resistance,Warrior,Blaster,2,STR
+blaster,Resistance,Warrior,Blaster,3,STR
 da,Resistance,Warrior,Demon Avenger,3,HP
 ds,Resistance,Warrior,Demon Slayer,3,STR
-bam,Resistance,Magician,Battle Mage,2,INT
-wh,Resistance,Archer,Wild Hunter,2,DEX
-xenon,Resistance,Thief,Xenon,2,STR DEX LUK
-mech,Resistance,Pirate,Mechanic,2,DEX
-kanna,Sengoku,Magician,Kanna,2,INT
-hayato,Sengoku,Warrior,Hayato,2,STR
+bam,Resistance,Magician,Battle Mage,3,INT
+wh,Resistance,Archer,Wild Hunter,3,DEX
+xenon,Resistance,Thief,Xenon,3,STR DEX LUK
+mech,Resistance,Pirate,Mechanic,3,DEX
+kanna,Sengoku,Magician,Kanna,3,INT
+hayato,Sengoku,Warrior,Hayato,3,STR
 sia,Shine,Magician,Sia Astelle,3,INT
-ren,Anima,Warrior,Ren,2,STR
+ren,Anima,Warrior,Ren,3,STR
