@@ -50,14 +50,14 @@ function createTableCell(content, columnName) {
 }
 
 /**
- * Renders the armor table with data from equipment.csv
+ * Renders the armor table with data from equip_armor.csv
  */
 async function renderArmorTable() {
     try {
         // Load data
         const [accountData, equipmentData] = await Promise.all([
             loadCSV('account.csv'),
-            loadCSV('equipment.csv')
+            loadCSV('equip_armor.csv')
         ]);
 
         // Create account map for quick lookups

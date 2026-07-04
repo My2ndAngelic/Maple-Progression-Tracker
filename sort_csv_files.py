@@ -18,12 +18,15 @@ def load_account_data(account_file):
     
     with open(account_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
+        # Handle potential spaces in column names
         for row in reader:
-            ign = row['IGN']
-            level = int(row['level']) if row['level'] else 0
-            job = row['jobName']
-            ign_to_level[ign] = level
-            ign_to_job[ign] = job
+            row = {k.strip(): v for k, v in row.items()}
+            ign = row.get('IGN', '')
+            level = int(row.get('level', 0)) if row.get('level') else 0
+            job = row.get('jobName', '')
+            if ign:
+                ign_to_level[ign] = level
+                ign_to_job[ign] = job
     
     return ign_to_level, ign_to_job
 
@@ -34,12 +37,15 @@ def load_job_data(joblist_file):
     
     with open(joblist_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
+        # Handle potential spaces in column names
         for row in reader:
-            job = row['jobName']
-            faction = row['faction']
-            archetype = row['archetype']
-            job_to_faction[job] = faction
-            job_to_archetype[job] = archetype
+            row = {k.strip(): v for k, v in row.items()}
+            job = row.get('jobName', '')
+            faction = row.get('faction', '')
+            archetype = row.get('archetype', '')
+            if job:
+                job_to_faction[job] = faction
+                job_to_archetype[job] = archetype
     
     return job_to_faction, job_to_archetype
 
@@ -115,14 +121,16 @@ def main():
     print(f"Loaded {len(ign_to_level)} IGNs with level data")
     print(f"Loaded {len(job_to_faction)} jobs with faction/archetype data")
     
-    # Get all CSV files except joblist.csv
+    # Get all CSV files except joblist.csv and jobdetail.csv
+    # Files to exclude: joblist.csv (reference), jobdetail.csv (character details), jobDetail.csv (deprecated)
+    exclude_files = {'joblist.csv', 'jobdetail.csv', 'jobDetail.csv', 'cash.csv'}
     csv_files = []
     for file in data_dir.glob('*.csv'):
-        if file.name != 'joblist.csv':
+        if file.name not in exclude_files:
             csv_files.append(file)
     
     print(f"\nFound {len(csv_files)} CSV files to sort:")
-    for file in csv_files:
+    for file in sorted(csv_files):
         print(f"  - {file.name}")
     
     # Sort each CSV file
@@ -135,9 +143,9 @@ def main():
     
     print(f"\n✓ Completed sorting all CSV files!")
     
-    # Display sorting preview for sacred.csv
-    print(f"\nPreview of sorted IGNs (from sacred.csv):")
-    sacred_file = data_dir / 'sacred.csv'
+    # Display sorting preview for symbol_sacred.csv
+    print(f"\nPreview of sorted IGNs (from symbol_sacred.csv):")
+    sacred_file = data_dir / 'symbol_sacred.csv'
     if sacred_file.exists():
         with open(sacred_file, 'r', encoding='utf-8') as f:
             reader = csv.reader(f)

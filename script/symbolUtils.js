@@ -33,17 +33,17 @@ export function getSymbolDisplayValue(level) {
 function getSymbolTypeInfo(type) {
     const typeMap = {
         'arcane': {
-            csvFile: 'arcane.csv',
+            csvFile: 'symbol_arcane.csv',
             tableId: 'arcaneTable',
             headers: ['Character', 'Level', 'Vanishing Journey', 'Chu Chu Island', 'Lachelein', 'Arcana', 'Morass', 'Esfera']
         },
         'sacred': {
-            csvFile: 'sacred.csv',
+            csvFile: 'symbol_sacred.csv',
             tableId: 'sacredTable',
             headers: ['Character', 'Level', 'Cernium', 'Hotel Arcus', 'Odium', 'Shangri-La', 'Arteria', 'Carcion']
         },
         'grandsacred': {
-            csvFile: 'grandsacred.csv',
+            csvFile: 'symbol_grandsacred.csv',
             tableId: 'grandSacredTable',
             headers: ['Character', 'Level', 'Tallahart']
         }

@@ -1,6 +1,6 @@
-import {calculateArcaneForce, calculateArcaneStat} from "./arcane.js";
-import {calculateSacredForce, calculateSacredStat} from "./sacred.js";
-import {calculateGrandSacredForce, calculateGrandSacredStat, calculateGrandSacredExpBonus, calculateGrandSacredMesoBonus, calculateGrandSacredDropBonus} from "./grandsacred.js";
+import {calculateArcaneForce, calculateArcaneStat} from "./symbol_arcane.js";
+import {calculateSacredForce, calculateSacredStat} from "./symbol_sacred.js";
+import {calculateGrandSacredForce, calculateGrandSacredStat, calculateGrandSacredExpBonus, calculateGrandSacredMesoBonus, calculateGrandSacredDropBonus} from "./symbol_grandsacred.js";
 import {prepareTable, sortByLevelFactionArchetype} from "./tableUtils.js";
 import {createDataMap, createSymbolsMap, loadCSV} from "./csvHandling.js";
 
@@ -97,9 +97,9 @@ export async function renderTable() {
         const [accountData, jobList, arcaneData, sacredData, grandSacredData, innerAbilityData] = await Promise.all([
             loadCSV('data/account.csv'),
             loadCSV('data/joblist.csv'),
-            loadCSV('data/arcane.csv'),
-            loadCSV('data/sacred.csv'),
-            loadCSV('data/grandsacred.csv'),
+            loadCSV('data/symbol_arcane.csv'),
+            loadCSV('data/symbol_sacred.csv'),
+            loadCSV('data/symbol_grandsacred.csv'),
             loadCSV('data/innerability.csv')
         ]);
 

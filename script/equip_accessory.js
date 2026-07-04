@@ -25,13 +25,13 @@ function getAccessoryClass(equipment) {
 }
 
 /**
- * Renders the accessory table with data from accessory.csv
+ * Renders the accessory table with data from equip_accessory.csv
  */
 export async function renderAccessoryTable() {
     try {
         const [accountData, accessoryData] = await Promise.all([
             loadCSV('data/account.csv'),
-            loadCSV('data/accessory.csv')
+            loadCSV('data/equip_accessory.csv')
         ]);
 
         // Sort by level, descending
