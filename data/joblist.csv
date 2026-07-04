@@ -1,7 +1,7 @@
 jobName,faction,archetype,fullName,linkSkillMaxLevel,mainstat,Guide,Discord,Wiki,Website
 lara,Anima,Magician,Lara,3,INT
 hy,Anima,Thief,Hoyoung,3,LUK
-zero,Child Of God,Warrior,Zero,5,STR
+zero,Child Of God,Warrior,Zero,3,STR
 bw,Cygnus Knight,Magician,Blaze Wizard,3,INT
 dw,Cygnus Knight,Warrior,Dawn Warrior,3,STR
 mihile,Cygnus Knight,Warrior,Mihile,3,STR
@@ -51,3 +51,4 @@ kanna,Sengoku,Magician,Kanna,3,INT
 hayato,Sengoku,Warrior,Hayato,3,STR
 sia,Shine,Magician,Sia Astelle,3,INT
 ren,Anima,Warrior,Ren,3,STR
+erel,Shine,Warrior,Erel,3,STR
