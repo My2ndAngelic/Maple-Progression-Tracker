@@ -1,28 +1,28 @@
 // Common UI elements and functionality
 export const navbar = `
   <div id="navbar">    
-    <button id="overviewBtn" onclick="window.location.href='overview.html'">Overview</button>
-    <button id="progressionBtn" onclick="window.location.href='progression.html'">Progression</button>
+    <button id="overviewBtn" onclick="window.location.href='overview.html'"><span class="nav-label">Overview</span></button>
+    <button id="progressionBtn" onclick="window.location.href='progression.html'"><span class="nav-label">Progression</span></button>
     <div class="dropdown">
-      <button id="equipmentBtn">Equipment ▼</button>
+      <button id="equipmentBtn"><span class="nav-label">Equipment ▼</span></button>
       <div class="dropdown-content">
-        <a href="armor.html">Armor</a>
-        <a href="accessory.html">Accessory</a>
-        <a href="cash.html">Cash</a>
+        <a href="armor.html"><span class="menu-label">Armor</span></a>
+        <a href="accessory.html"><span class="menu-label">Accessory</span></a>
+        <a href="cash.html"><span class="menu-label">Cash</span></a>
       </div>
     </div>
     <div class="dropdown">
-      <button id="symbolsBtn">Symbols ▼</button>
+      <button id="symbolsBtn"><span class="nav-label">Symbols ▼</span></button>
       <div class="dropdown-content">
-        <a href="arcane.html">Arcane</a>
-        <a href="sacred.html">Sacred</a>
-        <a href="grandsacred.html">Grand Sacred</a>
+        <a href="arcane.html"><span class="menu-label">Arcane</span></a>
+        <a href="sacred.html"><span class="menu-label">Sacred</span></a>
+        <a href="grandsacred.html"><span class="menu-label">Grand Sacred</span></a>
       </div>
     </div>
-    <button id="innerabilityBtn" onclick="window.location.href='innerability.html'">Inner Ability</button>
-    <button id="helpBtn" onclick="window.location.href='help.html'">Help</button>
-    <button id="aboutBtn" onclick="window.location.href='about.html'">About</button>
-    <button id="darkModeToggle">🌙 Dark Mode</button>
+    <button id="innerabilityBtn" onclick="window.location.href='innerability.html'"><span class="nav-label">Inner Ability</span></button>
+    <button id="helpBtn" onclick="window.location.href='help.html'"><span class="nav-label">Help</span></button>
+    <button id="aboutBtn" onclick="window.location.href='about.html'"><span class="nav-label">About</span></button>
+    <button id="darkModeToggle"><span class="nav-label">🌙 Dark Mode</span></button>
   </div>
 `;
 
@@ -82,7 +82,7 @@ export function applyTheme(isDark) {
     // Set theme
     const basePath = window.location.pathname.includes('/html/') ? '../' : '';
     themeLink.href = `${basePath}style/${isDark ? 'style-dark.css' : 'style.css'}`;
-    darkToggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    darkToggleBtn.innerHTML = `<span class="nav-label">${isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}</span>`;
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
     
     // Add or remove dark-mode class on body element
