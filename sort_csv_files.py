@@ -11,6 +11,16 @@ import csv
 import os
 from pathlib import Path
 
+def normalize_row_keys(row):
+    """Normalize CSV dict keys by trimming spaces and removing UTF-8 BOM."""
+    normalized = {}
+    for k, v in row.items():
+        if k is None:
+            continue
+        key = k.strip().lstrip('\ufeff')
+        normalized[key] = v
+    return normalized
+
 def load_account_data(account_file):
     """Load account data with IGN to level mapping and job mapping."""
     ign_to_level = {}
@@ -20,7 +30,7 @@ def load_account_data(account_file):
         reader = csv.DictReader(f)
         # Handle potential spaces in column names
         for row in reader:
-            row = {k.strip(): v for k, v in row.items()}
+            row = normalize_row_keys(row)
             ign = row.get('IGN', '')
             level = int(row.get('level', 0)) if row.get('level') else 0
             job = row.get('jobName', '')
@@ -39,7 +49,7 @@ def load_job_data(joblist_file):
         reader = csv.DictReader(f)
         # Handle potential spaces in column names
         for row in reader:
-            row = {k.strip(): v for k, v in row.items()}
+            row = normalize_row_keys(row)
             job = row.get('jobName', '')
             faction = row.get('faction', '')
             archetype = row.get('archetype', '')

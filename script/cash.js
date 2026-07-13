@@ -18,13 +18,15 @@ export async function renderCashTable() {
             jobMap[j.jobName] = j;
         });
 
-        // Merge cashData with accountData for sorting
-        const merged = cashData.map(cash => {
-            const acc = accountData.find(a => a.IGN === cash.IGN) || {};
-            return {...cash, ...acc};
+        // Render from account roster so missing cash rows never hide characters.
+        const cashMap = {};
+        cashData.forEach(cash => {
+            if (cash.IGN) cashMap[cash.IGN] = cash;
         });
 
-        sortByLevelFactionArchetype(merged, jobMap);    // Set up table headers
+        sortByLevelFactionArchetype(accountData, jobMap);
+
+        // Set up table headers
         const table = document.getElementById('cashTable');
         const thead = table.querySelector('thead');
         thead.innerHTML = `
@@ -41,14 +43,15 @@ export async function renderCashTable() {
         // Create a level map for quick access to character levels
         const levelMap = createLevelMap(accountData);
 
-        merged.forEach(cash => {
+        accountData.forEach(char => {
             const tr = document.createElement('tr');
+            const cash = cashMap[char.IGN] || {};
 
             // Add IGN cell
-            tr.appendChild(createTableCell(cash.IGN || ''));
+            tr.appendChild(createTableCell(char.IGN || ''));
 
             // Add Level cell from account data
-            tr.appendChild(createTableCell(levelMap.get(cash.IGN) || ''));
+            tr.appendChild(createTableCell(levelMap.get(char.IGN) || ''));
 
             // Add Petsnack cell with conditional formatting
             let petsnackValue = String(cash.Petsnack || '').trim();

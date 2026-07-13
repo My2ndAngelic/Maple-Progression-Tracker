@@ -31,6 +31,45 @@ code {
     border: 1px solid #ddd;
 }
 
+/* Inner Ability format reference table on Help page */
+.help-ia-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.help-ia-table th,
+.help-ia-table td {
+    border: 1px solid #ccc !important;
+    padding: 8px 10px !important;
+    text-align: left;
+    color: #000;
+    background: transparent;
+}
+
+.help-ia-table tr:first-child th {
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+}
+
+.help-ia-table tr:nth-child(odd):not(:first-child) {
+    background-color: #f9f9f9;
+}
+
+.help-ia-table tr:nth-child(even):not(:first-child) {
+    background-color: #ffffff;
+}
+
+.help-ia-table td.attack-speed { background-color: #ffdddd; }
+.help-ia-table td.boss-damage { background-color: #ddffdd; }
+.help-ia-table td.buff-duration { background-color: #ddddff; }
+.help-ia-table td.cooldown-skip { background-color: #ffddff; }
+.help-ia-table td.meso-obtain { background-color: #ffffdd; }
+.help-ia-table td.item-drop { background-color: #ddffff; }
+.help-ia-table td.passive-skill { background-color: #d6a5e0; }
+
 /* Dark mode styles */
 body.dark-mode .help-section h2 {
     color: #3399ff;
@@ -41,3 +80,30 @@ body.dark-mode code {
     color: #e0e0e0;
     border-color: #444;
 }
+
+body.dark-mode .help-ia-table th,
+body.dark-mode .help-ia-table td {
+    border: 1px solid #444 !important;
+    color: #fff;
+}
+
+body.dark-mode .help-ia-table tr:first-child th {
+    background-color: #c6c4c4;
+    color: #000;
+}
+
+body.dark-mode .help-ia-table tr:nth-child(odd):not(:first-child) {
+    background-color: #222;
+}
+
+body.dark-mode .help-ia-table tr:nth-child(even):not(:first-child) {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .help-ia-table td.attack-speed { background-color: #8b0000; }
+body.dark-mode .help-ia-table td.boss-damage { background-color: #228b22; }
+body.dark-mode .help-ia-table td.buff-duration { background-color: #1e3a8a; }
+body.dark-mode .help-ia-table td.cooldown-skip { background-color: #6b1f6b; }
+body.dark-mode .help-ia-table td.meso-obtain { background-color: #7a6a00; }
+body.dark-mode .help-ia-table td.item-drop { background-color: #006d6d; }
+body.dark-mode .help-ia-table td.passive-skill { background-color: #5b2a7e; }

@@ -185,7 +185,7 @@ h1 {
     display: inline-block;
 }
 
-.dropdown #equipmentBtn, .dropdown #symbolsBtn {
+.dropdown #equipmentBtn, .dropdown #symbolsBtn, .dropdown #vmatrixBtn {
     height: 100%;
     margin: 0;
     background-color: #007acc;
@@ -201,7 +201,7 @@ h1 {
     transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.dropdown #equipmentBtn .nav-label, .dropdown #symbolsBtn .nav-label {
+.dropdown #equipmentBtn .nav-label, .dropdown #symbolsBtn .nav-label, .dropdown #vmatrixBtn .nav-label {
     display: inline-block;
     transform: skewX(10deg);
 }

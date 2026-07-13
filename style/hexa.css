@@ -1,0 +1,93 @@
+/* Hexa Matrix table styles */
+
+#hexaView {
+    margin-top: 20px;
+}
+
+#hexaTable {
+    width: 100%;
+    table-layout: auto;
+}
+
+#hexaTable th,
+#hexaTable td {
+    text-align: center;
+    padding: 8px 6px;
+}
+
+#hexaTable thead tr:first-child th:first-child,
+#hexaTable td:first-child {
+    text-align: left;
+    min-width: 140px;
+}
+
+#hexaTable thead tr:first-child th:nth-child(2),
+#hexaTable td:nth-child(2) {
+    min-width: 52px;
+}
+
+#hexaTable th.skill-header {
+    background-color: #4a6fb1;
+    color: #ffffff;
+}
+
+#hexaTable th.mastery-header {
+    background-color: #2f8a7a;
+    color: #ffffff;
+}
+
+#hexaTable th.boost-header {
+    background-color: #7f5ca8;
+    color: #ffffff;
+}
+
+#hexaTable th.common-header {
+    background-color: #a16a2f;
+    color: #ffffff;
+}
+
+#hexaTable th.other-header {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+#hexaTable th.hexa-sub-header {
+    background-color: #454545;
+    color: #ffffff;
+    font-size: 0.85em;
+    min-width: 48px;
+}
+
+#hexaTable td.hexa-cell {
+    min-width: 48px;
+}
+
+body.dark-mode #hexaTable th.skill-header {
+    background-color: #8aa7db;
+    color: #101010;
+}
+
+body.dark-mode #hexaTable th.mastery-header {
+    background-color: #75b6aa;
+    color: #101010;
+}
+
+body.dark-mode #hexaTable th.boost-header {
+    background-color: #b197dd;
+    color: #101010;
+}
+
+body.dark-mode #hexaTable th.common-header {
+    background-color: #d0a574;
+    color: #101010;
+}
+
+body.dark-mode #hexaTable th.other-header {
+    background-color: #bbbbbb;
+    color: #101010;
+}
+
+body.dark-mode #hexaTable th.hexa-sub-header {
+    background-color: #dedede;
+    color: #000000;
+}

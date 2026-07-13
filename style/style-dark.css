@@ -311,7 +311,7 @@ h1 {
     display: block;
 }
 
-.dropdown:hover #equipmentBtn, .dropdown:hover #symbolsBtn {
+.dropdown:hover #equipmentBtn, .dropdown:hover #symbolsBtn, .dropdown:hover #vmatrixBtn {
     background-color: #1a73e8;
 }
 

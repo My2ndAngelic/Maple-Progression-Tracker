@@ -1,0 +1,86 @@
+/* V Matrix table styles */
+
+.v-table th,
+.v-table td {
+    text-align: center;
+    padding: 8px 6px;
+}
+
+.v-table thead tr:first-child th:first-child,
+.v-table td:first-child {
+    text-align: left;
+    min-width: 140px;
+}
+
+.v-table thead tr:first-child th:nth-child(2),
+.v-table td:nth-child(2) {
+    min-width: 52px;
+}
+
+.v-table th.job-header {
+    background-color: #516ca8;
+    color: #ffffff;
+}
+
+.v-table th.boost-header {
+    background-color: #3f8d7f;
+    color: #ffffff;
+}
+
+.v-table th.common-header {
+    background-color: #6e5a9e;
+    color: #ffffff;
+}
+
+.v-table th.node-sub-header {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    font-size: 0.85em;
+    min-width: 36px;
+}
+
+.v-table td.node-cell {
+    min-width: 36px;
+}
+
+.v-table td.node-complete {
+    background-color: #4caf50 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.v-table td.xenon-only-masked {
+    background-color: #efefef;
+    color: transparent;
+}
+
+body.dark-mode .v-table th.job-header {
+    background-color: #8aa4de;
+    color: #111111;
+}
+
+body.dark-mode .v-table th.boost-header {
+    background-color: #76b9ad;
+    color: #111111;
+}
+
+body.dark-mode .v-table th.common-header {
+    background-color: #a790de;
+    color: #111111;
+}
+
+body.dark-mode .v-table th.node-sub-header {
+    background-color: #dedede;
+    color: #000000;
+}
+
+body.dark-mode .v-table td.node-complete {
+    background-color: #2e7d32 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+body.dark-mode .v-table td.xenon-only-masked {
+    background-color: #2b2b2b;
+    color: transparent;
+}

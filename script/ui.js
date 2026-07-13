@@ -19,6 +19,13 @@ export const navbar = `
         <a href="grandsacred.html"><span class="menu-label">Grand Sacred</span></a>
       </div>
     </div>
+    <div class="dropdown">
+      <button id="vmatrixBtn"><span class="nav-label">Matrix ▼</span></button>
+      <div class="dropdown-content">
+        <a href="v.html"><span class="menu-label">V</span></a>
+        <a href="hexa.html"><span class="menu-label">Hexa</span></a>
+      </div>
+    </div>
     <button id="innerabilityBtn" onclick="window.location.href='innerability.html'"><span class="nav-label">Inner Ability</span></button>
     <button id="helpBtn" onclick="window.location.href='help.html'"><span class="nav-label">Help</span></button>
     <button id="aboutBtn" onclick="window.location.href='about.html'"><span class="nav-label">About</span></button>

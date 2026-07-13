@@ -16,9 +16,8 @@ function getDataPath() {
  */
 function parseCSV(text) {
     const lines = text.trim().split('\n');
-    const headers = lines[0].split(',').map(h => h.trim());
 
-    return lines.slice(1).map(line => {
+    function parseCSVLine(line) {
         const values = [];
         let inQuote = false;
         let currentValue = '';
@@ -47,6 +46,13 @@ function parseCSV(text) {
 
         // Push the last value
         values.push(currentValue);
+        return values;
+    }
+
+    const headers = parseCSVLine(lines[0]).map(h => h.trim());
+
+    return lines.slice(1).map(line => {
+        const values = parseCSVLine(line);
 
         // Create object from headers and values
         const obj = {};

@@ -1,0 +1,24 @@
+{
+  "totalCount": 1,
+  "ranks": [
+    {
+      "characterID": 0,
+      "characterName": "My2ndRen",
+      "exp": 0,
+      "gap": 0,
+      "jobDetail": 0,
+      "jobID": 0,
+      "level": 276,
+      "rank": 0,
+      "startRank": 0,
+      "worldID": 0,
+      "characterImgURL": "",
+      "isSearchTarget": true,
+      "legionLevel": 0,
+      "raidPower": 0,
+      "tierName": "",
+      "tierID": 0,
+      "score": 0
+    }
+  ]
+}
