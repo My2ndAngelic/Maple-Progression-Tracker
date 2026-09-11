@@ -1,11 +1,27 @@
 import {prepareTable} from './tableUtils.js';
 import {initializeUI} from './ui.js';
+import {loadCSV} from './csvHandling.js';
+
+let innerAbilityTypes = {};
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Initialize the UI (adds navbar)
     initializeUI();
 
     try {
+        // Load inner ability type data (max tier values + description templates)
+        const typeData = await loadCSV('innerability_max.csv');
+        typeData.forEach(row => {
+            if (!row.type) return;
+            innerAbilityTypes[row.type] = {
+                rare: row.rare !== '' ? parseInt(row.rare) : undefined,
+                epic: row.epic !== '' ? parseInt(row.epic) : undefined,
+                unique: row.unique !== '' ? parseInt(row.unique) : undefined,
+                legendary: row.legendary !== '' ? parseInt(row.legendary) : undefined,
+                description: row.description || ''
+            };
+        });
+
         // Load account data first to get IGN and level
         const accountResponse = await fetch('../data/account.csv');
         const accountData = await accountResponse.text();
@@ -138,111 +154,6 @@ function displayInnerAbilityData(csvData, accountMap) {
  * @param {string} ability - The abbreviated ability text from the CSV
  * @returns {string} The full description of the ability
  */
-// Maximum legendary tier values for inner abilities
-const MAX_LEGENDARY_VALUES = {
-    // Attack Speed & Special
-    'as': 1,
-    'passive': 1,
-    'aoe': 1,
-
-    // Stats
-    'str': 40,
-    'dex': 40,
-    'int': 40,
-    'luk': 40,
-    'hp': 600,
-    'mp': 600,
-    'att': 30,
-    'matt': 30,
-    'allstat': 40,
-
-    // Defense
-    'defp': 20,
-    'fddef': 50,
-    'deff': 500,
-
-    // All possible stat conversions
-    'str2dex': 10, 'str2int': 10, 'str2luk': 10,
-    'dex2str': 10, 'dex2int': 10, 'dex2luk': 10,
-    'int2str': 10, 'int2dex': 10, 'int2luk': 10,
-    'luk2str': 10, 'luk2dex': 10, 'luk2int': 10,
-
-    // Boss
-    'boss': 20,
-
-    // Level-based
-    'attlvl': 10,
-    'mattlvl': 10,
-
-    // Damage types
-    'normal': 10,
-    'abnormal': 10,
-
-    // Drop rates
-    'item': 20,
-    'meso': 20,
-
-    // Critical and buffs
-    'crit': 30,
-    'buff': 50,
-
-    // Cooldown
-    'cdskip': 20,
-
-    // DEF conversion
-    'deffd': 50
-};
-
-// Maximum unique tier values for inner abilities (for lines 2 and 3)
-const MAX_UNIQUE_VALUES = {
-    // Stats
-    'str': 30,
-    'dex': 30,
-    'int': 30,
-    'luk': 30,
-    'hp': 450,
-    'mp': 450,
-    'att': 21,
-    'matt': 21,
-    'allstat': 30,
-
-    // Defense
-    'defp': 15,
-    'deff': 350,
-    'fddef': 35,
-
-    // All possible stat conversions
-    'str2dex': 8, 'str2int': 8, 'str2luk': 8,
-    'dex2str': 8, 'dex2int': 8, 'dex2luk': 8,
-    'int2str': 8, 'int2dex': 8, 'int2luk': 8,
-    'luk2str': 8, 'luk2dex': 8, 'luk2int': 8,
-
-    // Defense and Boss
-    'boss': 15,
-
-    // Level-based
-    'attlvl': 8,
-    'mattlvl': 8,
-
-    // Damage types
-    'normal': 8,
-    'abnormal': 8,
-
-    // Drop rates
-    'item': 15,
-    'meso': 15,
-
-    // Critical and buffs
-    'crit': 25,
-    'buff': 35,
-
-    // Cooldown
-    'cdskip': 15,
-
-    // DEF conversion
-    'deffd': 35
-};
-
 function getAbilityDescription(ability) {
     if (!ability) return '';
 
@@ -250,14 +161,10 @@ function getAbilityDescription(ability) {
     const parts = ability.split(/\s+/);
     if (parts.length > 1) {
         // Check if all parts are main stats
-        const isAllMainStats = parts.every(part => {
-            const type = part.match(/^(STR|DEX|INT|LUK)/i);
-            return type !== null;
-        });
+        const isAllMainStats = parts.every(part => /^(STR|DEX|INT|LUK)/i.test(part));
 
         if (isAllMainStats) {
-            const descriptions = parts.map(part => getAbilityDescription(part));
-            return descriptions.join(', ');
+            return parts.map(part => getAbilityDescription(part)).join(', ');
         } else {
             // If not all main stats, treat as single ability
             return ability;
@@ -270,86 +177,16 @@ function getAbilityDescription(ability) {
 
     const [, type, sign, value] = match;
     const typeLC = type.toLowerCase();
+    const typeInfo = innerAbilityTypes[typeLC];
+    if (!typeInfo || !typeInfo.description) return ability;
 
-    switch (typeLC) {
-        // Basic Stats
-        case 'str':
-            return `STR: ${sign}${value}`;
-        case 'dex':
-            return `DEX: ${sign}${value}`;
-        case 'int':
-            return `INT: ${sign}${value}`;
-        case 'luk':
-            return `LUK: ${sign}${value}`;
-        case 'hp':
-            return `Max HP: ${sign}${value}%`;
-        case 'mp':
-            return `Max MP: ${sign}${value}%`;
-        case 'att':
-            return `Attack ${sign}${value}`;
-        case 'matt':
-            return `Magic Attack ${sign}${value}`;
-        case 'damage':
-            return `Damage ${sign}${value}%`;
-        case 'crit':
-            return `Critical Rate: ${sign}${value}%`;
-        case 'allstat':
-            return `All Stats ${sign}${value}`;
-
-        // Special Stats
-        case 'as':
-            return `Attack Speed ${sign}${value} level`;
-        case 'boss':
-            return `Boss Damage ${sign}${value}%`;
-        case 'cdskip':
-            return `${value}% chance to skip cooldowns`;
-        case 'meso':
-            return `Mesos Obtained: ${sign}${value}%`;
-        case 'item':
-            return `Item Drop Rate ${sign}${value}%`;
-        case 'passive':
-            return `Passive Skills ${sign}${value} Level`;
-        case 'abnormal':
-            return `${sign}${value}% damage when attacking targets inflicted with Abnormal Status.`;
-        case 'buff':
-            return `Buff Duration ${sign}${value}%`;
-        case 'normal':
-            return `${value}% damage to normal mosters`;
-        case 'aoe':
-            return `Enemies Hit by Multi-target Skills ${sign}${value}`;
-
-        // Defense Stats
-        case 'defp':
-            return `Defense ${sign}${value}%`;
-        case 'fddef':
-            return `Final Damage: ${sign}${value}% of DEF`;
-        case 'deff':
-            return `Increased defense ${sign}${value}`;
-
-        // Special conversions - handle all stat conversion combinations
-        case 'str2dex':
-        case 'str2int':
-        case 'str2luk':
-        case 'dex2str':
-        case 'dex2int':
-        case 'dex2luk':
-        case 'int2str':
-        case 'int2dex':
-        case 'int2luk':
-        case 'luk2str':
-        case 'luk2dex':
-        case 'luk2int': {
-            const [fromStat, toStat] = typeLC.split('2');
-            return `${value}% of AP assigned to ${fromStat.toUpperCase()} added to ${toStat.toUpperCase()}`;
-        }
-        case 'attlvl':
-            return `Attack ${sign}1 for every ${value} levels`;
-        case 'mattlvl':
-            return `Magic Attack ${sign}1 for every ${value} levels`;
-
-        default:
-            return ability;
-    }
+    const [fromStat, toStat] = typeLC.split('2');
+    return typeInfo.description
+        .replaceAll('{SIGN}', sign)
+        .replaceAll('{VALUE}', value)
+        .replaceAll('{TYPE}', type.toUpperCase())
+        .replaceAll('{FROM}', fromStat ? fromStat.toUpperCase() : '')
+        .replaceAll('{TO}', toStat ? toStat.toUpperCase() : '');
 }
 
 /**
@@ -373,17 +210,18 @@ function isMaxValue(ability, cellIndex) {
     // Each preset has 3 lines, starting at index 2 (after IGN and Level columns)
     const lineNumber = ((cellIndex - 2) % 3) + 1;
 
+    const maxValues = innerAbilityTypes[typeLC];
+    if (!maxValues) return false;
+
     // For line 1, check against Legendary values
     if (lineNumber === 1) {
-        const maxLegendaryValue = MAX_LEGENDARY_VALUES[typeLC];
-        if (!maxLegendaryValue) return false;
-        return numValue === maxLegendaryValue;
+        if (!maxValues.legendary) return false;
+        return numValue === maxValues.legendary;
     }
 
     // For lines 2 and 3, check against Unique values
-    const maxUniqueValue = MAX_UNIQUE_VALUES[typeLC];
-    if (!maxUniqueValue) return false;
-    return numValue >= maxUniqueValue;
+    if (!maxValues.unique) return false;
+    return numValue >= maxValues.unique;
 }
 
 /**
