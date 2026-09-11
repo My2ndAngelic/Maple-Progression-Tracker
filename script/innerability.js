@@ -175,18 +175,14 @@ function getAbilityDescription(ability) {
     const match = ability.match(/([A-Za-z]+)([+-])(\d+)(?:%)?/);
     if (!match) return ability;
 
-    const [, type, sign, value] = match;
+    const [, type, , value] = match;
     const typeLC = type.toLowerCase();
     const typeInfo = innerAbilityTypes[typeLC];
     if (!typeInfo || !typeInfo.description) return ability;
 
-    const [fromStat, toStat] = typeLC.split('2');
     return typeInfo.description
-        .replaceAll('{SIGN}', sign)
         .replaceAll('{VALUE}', value)
-        .replaceAll('{TYPE}', type.toUpperCase())
-        .replaceAll('{FROM}', fromStat ? fromStat.toUpperCase() : '')
-        .replaceAll('{TO}', toStat ? toStat.toUpperCase() : '');
+        .replaceAll('{TYPE}', type.toUpperCase());
 }
 
 /**

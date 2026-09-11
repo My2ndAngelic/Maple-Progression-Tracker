@@ -1,40 +1,40 @@
-type,rare,epic,unique,legendary,description
-as,,,,1,Attack Speed {SIGN}{VALUE} level
-passive,,,,1,Passive Skills {SIGN}{VALUE} Level
-aoe,,,,1,Enemies Hit by Multi-target Skills {SIGN}{VALUE}
-str,10,20,30,40,{TYPE}: {SIGN}{VALUE}
-dex,10,20,30,40,{TYPE}: {SIGN}{VALUE}
-int,10,20,30,40,{TYPE}: {SIGN}{VALUE}
-luk,10,20,30,40,{TYPE}: {SIGN}{VALUE}
-hp,150,300,450,600,Max HP: {SIGN}{VALUE}%
-mp,150,300,450,600,Max MP: {SIGN}{VALUE}%
-att,,12,21,30,Attack {SIGN}{VALUE}
-matt,,12,21,30,Magic Attack {SIGN}{VALUE}
-damage,,,,,Damage {SIGN}{VALUE}%
-allstat,10,20,30,40,All Stats {SIGN}{VALUE}
-defp,,,10,20,Defense {SIGN}{VALUE}%
-deff,100,200,300,400,Increased defense {SIGN}{VALUE}
-fddef,,,25,50,Final Damage: {SIGN}{VALUE}% of DEF
-deffd,,,25,50,Final Damage: {SIGN}{VALUE}% of DEF
-str2dex,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-str2int,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-str2luk,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-dex2str,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-dex2int,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-dex2luk,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-int2str,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-int2dex,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-int2luk,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-luk2str,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-luk2dex,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-luk2int,3,5,8,10,{VALUE}% of AP assigned to {FROM} added to {TO}
-boss,,,10,20,Boss Damage {SIGN}{VALUE}%
-attlvl,,,,10,Attack {SIGN}1 for every {VALUE} levels
-mattlvl,,,,10,Magic Attack {SIGN}1 for every {VALUE} levels
-normal,3,5,8,10,{VALUE}% damage to normal mosters
-abnormal,3,5,8,10,{SIGN}{VALUE}% damage when attacking targets inflicted with Abnormal Status.
-item,5,10,15,20,Item Drop Rate {SIGN}{VALUE}%
-meso,5,10,15,20,Mesos Obtained: {SIGN}{VALUE}%
-crit,,10,20,30,Critical Rate: {SIGN}{VALUE}%
-buff,13,25,38,50,Buff Duration {SIGN}{VALUE}%
-cdskip,,,10,20,{VALUE}% chance to skip cooldowns
+type,description,legendary,unique,epic,rare
+as,Attack Speed +{VALUE} level,1,,,
+passive,Passive Skills +{VALUE} Level,1,,,
+aoe,Enemies Hit by Multi-target Skills +{VALUE},1,,,
+str,{TYPE}: +{VALUE},40,30,20,10
+dex,{TYPE}: +{VALUE},40,30,20,10
+int,{TYPE}: +{VALUE},40,30,20,10
+luk,{TYPE}: +{VALUE},40,30,20,10
+hp,Max HP: +{VALUE}%,600,450,300,150
+mp,Max MP: +{VALUE}%,600,450,300,150
+att,Attack +{VALUE},30,21,12,
+matt,Magic Attack +{VALUE},30,21,12,
+damage,Damage +{VALUE}%,,,,
+allstat,All Stats +{VALUE},40,30,20,10
+defp,Defense +{VALUE}%,20,10,,
+deff,Increased defense +{VALUE},400,300,200,100
+fddef,Final Damage: +{VALUE}% of DEF,50,25,,
+deffd,Final Damage: +{VALUE}% of DEF,50,25,,
+str2dex,{VALUE}% of AP assigned to STR added to DEX,10,8,5,3
+str2int,{VALUE}% of AP assigned to STR added to INT,10,8,5,3
+str2luk,{VALUE}% of AP assigned to STR added to LUK,10,8,5,3
+dex2str,{VALUE}% of AP assigned to DEX added to STR,10,8,5,3
+dex2int,{VALUE}% of AP assigned to DEX added to INT,10,8,5,3
+dex2luk,{VALUE}% of AP assigned to DEX added to LUK,10,8,5,3
+int2str,{VALUE}% of AP assigned to INT added to STR,10,8,5,3
+int2dex,{VALUE}% of AP assigned to INT added to DEX,10,8,5,3
+int2luk,{VALUE}% of AP assigned to INT added to LUK,10,8,5,3
+luk2str,{VALUE}% of AP assigned to LUK added to STR,10,8,5,3
+luk2dex,{VALUE}% of AP assigned to LUK added to DEX,10,8,5,3
+luk2int,{VALUE}% of AP assigned to LUK added to INT,10,8,5,3
+boss,Boss Damage +{VALUE}%,20,10,,
+attlvl,Attack +1 for every {VALUE} levels,10,,,
+mattlvl,Magic Attack +1 for every {VALUE} levels,10,,,
+normal,{VALUE}% damage to normal mosters,10,8,5,3
+abnormal,+{VALUE}% damage when attacking targets inflicted with Abnormal Status.,10,8,5,3
+item,Item Drop Rate +{VALUE}%,20,15,10,5
+meso,Mesos Obtained: +{VALUE}%,20,15,10,5
+crit,Critical Rate: +{VALUE}%,30,20,10,
+buff,Buff Duration +{VALUE}%,50,38,25,13
+cdskip,{VALUE}% chance to skip cooldowns,20,10,,
