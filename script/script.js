@@ -5,7 +5,7 @@ import {prepareTable, sortByLevelFactionArchetype} from "./tableUtils.js";
 import {createDataMap, createSymbolsMap, loadCSV} from "./csvHandling.js";
 
 // Import the getAbilityDescription function from innerability.js
-import {getAbilityDescription} from "./innerability.js";
+import {getAbilityDescription, loadInnerAbilityTypes} from "./innerability.js";
 
 function createTableRow(char, job, arcanePower, arcaneStat, totalSacredForce, sacredStat, expBonus, mesoBonus, dropBonus, innerAbilityData) {
     const tr = document.createElement('tr');
@@ -100,7 +100,8 @@ export async function renderTable() {
             loadCSV('data/symbol_arcane.csv'),
             loadCSV('data/symbol_sacred.csv'),
             loadCSV('data/symbol_grandsacred.csv'),
-            loadCSV('data/innerability.csv')
+            loadCSV('data/innerability.csv'),
+            loadInnerAbilityTypes()
         ]);
 
         const jobMap = createDataMap(jobList, 'jobName');

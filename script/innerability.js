@@ -3,24 +3,38 @@ import {initializeUI} from './ui.js';
 import {loadCSV} from './csvHandling.js';
 
 let innerAbilityTypes = {};
+let innerAbilityTypesPromise;
+
+export function loadInnerAbilityTypes() {
+    if (!innerAbilityTypesPromise) {
+        innerAbilityTypesPromise = loadCSV('innerability_max.csv').then(typeData => {
+            typeData.forEach(row => {
+                if (!row.type) return;
+                innerAbilityTypes[row.type.toLowerCase()] = {
+                    rare: row.rare !== '' ? parseInt(row.rare) : undefined,
+                    epic: row.epic !== '' ? parseInt(row.epic) : undefined,
+                    unique: row.unique !== '' ? parseInt(row.unique) : undefined,
+                    legendary: row.legendary !== '' ? parseInt(row.legendary) : undefined,
+                    description: row.description || ''
+                };
+            });
+        }).catch(error => {
+            innerAbilityTypesPromise = undefined;
+            throw error;
+        });
+    }
+    return innerAbilityTypesPromise;
+}
 
 document.addEventListener('DOMContentLoaded', async () => {
+    if (!document.getElementById('innerAbilityTable')) return;
+
     // Initialize the UI (adds navbar)
     initializeUI();
 
     try {
         // Load inner ability type data (max tier values + description templates)
-        const typeData = await loadCSV('innerability_max.csv');
-        typeData.forEach(row => {
-            if (!row.type) return;
-            innerAbilityTypes[row.type] = {
-                rare: row.rare !== '' ? parseInt(row.rare) : undefined,
-                epic: row.epic !== '' ? parseInt(row.epic) : undefined,
-                unique: row.unique !== '' ? parseInt(row.unique) : undefined,
-                legendary: row.legendary !== '' ? parseInt(row.legendary) : undefined,
-                description: row.description || ''
-            };
-        });
+        await loadInnerAbilityTypes();
 
         // Load account data first to get IGN and level
         const accountResponse = await fetch('../data/account.csv');
