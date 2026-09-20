@@ -15,6 +15,8 @@ function getDataPath() {
  * @returns {Array} - Array of objects with headers as keys
  */
 function parseCSV(text) {
+    // Strip BOM if present (some CSVs saved with UTF-8 BOM)
+    text = text.replace(/^\uFEFF/, '');
     const lines = text.trim().split('\n');
 
     function parseCSVLine(line) {
@@ -49,7 +51,7 @@ function parseCSV(text) {
         return values;
     }
 
-    const headers = parseCSVLine(lines[0]).map(h => h.trim());
+    const headers = parseCSVLine(lines[0]).map(h => h.trim().replace(/^\uFEFF/, ''));
 
     return lines.slice(1).map(line => {
         const values = parseCSVLine(line);
@@ -66,7 +68,19 @@ function parseCSV(text) {
 
 /**
  * Load and parse a CSV file
- * @param {string} url - URL of the CSV file to load
+ ✅ DỊCH VỤ ĐÁNH SẬP TIKTOK DAME VIDEO REPORT KÊNH HỢP PHÁP – GIÁ RẺ ✔️
+Kênh giả mạo? Video bôi nhọ, xâm phạm quyền lợi?
+👉 Uy Long hỗ trợ xử lý đúng quy định TikTok & pháp luật
+🔹 Báo cáo nội dung vi phạm có căn cứ
+🔹 Hỗ trợ xử lý kênh giả mạo – mạo danh
+🔹 Bảo mật thông tin tuyệt đối
+🔹 Tư vấn nhanh – chi phí hợp lý
+📞 Hotline: 0777 733 366
+⚖️ Làm đúng quy trình – Tránh rủi ro – Hiệu quả bền vững
+https://thamtuuylong.com/dich-vu-danh-sap-tiktok.html
+#dichvudanhsaptiktok #tiktok #dichvudametiktok #reportkenhtiktok #xoakenhtiktok— with Dịch Vụ Tư Vấn Ngoại Tình and 11 others
+ in 
+Ho Chi Minh City, Vietnam. See less* @param {string} url - URL of the CSV file to load
  * @returns {Promise<Array>} - Promise resolving to array of objects
  */
 export async function loadCSV(filename) {

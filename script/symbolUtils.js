@@ -34,18 +34,15 @@ function getSymbolTypeInfo(type) {
     const typeMap = {
         'arcane': {
             csvFile: 'symbol_arcane.csv',
-            tableId: 'arcaneTable',
-            headers: ['Character', 'Level', 'Vanishing Journey', 'Chu Chu Island', 'Lachelein', 'Arcana', 'Morass', 'Esfera']
+            tableId: 'arcaneTable'
         },
         'sacred': {
             csvFile: 'symbol_sacred.csv',
-            tableId: 'sacredTable',
-            headers: ['Character', 'Level', 'Cernium', 'Hotel Arcus', 'Odium', 'Shangri-La', 'Arteria', 'Carcion']
+            tableId: 'sacredTable'
         },
         'grandsacred': {
             csvFile: 'symbol_grandsacred.csv',
-            tableId: 'grandSacredTable',
-            headers: ['Character', 'Level', 'Tallahart']
+            tableId: 'grandSacredTable'
         }
     };
     return typeMap[type] || {};
@@ -80,7 +77,9 @@ export async function renderSymbolsDetail(type) {
         });
         sortByLevelFactionArchetype(merged, jobMap);
 
-        // Get symbol names (all column names except IGN)
+        // Get symbol names (all column names except IGN).
+        // Column names are region names, so new regions added to the CSV
+        // appear automatically without code changes.
         const columns = Object.keys(symbolData[0] || {}).filter(key => key !== 'IGN');
         const table = document.getElementById(tableId);
         const thead = table.querySelector('thead');
@@ -90,9 +89,9 @@ export async function renderSymbolsDetail(type) {
         thead.innerHTML = '';
         tbody.innerHTML = '';
 
-        // Create header row using predefined headers
+        // Create header row dynamically from CSV columns
         const headerRow = document.createElement('tr');
-        const {headers} = getSymbolTypeInfo(type);
+        const headers = ['Character', 'Level', ...columns];
         headerRow.innerHTML = headers.map(header => `<th>${header}</th>`).join('');
         thead.appendChild(headerRow);
 
